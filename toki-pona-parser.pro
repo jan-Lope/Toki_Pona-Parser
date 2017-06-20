@@ -20,7 +20,7 @@
 %
 % In swi-prolog load the main script:
 %
-% ?- ['toki-pona-18.pro'].
+% ?- ['toki-pona-parser.pro'].
 %
 % Now you can check the grammar of a Toki Pona sentence with the command check_grammar(P).
 % In this example it is the sentence "mi moku.".
@@ -35,7 +35,7 @@
 % false.
 %
 % As an alternative way you can start swi-prolog and and the main script by one command:
-% $ swipl -s toki-pona-18.pro
+% $ swipl -s toki-pona-parser.pro
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Abbreviations
