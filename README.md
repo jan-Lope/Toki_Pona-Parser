@@ -9,7 +9,11 @@ First you have to install swi-prolog.
     Windows, Mac OS X: http://www.swi-prolog.org/download/stable  
     Ubuntu/Debian: sudo apt-get install swi-prolog  
 
-Download and decompress these scripts.
+Download and decompress these scripts. 
+
+Alternatively you can get the scripts per git on the command line.  
+$ git clone https://github.com/jan-Lope/Toki_Pona-Parser.git  
+$ cd Toki_Pona-Parser  
 
 Start swi-prolog in the directory where the scripts are. For example in Ubuntu you type swipl. You will see the Prolog prompt ?-
 
@@ -19,6 +23,11 @@ $ swipl
 Now you can load the main script in the Prolog system.
 
 ?- ['toki-pona-parser.pro'].  
+
+Alternatively you start swi-prolog with the main script by one command.  
+$ swipl -s toki-pona-parser.pro  
+?-
+
 
 Now you can check the grammar of a Toki Pona sentence with the command check_grammar(P). Don't forget the dot.
 After the new prompt |: you can type the sentence. Use neither a space before the sentence nor doppel spaces.
@@ -44,45 +53,45 @@ false.
 The grammar of the sentence "mi moku e moku." is unambiguously. The first "moku" can only be a transitive verb and the second "moku" is a noun.
 This sentence (s) is a declarative (dec), simple (sim) sentence. It has a noun phrase (np) with a subject (sub) and a verb phrase (vp) with a direct object (obj_d). Here are the abbreviations:
 
-s            sentence  
+    s            sentence  
   
-dec          declarative sentence  
-exc          exclamatory sentence  
-imp          imperative sentence  
-int          interrogative sentence  
-hdl          headline  
+    dec          declarative sentence  
+    exc          exclamatory sentence  
+    imp          imperative sentence  
+    int          interrogative sentence  
+    hdl          headline  
   
-sim          simple sentence  
-voc          vocativ sentence  
-inj          interjection sentence  
-salut        salutation sentence  
-com          command sentence  
-des          designate sentence  
+    sim          simple sentence  
+    voc          vocativ sentence  
+    inj          interjection sentence  
+    salut        salutation sentence  
+    com          command sentence  
+    des          designate sentence  
   
-np           noun phrase  
-vp           verb phrase  
-lp           "la" phrase  
-vocp         vocativ phrase  
-salutp       salutation phrase  
+    np           noun phrase  
+    vp           verb phrase  
+    lp           "la" phrase  
+    vocp         vocativ phrase  
+    salutp       salutation phrase  
   
-subj         subject  
+    subj         subject  
   
-obj_d        object direct after transitive verb  
-obj_i        object after intransitive verb  
-obj_be       object after missing "be"  
-obj_p        object after prepositiion  
-obj_a        object after "anu"  
+    obj_d        object direct after transitive verb  
+    obj_i        object after intransitive verb  
+    obj_be       object after missing "be"  
+    obj_p        object after prepositiion  
+    obj_a        object after "anu"  
   
-unofficial_  unofficial word (adjective)  
+    unofficial_  unofficial word (adjective)  
   
-card         cardinal number  
-ord          ordinal number  
+    card         cardinal number  
+    ord          ordinal number  
   
-conj         conjunction  
-sep          separator  
-verb_int     verb_intransitive  
-verb_tra     verb transitive  
-be           The missing "be", "am", "are", "is" in Toki Pona.  
+    conj         conjunction  
+    sep          separator  
+    verb_int     verb_intransitive  
+    verb_tra     verb transitive  
+    be           The missing "be", "am", "are", "is" in Toki Pona.  
 
 Avoid ambiguous grammar as much as possible! Keep in mind if a sentence is clear for you it could be not clear for other people!
 
