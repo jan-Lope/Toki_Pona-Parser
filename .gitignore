@@ -28,6 +28,7 @@ tmp.*
 *.eps
 *.pdf
 *.bbl
+*.blg
 *.bcf
 *.blg
 *-blx.aux
@@ -37,4 +38,7 @@ tmp.*
 *.ilg
 *.ind
 *.ist
+
+# Build
+_build/
 
