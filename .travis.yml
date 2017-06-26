@@ -16,10 +16,8 @@ script:
 - mkdir _build
 - "./make.sh"
 deploy:
-  provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  overwrite: true
-  file: "Toki_Pona.out"
+  provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
   on:
-    tags: true
+    branch: master
