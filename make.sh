@@ -32,6 +32,16 @@ if [ ! -f _build/$PROLOG_MAIN_FILE.out ]; then
         echo "ERROR"
         exit 1
 fi
+# 
+# To Do
+# http://www.swi-prolog.org/pldoc/man?section=runtime
+# http://www.swi-prolog.org/pldoc/man?section=runcomp
+# http://www.swi-prolog.org/pldoc/doc_for?object=section%282,%272.10%27,swi%28%27/doc/Manual/compilation.html%27%29%29
+# http://www.swi-prolog.org/pldoc/man?section=cmdline
+
+
+
+
 #
 echo " "
 echo "end $0"
