@@ -1,3 +1,4 @@
+language: ruby
 sudo: required
 dist: trusty
 before_install:
@@ -7,11 +8,6 @@ script:
 - "./make.sh"
 deploy:
   provider: releases
-  api_key:
-    secure: [YOUR KEY]
-  file:
-  - _build/Toki_Pona.out
-
   skip_cleanup: true
-  on:
-tags: true
+
+
