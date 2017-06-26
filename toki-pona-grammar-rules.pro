@@ -1,116 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Learn Definite Clause Grammars with toki pona
-% toki pona - Lession 18 - Parse Trees
+% Toki Pona - Grammar Rules
 % by Robert Warnke http://rowa.giso.de
 % released under the GNU General Public License
 % twitter: #tokipona #SWIprolog
 %
-% These scripts do not support Toki Pona slangs!
-%
-% First you have to install swi-prolog.
-%   Windows, Mac OS X: http://www.swi-prolog.org/download/stable
-%   Ubuntu/Debian: sudo apt-get install swi-prolog
-%
-% Download and decompress these scripts: http://rowa.giso.de/languages/toki-pona/dcg/toki-pona-dcg.tar.gz
-%
-% Start swi-prolog in the directory where the scripts are (here in Ubuntu):
-%
-% $ swipl
-% ?-
-%
-% In swi-prolog load the main script:
-%
-% ?- ['toki-pona-parser.pro'].
-%
-% Now you can check the grammar of a Toki Pona sentence with the command check_grammar(P).
-% In this example it is the sentence "mi moku.".
-% To get all possible variants type semicolons until "false" or "no" is printed.
-% "false" or "no" mean no (more) variants can be found.
-%
-% ?- check_grammar(P).
-% |: mi moku.
-% P = s(dec(sim(np(sub(pronoun(mi))), vp(verb_tra(moku)))), sep('.')) ;
-% P = s(dec(sim(np(sub(pronoun(mi))), vp(be, obj_be(adjective(moku))))), sep('.')) ;
-% P = s(dec(sim(np(sub(pronoun(mi))), vp(be, obj_be(noun(moku))))), sep('.')) ;
-% false.
-%
-% As an alternative way you can start swi-prolog and and the main script by one command:
-% $ swipl -s toki-pona-parser.pro
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Abbreviations
-%
-% To avoid long phrase trees we need abbreviations.
-%
-% s        sentence
-%
-% dec      declarative sentence
-% exc      exclamatory sentence
-% imp      imperative sentence
-% int      interrogative sentence
-% hdl      headline
-%
-% sim      simple sentence
-% voc      vocativ sentence
-% inj      interjection sentence
-% salut    salutation sentence
-% com      command sentence
-% des      designate sentence
-%
-% np       noun phrase
-% vp       verb phrase
-% lp       "la" phrase
-% vocp     vocativ phrase
-% salutp   salutation phrase
-%
-% subj     subject
-%
-% obj_d    object direct after transitive verb
-% obj_i    object after intransitive verb
-% obj_be   object after missing "be"
-% obj_p    object after prepositiion
-% obj_a    object after "anu"
-%
-% unofficial_ unofficial word (adjective)
-%
-% card     cardinal number
-% ord      ordinal number
-%
-% conj     conjunction
-% sep      separator
-% verb_int verb_intransitive
-% verb_tra verb transitive
-% be       The missing "be", "am", "are", "is" in Toki Pona.
-%
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Include Files
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% This catalog file contains the official  Toki Pona words.
-:- ['official_words_catalog-parse-tree.pro'].
-
-% Unofficial Words - Adjectives catalogs
-:- ['unofficial_words_continent_catalog-parse-tree.pro'].
-:- ['unofficial_words_country_catalog-parse-tree.pro'].
-:- ['unofficial_words_city_catalog-parse-tree.pro'].
-:- ['unofficial_words_language_catalog-parse-tree.pro'].
-:- ['unofficial_words_ideology_catalog-parse-tree.pro'].
-:- ['unofficial_words_community_catalog-parse-tree.pro'].
-:- ['unofficial_words_female_prominent_personage_catalog-parse-tree.pro'].
-:- ['unofficial_words_male_prominent_personage_catalog-parse-tree.pro'].
-:- ['unofficial_words_female_name_catalog-parse-tree.pro'].
-:- ['unofficial_words_person_catalog-parse-tree.pro'].
-:- ['unofficial_words_male_name_catalog-parse-tree.pro'].
-:- ['unofficial_words_movies_catalog-parse-tree.pro'].
-:- ['unofficial_words_miscellaneous_catalog-parse-tree.pro'].
-
-% This file contains the DCG and Prolog rules for a user friendly input.
-:- ['check_grammar_parse_tree.pro'].
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % paragraph and sentences
@@ -4615,14 +4509,3 @@ removing_extraneous_tree_nodes_pr_abcdef(Pre,R, epsilon,epsilon,epsilon,epsilon,
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % eof
-
-/*
-To Do:
-http://www.cs.fsu.edu/~engelen/expr.htmlhttp://www.cs.fsu.edu/~engelen/expr.html
-http://cecs.wright.edu/~tkprasad/VHDL/VHDL-AMS/vhdl97.htmlhttp://cecs.wright.edu/~tkprasad/VHDL/VHDL-AMS/vhdl97.html
-pretty printing
-https://user.phil-fak.uni-duesseldorf.de/~rumpf/WS2004/Prolog/h8.pdf
-http://www.learnprolognow.org/lpnpage.php?pagetype=html&pageid=lpn-htmlse42
-https://github.com/dragonwasrobot/learn-prolog-now-exercises/blob/master/chapter-12/practical-session.pl
-http://www.swi-prolog.org/pldoc/doc/swi/library/pprint.pl
-*/
