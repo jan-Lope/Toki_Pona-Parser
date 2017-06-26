@@ -1,3 +1,6 @@
+# Configuration file for https://travis-ci.org
+# (c) Robert Warnke
+# Checked with http://lint.travis-ci.org
 language: ruby
 sudo: required
 dist: trusty
