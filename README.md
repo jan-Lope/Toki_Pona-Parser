@@ -1,14 +1,14 @@
 # Toki Pona Parser
 Toki Pona is a constructed, minimal language. This parser based on swi-prolog and definite clause grammars (dcg) and supports spelling, grammar check and ambiguity check of Toki Pona sentences.
 
-Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
+## The Tool for Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 
 First you have to install swi-prolog.
 
     Windows, Mac OS X: http://www.swi-prolog.org/download/stable  
     Ubuntu/Debian: sudo apt-get install swi-prolog  
 
-Download and decompress these scripts. 
+Download and decompress these [scripts](https://github.com/jan-Lope/Toki_Pona-Parser). 
 
 Alternatively you can get the scripts per git on the command line.  
 
@@ -207,11 +207,25 @@ ni li ' pona pi sijelo mi.
 
 For more example sentences please see the source code of toki-pona-parser.pro.
 
-Questions, suggestions, ... Please write to me via twitter : https://twitter.com/jan__Lope or http://rowa.giso.de/languages/toki-pona/english/contact.php
+Questions, suggestions, ... Please write to me via [twitter](https://twitter.com/jan__Lope) or this [contact form](http://rowa.giso.de/languages/toki-pona/english/contact.php)
 
-Here an introduction to definite clause grammars (DCG): http://cmsmcq.com/2004/lgintro.html
+Here an [introduction to definite clause grammars (DCG)](http://cmsmcq.com/2004/lgintro.html).
 
-For edit the source code you can use the atom editor ( https://atom.io ) with the prolog plugin. On MS Windows you can use the the swi-prolog editor also ( http://arbeitsplattform.bildung.hessen.de/fach/informatik/swiprolog/indexe.html ).
+For edit the source code you can use the [atom editor](https://atom.io) with the prolog plugin. 
+On MS Windows you can use the the [swi-prolog editor](http://arbeitsplattform.bildung.hessen.de/fach/informatik/swiprolog/indexe.html) also.
+
+
+
+## In Progress
+
+Linux user can use the generated [Toki_Pona.out](https://github.com/jan-Lope/Toki_Pona-Parser/blob/gh-pages/Toki_Pona.out) without installing swi-prolog.
+
+Download this file and start it.
+
+
+    ./Toki_Pona.out
+
+
 
 
 [jan Lope](https://jan-lope.github.io)
