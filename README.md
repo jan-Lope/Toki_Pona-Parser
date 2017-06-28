@@ -1,8 +1,7 @@
-# Toki_Pona-Parser
+# Toki Pona Parser
+Toki Pona is a constructed, minimal language. This parser based on swi-prolog and definite clause grammars (dcg) and supports spelling, grammar check and ambiguity check of Toki Pona sentences.
 
 Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
-
-Toki Pona is a constructed, minimal language. This parser based on swi-prolog and definite clause grammars (dcg) and supports spelling, grammar check and ambiguity check of Toki Pona sentences.
 
 First you have to install swi-prolog.
 
@@ -215,3 +214,4 @@ Here an introduction to definite clause grammars (DCG): http://cmsmcq.com/2004/l
 For edit the source code you can use the atom editor ( https://atom.io ) with the prolog plugin. On MS Windows you can use the the swi-prolog editor also ( http://arbeitsplattform.bildung.hessen.de/fach/informatik/swiprolog/indexe.html ).
 
 
+[jan Lope](https://jan-lope.github.io)
