@@ -29,6 +29,11 @@ Alternatively you start swi-prolog with the main script by one command.
     $ swipl -s Toki_Pona.pro
     ?-
 
+Under Linux you can start the script directly.
+
+    ./Toki_Pona.pro  
+
+
 Now you can check the grammar of a Toki Pona sentence with the command check_grammar(P). Don't forget the dot.
 After the new prompt |: you can type the sentence. Use neither a space before the sentence nor doppel spaces.
 In this example it is the sentence "mi moku.".
