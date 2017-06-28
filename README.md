@@ -218,7 +218,8 @@ On MS Windows you can use the the [swi-prolog editor](http://arbeitsplattform.bi
 
 ## In Progress
 
-Linux user can use the generated [Toki_Pona.out](https://github.com/jan-Lope/Toki_Pona-Parser/blob/gh-pages/Toki_Pona.out) without installing swi-prolog.
+Linux user can use the generated [Toki_Pona.out](https://github.com/jan-Lope/Toki_Pona-Parser/blob/gh-pages/Toki_Pona.out) without installing swi-prolog. 
+It is generated automatically by [travis-ci.org](https://travis-ci.org/jan-Lope/Toki_Pona-Parser).
 
 Download this file and start it.
 
