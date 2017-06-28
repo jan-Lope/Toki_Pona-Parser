@@ -470,8 +470,8 @@ verb_pre(verb_pre(Verb_pre),Verb_pre) --> [Verb_pre], { member(Verb_pre, [
      ken,          % to can, may
      kepeken,      % to use
      lukin,        % to seek to, try to, look for
-%     open,         % to begin, to start
-%     pini,         % to stop, to finish, to end, to interrupt
+     open,         % to begin, to start
+     pini,         % to stop, to finish, to end, to interrupt
      pu,           % buying and interacting with the official Toki Pona book
      sona,         % to know how to
      wile          % to want, need, wish, have to, must, will, should
