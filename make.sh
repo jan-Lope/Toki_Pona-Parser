@@ -15,7 +15,10 @@ echo " "
 #
 rm -f *.out
 echo "make $PROLOG_MAIN_FILE.out"
-swipl -nodebug -g true -O -q --stand_alone=true -o  "$PROLOG_MAIN_FILE.out" -c "$PROLOG_MAIN_FILE.pro" > /dev/null 2> /dev/null
+
+# '-t io_loop' is needed to start the loop in the stand alone version
+swipl -nodebug -g true -t io_loop -O -q --stand_alone=true -o  "$PROLOG_MAIN_FILE.out" -c "$PROLOG_MAIN_FILE.pro" > /dev/null 2> /dev/null
+
 if [ $? != 0  ]; then
         echo "ERROR"
         exit 1

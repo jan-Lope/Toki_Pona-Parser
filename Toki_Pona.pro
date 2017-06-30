@@ -116,3 +116,8 @@
 % This file contains the DCG and Prolog rules for a user friendly input.
 :- ['toki-pona-io-rules.pro'].
 
+% Start the io loop if we are not called for compiling
+:- current_prolog_flag(os_argv,Argv),               % get all args for prolog
+   \+ member('--stand_alone=true',Argv) -> io_loop  % start if not compiling
+   ; true.                                          % just avoid warning.
+
