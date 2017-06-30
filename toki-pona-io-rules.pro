@@ -8,6 +8,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % For a user friendly input:
 
+% Read lines and analyze until we read an empty line
+io_loop :- repeat, check_grammar, halt.
+
+check_grammar :-
+    read_line(CL),                                 % read a line
+    ( CL = [] -> true                              % exit loop on empty line
+      ; wordlist(WL,CL,[]), !, sentence(P,WL,[]),  % analyze
+      write(P), nl, fail).                         % print results and loop
+
 % check_grammar(P)          :- read_line(CL), wordlist(WL,CL,[]), !, sentence(P,WL,[]).   % Read a line from the user, put it in a list of words and check it with "sentence".
 check_grammar(P)          :- read_line(CL), wordlist(WL,CL,[]), !, paragraph(P,WL,[]).   % Read a line from the user, put it in a list of words and check it with "sentence".
 
