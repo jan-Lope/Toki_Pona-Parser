@@ -1,0 +1,1736 @@
+% correct Toki Pona sentences
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% pu, The Toki Pona book of Sonja Lang released 2014, http://tokipona.org
+%
+% pu page 7
+%
+mi open lon nimi sewi.
+sina pu a!
+toki pona li tan seme?
+tenpo pini la mi wile sona e kon ale kepeken nimi lili.
+mi lukin e kon mi.
+mi kama sona e toki mute.
+mi musi.
+mi pali e nasin toki lili.
+ona li pona e toki insa mi.
+mi pana e toki lili mi tawa jan ale lon ilo lipu lon tenpo pini.
+kulupu lili li kama.
+ona li olin e toki pona.
+pu la mi wile pana e selo pini pi toki pona. 
+nasin ni la mi kepeken toki pona.
+%
+% pu lesson 2
+%
+ijo li ijo.
+ni li jan.
+ni li kili.
+lipu li ijo.
+jan li meli.
+soweli li ijo.
+meli li jan.
+ijo li ijo.
+ni li lipu.
+meli li jan.
+jan li ijo.
+soweli li meli.
+kili li ijo.
+ni li lipu.
+% pu lesson 3
+telo li pona.
+telo kili li suli.
+meli li lili.
+soweli lili li pona.
+jan ni li suli.
+soweli meli li pona.
+ni li jan pona.
+tomo telo li lili.
+ni li soweli lili.
+jan lili li meli.
+lipu suli li pona.
+kili li kili telo.
+%
+% pu lesson 4
+%
+mi mije.
+sina sin.
+tomo sina li sin.
+mije li jan pona.
+tomo soweli li lili.
+sina mije wawa.
+kulupu sin li wawa.
+ni li lipu sina.
+sina wawa.
+ni li kili mi.
+telo sin li ijo pona.
+tomo lipu li sin.
+kulupu mi li suli.
+sina meli suli.
+%
+% pu lesson 5
+%
+ijo li pali e ijo.
+mi moku e telo.
+mije li sona.
+mije li sona e ijo.
+mi sona e toki pona.
+mije ni li jan toki.
+soweli suli li moku e sina.
+lipu kulupu li wawa.
+sina pali e moku sin.
+jan sona li kute.
+tomo sona li jo e lipu.
+mi kute e sina.
+kili li jo e telo.
+kulupu li pali e tomo moku.
+jan pali li jo e sona lili.
+jan pona li moku e soweli.
+meli li kute e mije.
+kulupu lili li jo e toki sin.
+%
+% pu lesson 6
+%
+mi moku ala e soweli.
+mi toki pona e ijo.
+pali sina li pona mute.
+telo li wawa e mi.
+jan sona li pu.
+meli lili li kute ike e mama.
+sewi li wan.
+jan ala li ike.
+mama mije li pu mute.
+wan li pona.
+mi kute e telo suli.
+mi sona lili e toki pona.
+lipu sewi li jo sona.
+kulupu suli li wan.
+mije li moku ala e kili ike.
+moku li suli e mi.
+%
+% pu lesson 7
+%
+seme li sin?
+jan seme li toki?
+sina pu anu seme?
+ona li mama ala mama? 
+mama. 
+mama ala. 
+ona li jo ala jo e kili mute?
+jo.
+mije sona li jo e kala anu seme?
+sina seme e ona?
+tomo li jo e ilo toki.
+sina kute ala kute e mama sina?
+kala wawa li moku e seme?
+sina jo e ilo seme?
+ona li kute ala kute?
+ona li kute anu seme?
+kulupu wan li pu ala pu?
+kulupu wan li pu anu seme?
+mi pali e seme?
+mi mute li pali e seme?
+kala li moku ala moku e telo?
+kala li moku e telo anu seme?
+ilo moku li lili ala lili?
+ilo moku li lili anu seme?
+mi kute e mije anu meli.
+%
+% pu lesson 8
+%
+mi pana e kala tawa ona.
+mi pana e kala lon tomo.
+mi pana e kala ona lon tomo.
+mi lon tomo.
+mi tawa sina.
+mama ni li tawa telo suli.
+mi pali mute tan mi.
+mi toki lon toki pona.
+soweli lili li pona tawa mi.
+kulupu pali li kepeken seme?
+mi sona e toki mute tan meli mi.
+mije sin li lon tomo telo anu seme?
+mi kepeken toki pona.
+ona li pana e ijo tan tomo ona.
+kili li ike ala.
+jan pali li kepeken ilo.
+mi lon.
+jan toki li pana e sona tawa jan kute.
+sina pali e ona tan seme?
+%
+% pu lesson 9 
+%
+nimi mi li Apu. 
+ma Apika li jo e jan mute.
+meli Sonko li tawa nasin Kuwin.
+ma tomo Pelin li lon ma Tosi.
+sina sona ala sona e toki Inli?
+nena sewi Kepelitepe li lon ma Tuki.
+jan Sulu li utala e jan ike.
+sina tan ala tan ma Tosi?
+sina tan ma Tosi anu seme?
+ma Sonko li suli mute.
+telo Sisikaka li lon ma Pelu.
+kulupu Apika li kepeken toki mute.
+mi tawa ma Inli.
+nimi sina li seme?
+%
+% pu lesson 10
+%
+toki!
+pona tawa sina!
+kama pona!
+seme li sin?
+mi tawa.
+tawa pona.
+o toki ala.
+o pali.
+jan Mosima o, ni li soweli sina anu seme?
+o moku ala e kili mi.
+sina pilin ike tan seme?
+sewi o pana e pona tawa mi.
+o kute e mama sina.
+sina suli a!
+pona!
+mi o moku e ijo pona.
+jan Lisa li pilin pona.
+a a a.
+mu!
+o pana e ilo tawa mi.
+o tawa tomo sina.
+ma Kanata li jo e kala mute a!
+jan Ali o wawa.
+%
+% pu lesson 11
+%
+tenpo suno ni li pona mute tawa mi.
+meli lili pi sijelo pona li telo e kasi.
+mije pi pilin pona li pali e ilo tenpo.
+mama mama mi li lili.
+sina mute li jo ala jo e tomo tawa?
+o awen lon tenpo pi suli mute.
+jan sona pi toki pona li pu lon tenpo mute.
+mi pilin pona lon ma kasi ona.
+kulupu pi toki pona li pana e ijo mute.
+mu!
+ma utala ni li lili.
+mije pi sijelo wawa li awen.
+suno li pana e pona tawa kasi.
+o kepeken ala ilo ike.
+%
+% pu lesson 12
+%
+ni li nanpa wan.
+nanpa ni li tu.
+nanpa ni li luka.
+nanpa ni li mute.
+nanpa ni li ale.
+nanpa ni li tu wan.
+nanpa ni li tu tu.
+nanpa ni li luka tu.
+nanpa ni li luka luka tu wan.
+nanpa ni li mute mute mute luka luka luka tu wan.
+nanpa ni li ale tu.
+jan ale ale luka wan li kama.
+sina nanpa wan!
+ni li tenpo suno nanpa tu tu.
+mije lili tu li awen kasi mute.
+mije lili tu li awen kasi luka luka wan.
+tomo sin pi jan utala lili li pona mute.
+ijo nanpa luka li seme?
+mi sona e toki mute.
+mi sona e toki luka.
+jan ale li kute tawa ona.
+%
+% pu lesson 13
+%
+ma tomo li kama suli.
+mi kama sona e toki pona.
+mije wawa li lukin jo e meli pona.
+mi mute li kama awen lon ma tomo Towano.
+jan lili mi o, sina wile moku e kala anu seme?
+jan mute li sona ala tawa lon telo.
+sina ken ala ken kama?
+kili li kama ike.
+mi wile lon ma mama mi.
+jan utala li sona pali e moku pona.
+nasin li kama lili.
+kasi li kama jo e telo.
+sina ken awen e nimi sina.
+sijelo meli li kama pona a.
+%
+% pu lesson 14
+%
+ona li kama lon tenpo pimeja ni.
+tenpo pimeja ni la ona li kama.
+mi pona tawa jan, la jan li pona tawa mi.
+sina kama lon tomo mi, la mi pana e moku.
+sina lukin e telo jelo, la o moku ala e ona.
+ilo pi laso pimeja li lon tomo walo.
+suno li loje, la tenpo pona li lon.
+tan seme la soweli wawa pimeja li moku e ona?
+sewi li wile, la mi pali e ona lon tenpo suno kama.
+sijelo sina li laso, la ni li ike.
+tenpo ike la jan li wile toki tawa jan pona.
+kulupu la mi mute li wawa.
+mi pu, la mi pilin pona.
+tenpo seme la mama sina li kama?
+mama sina li kama lon tenpo seme?
+mi jo ala e soweli, la mi moku e kili.
+mi pilin ike tan utala suli.
+%
+% pu lesson 15
+%
+mi lon poka sina.
+noka tomo li wawa.
+jan lili li lon insa pi mama meli.
+ilo suli li tawa lon sewi.
+kala laso mute li lon noka pi telo suli.
+tomo sona ni la jan lili li wile kepeken toki Inli.
+telo li kama tan sewi.
+lipu li lon noka soweli.
+sina pana e ilo tenpo loje lon poka seme?
+mi lukin e meli pimeja lon sinpin tomo.
+o awen e monsi sina.
+suno li lon poka pimeja.
+%
+% pu lesson 16
+%
+suwi li pona tawa mi.
+sina en mi li anpa tawa sewi.
+ma mama li lili li lete.
+taso mije en meli li pali li pilin pona.
+meli sama mi li open e lupa nanpa wan e lupa nanpa tu.
+tomo sina taso li pimeja.
+%
+% pu lesson 17
+%
+mi wile e ni: jan Melani li kama tawa tomo mi.
+mama sama Mawijo li jo e tomo lili lon ma kasi.
+ona li wile alasa li kama jo e ilo alasa e len loje.
+tenpo suno nanpa wan la ona li lukin e waso laso taso.
+waso li moku e pipi lili.
+tenpo suno nanpa tu la ona li kute e mu wawa.
+jan Mawijo li awen.
+ona li lukin e soweli suli.
+lawa soweli li jo e palisa.
+jan Mawijo li kepeken ilo alasa.
+taso linja li pakala.
+soweli suli li tawa weka.
+%
+% pu lesson 18
+%
+jan Mawijo li jo e meli olin.
+nimi ona li Sili.
+jan Sili li lape lili lon supa.
+tenpo suno pini la jan Sili li pona e tomo, li telo e len.
+jan Mawijo li kama lon tenpo seme?
+kalama a!
+tenpo ni la jan Mawijo li kama lon lupa, li jo e soweli lili tu.
+jan Sili li pilin pona, li uta e jan Mawijo.
+ona li seli e soweli e pan.
+moku pona!
+%
+% pu - Toki Pona proverbs
+%
+ale li jo e tenpo.
+ale li pona.
+toki pona li toki pona.
+ante li kama.
+ike li kama.
+jan li suli mute.
+mani li suli lili.
+jan sona li jan nasa.
+lupa meli li mama pi ijo ale.
+mi pona e ale mi, la mi pona e mi.
+nasin pona li mute.
+o olin e jan poka.
+pali li pana e sona.
+pilin pona li pana e sijelo pona.
+sina pana e ike, la sina kama jo e ike.
+wawa li lon insa.
+weka lili li pona tawa lawa.
+wile sona li mute e sona.
+jan lili li sona ala e ike.
+meli li nasa e mije.
+mi weka e ike jan, la mi weka e ike mi.
+nasin ante li pona tawa jan ante.
+telo li pona.
+lape li pona.
+toki li pona.
+o pana e pona tawa ma.
+utala li ike.
+%
+% pu - Famous Quotations
+%
+o weka e nimi ike.
+sina sona e toki wan taso, la sina sona ala e toki ni.
+toki sina en pali sina li sama, la sina pilin pona.
+sewi li lon ala, li lon ale.
+sina wile ante e ale, la o ante e sina.
+wile sona nanpa wan li ni: ale li pona anu ike?
+sona pona li ni: o weka e ike.
+nasin pona li pona nanpa wan.
+sina ken ala toki e ijo lon toki pona, la sina sona pona ala e ona.
+%
+% pu - The Tora
+%
+kulupu Isale o kute e ni.
+sewi li sewi mi.
+sewi li wan.
+%
+% pu - The Gospel
+%
+jan Isa li tawa lili, li kama anpa, li toki e ni tawa sewi.
+mama mi o!
+ken la o weka e pilin ike mi.
+wile mi o lon ala.
+taso wile sina o lon.
+%
+% pu - The Qur'an
+%
+jan lawa li wile sona e ni tan jan Isa.
+jan sona pona o!
+mi pali e seme, la mi kama lon tenpo sewi?
+jan Isa li toki e ni.
+tan seme la sina pana e nimi pona tawa mi?
+jan ala li pona.
+sewi wan taso li pona.
+%
+% The Writing of Baha...
+%
+o pilin ala e ni: sewi li pana e nasin taso.
+a!
+sewi li open e telo suwi kepeken luka wawa.
+ilo sitelen pi toki sewi li wawa e ni.
+jan sona o kepeken sona a!
+%
+% pu - Short Obligatory Prayer
+%
+sewi mi o!
+mi toki wawa e ni: sina pali e mi tawa seme?
+mi o sona e sina.
+mi o olin e sina.
+tenpo ni la mi sona e ni: mi anpa.
+sina wawa.
+mi jo lili.
+sina jo mute.
+sina sewi wan.
+sina awen e ale.
+lon la sina lon.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% jan Lopes DCG lessons 01
+sina pona.
+mi pona.
+telo li pona.
+suno li suli.
+moku li pona.
+mi suli.
+jan li moku.
+jan li pona.
+mi moku.
+sina suli.
+telo li pona.
+telo li suli.
+suno li suli.
+jan li moku.
+%
+% jan Lopes DCG lessons 02
+%
+mi moku e kili.
+ona li lukin e pipi.
+ona li pona e ilo.
+mi pona e ijo.
+mi wile lukin e ma.
+mi wile pakala e sina.
+ona li wile jo e ilo.
+pipi li lukin li unpa.
+mi moku li pakala. 
+mi moku e kili e telo.
+mi wile lukin e ma e suno.
+mi wile lukin e ma e suno e ni e sina e ona.
+mi wile lukin e ma e suno e ni e sina e ona li pona e ijo.
+mi lukin e ni.
+mi wile unpa e ona.
+jan li wile jo e ma.
+mi jan li suli. 
+mi jo e ilo.
+ona li moku e kili.
+ijo li lukin e mi.
+ona li wile pakala e pipi.
+kili li moku li pona. 
+pipi li wile moku e telo.
+mi lukin e ni.
+jan li wile jo e ma.
+mi jan li suli. 
+mi moku li pakala li pakala.
+mi moku li ma li pona li pipi li pakala li kili li lukin.
+%
+% jan Lopes DCG lessons 03
+%
+mi moku e moku mi. 
+jan utala nasa mute li ike. 
+jan li ike lukin. 
+jan ni li pona lukin. 
+jan ike li ni. 
+jan lawa li lawa. 
+jan lili li wile moku e telo moku lili. 
+jan sewi li ilo. 
+jan unpa li sewi. 
+ma telo li ike mute. 
+ma tomo mi li pona mute. 
+mi mute li moku e telo nasa mute. 
+ona mute li telo e tomo telo. 
+tomo toki li pona. 
+toki sina li telo. 
+tomo mi li pona. 
+ma sina li lili. 
+telo ona li pona. 
+len jan li ike mute. 
+mi lawa pona e jan. 
+mi utala ike. 
+sina lukin sewi e suno. 
+ona li wile mute e ni. 
+mi mute li lukin lili e ona. 
+mi jo e kili. 
+ona li pona li lili. 
+mi moku lili e kili lili. 
+jan lawa li moku e telo jaki. 
+mi wile e ilo moku. 
+jan ike li utala e ona mute. 
+jan ike ni li jo e len nasa. 
+mi mute li moku e telo nasa mute. 
+jan lili li lukin e jan suli. 
+mi lukin sewi e tomo suli. 
+seli suno li seli e tomo mi. 
+jan lili li wile e telo kili. 
+ona mute li nasa e jan suli. 
+ni mute li ni mute.
+mi moku e moku mute mi. 
+%
+% jan Lopes DCG lessons 04
+%
+mi lon tomo.
+mi moku lon tomo.
+mi moku, lon tomo.
+suno li lon sewi.
+mi telo e mi lon tomo telo.
+mi telo e mi, lon tomo telo.
+kili li lon poki.
+mi wile lon tomo.
+mi wile e ni.
+mi lon tomo.
+sina toki e ni tawa mi.
+sina moku.
+mi kepeken ilo.
+sina wile kepeken ilo.
+mi kepeken poki ni.
+mi moku kepeken ilo moku.
+mi moku, kepeken ilo moku.
+mi lukin kepeken ilo suno.
+mi lukin, kepeken ilo suno.
+mi tawa tomo mi.
+ona mute li tawa utala.
+sina wile tawa telo suli. 
+ona li tawa sewi kiwen. 
+mi toki tawa sina.
+mi toki, tawa sina.
+ona li lawa e jan tawa ma pona.
+ona li lawa e jan, tawa ma pona.
+ona li kama tawa ma mi.
+ona li kama, tawa ma mi.
+ni li pona tawa mi.
+ni li pona, tawa mi.
+ni li ike tawa mi.
+ni li ike, tawa mi.
+kili li pona tawa mi.
+kili li pona, tawa mi.
+toki li pona tawa mi.
+toki li pona, tawa mi.
+utala li ike tawa mi.
+utala li ike, tawa mi.
+telo suli li ike tawa mi.
+telo suli li ike, tawa mi.
+mi lukin e ma.
+ni li pona tawa mi.
+ni li pona, tawa mi.
+ma li pona lukin.
+mi pana e tomo tawa sina.
+mi pana e tomo, tawa sina.
+mi tawa e kiwen.
+ona li tawa e len mi.
+ona li kama tawa tomo mi. 
+mi kama e pakala.
+mi kama jo e telo.
+mi pona e ilo suno kepeken ilo lili.
+toki pona li pona tawa mi.
+mi mute li pana e moku tawa ona mute. 
+ni li tawa jan pona mi.
+ilo li lon poki.
+poki ni li lon jaki.
+mi wile tawa tomo ona kepeken tomo tawa mi.
+ona mute li utala toki.
+sina wile kama tawa tomo toki. 
+jan li toki kepeken toki pona lon tomo toki.
+mi tawa tomo toki. 
+ona li pona tawa mi.
+sina kama jo e jan pona lon ni.
+mi pana e tomo e telo tawa ona mute.
+mi wile e ni: mi lon tomo.
+sina toki e ni tawa mi: sina moku.
+sina kama e ni: mi wile moku.
+%
+% jan Lopes DCG lessons 05
+%
+jan ni li sama mi.
+ona li lukin sama pipi.
+sama li ike. 
+mi sona e tan.
+ona li lon sewi mi.
+pipi li lon anpa mi.
+moku li lon insa mi.
+len li lon poka mi.
+mi anpa e jan utala.
+jan pona mi li lon poka mi.
+suno li lon sewi mi.
+ma li lon anpa mi.
+ijo ike li lon monsi mi.
+mi pona tan ni: mi lon.
+mi lukin e ma poka jan pona mi.
+jan li lukin sama pipi.
+poka mi li pakala. 
+mi kepeken poki kepeken ilo moku.
+jan li lon insa tomo.
+mi moku tan ni: mi wile moku.
+mi moku, tan ni: mi wile moku.
+mi pona tan ni: mi lon. 
+mi pona, tan ni: mi lon. 
+%
+% jan Lopes DCG lessons 06
+%
+mi lape ala.
+mi musi ala.
+mi wawa ala.
+mi wile ala tawa musi.
+mi wile ala pali e tomo tawa.
+jan li toki ala.
+ala li jaki.
+jan ali li wile tawa.
+ma ali li pona.
+jan utala ali li nasa.
+ali li pona.
+sina pona ala pona?
+suno li suli ala suli?
+len sina li telo ala telo?
+tomo tawa sina li pakala ala pakala?
+sina ken ala ken lape?
+ona li lon ala lon tomo?
+ona li tawa ala tawa ma ike?
+sina pana ala pana e moku tawa?
+pipi li moku ala moku e kili?
+sina wile ala wile moku?
+wile.
+wile ala.
+ala.
+sina lukin ala lukin e kiwen?
+lukin.
+lukin ala.
+sina sona ala sona e toki mi?
+sona.
+sona ala.
+ni li musi ala musi?
+sina wile toki e tan tawa mi.
+pipi li lon ala lon poka mi?
+mi pona ala pona tawa sina?
+mi ken ala lape. 
+mi wile ala toki tawa sina.
+ona li tawa ala telo. 
+sina wile ala wile pali?
+wile ala.
+jan utala li seli ala seli e tomo?
+jan lili li ken ala moku e telo nasa.
+sina kepeken ala kepeken ni?
+sina ken ala ken kama?
+mi pona tan ni: mi lon.
+mi sona ala e tan.
+pipi li lon ala lon poka mi.
+%
+% jan Lopes DCG lessons 07
+%
+ma suli Elopa li pona. 
+ma Elopa li pona.
+ma suli Wawawa li ike. 
+ma Kanata li pona. 
+ma Lanlan li nasa. 
+ma Italija li pona lukin.
+mi wile tawa ma Tosi.
+ma tomo Lantan li suli. 
+ma tomo Pelin li pona. 
+ma tomo Alenta li pona.
+ma tomo Loma li pona.
+mi kama tan ma tomo Pelin.
+toki Inli li pona. 
+toki Epelanto li pona.
+toki Insisi li nasa. 
+jan Kanata li pona. 
+jan Mesiko li pona.
+jan Sinsin li nasa.
+jan Lisa li pona.
+jan Pentan li pana e sona tawa mi.
+jan Mewi li toki tawa mi.
+jan Mawija li pona. 
+meli Mawija li pona.
+jan Santa li pona. 
+mije Santa li pona.
+mije Tosi li pona.
+jan Nesan li musi.
+jan Eta li jan unpa.
+jan Lopa li awen.
+mi jan Pepe.
+nimi mi li jan Pepe pona.
+meli Italija li pona.
+mije Epanja li pona.
+jan Susan li nasa.
+jan Ken o, pipi li lon len sina.
+jan Keli o, sina pona lukin.
+jan Mawen o, sina wile ala wile moku?
+jan Tepani o, sina ike tawa mi.
+jan Epi o a!
+o pali!
+o awen!
+o lukin e ni!
+o tawa ma tomo poka jan pona sina.
+jan San o tawa tomo sina!
+jan Ta o toki ala tawa mi!
+jan Sesi o moku e kili ni!
+mi mute o tawa.
+mi mute o musi.
+mama meli li meli.
+mama mije li mije.
+pona!
+ike!
+pakala!
+mu.
+a!
+a a a!
+a a a.
+toki!
+jan Lisa o toki.
+suno pona!
+lape pona!
+moku pona!
+mi tawa.
+tawa pona!
+kama pona!
+musi pona!
+o tawa!
+o tawa.
+mama meli o awen.
+mi kama tan ma Elopa.
+ni li musi.
+jan Lisa o, toki.
+pakala!
+mi wile tawa ma Oselija.
+mi tawa!
+mu.
+mi wile kama sona e toki Inli.
+mi wile kama lon.
+jan Ana o pana e moku tawa mi.
+o tawa musi poka mi.
+jan Mose o lawa e mi mute tawa ma.
+pona.
+tawa pona!
+tawa pona.
+mi wile wile e ni: mi lon.
+nimi mi li Lope. 
+nimi mi li jan Ken.
+%
+% jan Lopes DCG lessons 08
+%
+seme li utala e sina?
+seme li moku e kili?
+seme li lon poka mi?
+seme li lon tomo mi?
+seme li pona tawa sina?
+sina lukin e seme?
+sina pakala e seme?
+ona li jo e seme?
+sina lon seme?
+sina mute li lon seme?
+ma Elopa li lon seme?
+ma tomo Pelin li lon seme?
+jan seme li moku?
+jan seme li tawa poka sina?
+meli seme li moku?
+mije seme li moku?
+sina lukin e jan seme?
+sina lukin e meli seme?
+sina lukin e tomo e mije seme?
+sina toki tawa jan pona seme?
+sina toki tawa mije tawa jan seme?
+ona li pana e sona tawa meli seme?
+ma seme li pona tawa sina?
+ma seme li pona, tawa sina?
+ma tomo seme li pona tawa sina?
+ona li pakala e tomo seme?
+ona li pakala e tomo pona seme?
+sina kama, tan ma seme?
+sina kama tan ma seme?
+sina kama tan seme?
+sina kama, tan seme?
+sina moku e telo suli tan seme?
+ona li jo ala jo e kili mute?
+sina seme e ona?
+mi seme?
+ona li seme?
+toki ni li seme?
+jan lili sina li suwi.
+telo kili ni li suwi.
+mi wile e suwi!
+jan sin li kama.
+mi wile e suwi sin!
+mi olin e sina.
+mi olin e sina!
+ni li pona tawa mi.
+%
+% jan Lopes DCG lessons 09
+%
+kulupu Neje li nasa lili.
+jan Lope pi ma tomo Pelin pona li kama sona e toki pona li pali e ilo pi toki pona.
+jan utala pi ma Losi li ike tawa ma ali. 
+mi toki pi jan ike. 
+mi kama tan ma Mewika. 
+kalama ni li seme? 
+kalama musi li pona tawa mi. 
+mi kalama kepeken ilo. 
+o kalama ala! 
+sina pali e ni kepeken nasin seme?
+kili pi jan Linta li ike. 
+meli Lisa li pona lukin li pali kepeken nasin seme?
+len pi jan Susan li jaki. 
+mi sona ala e nimi pi ona mute. 
+mi wile toki meli. 
+sina pakala e ilo kepeken nasin seme? 
+jan Wasintan li jan lawa pona pi ma Mewika. 
+wile pi jan ike li pakala e ijo.
+jan lili pi jan Keli li musi.
+mi jan pi toki pona.
+ona li jan pona pi kalama musi.
+jan lawa pi tomo tawa telo li moku.
+kalama musi pi jan Enja li pona.
+jan seme pi kulupu ni li suli?
+tomo pi mi mute li pakala.
+ona li pali e ni kepeken nasin seme?
+kili pi jan Linta li ike. 
+len pi jan Susan li jaki.
+mi sona ala e nimi pi ona mute.
+mi wile ala toki pi kalama musi.
+mi wile toki meli.
+sina pakala e ilo kepeken nasin seme? 
+jan Wasintan li jan lawa pona pi ma Mewika. 
+wile pi jan ike li pakala e ijo. 
+nimi pi ma suli mi li Elopa.
+nimi pi nasin sewi mi li Patapali.
+kulupu pi kalama musi pi ma Inli li pona.
+jan pi wawa ala pi pona mute li kama.
+jan pi wawa ala pi pona mute pi pana sona li kama.
+%
+% jan Lopes DCG lessons 10
+%
+sina pona anu seme? 
+ona li mama anu seme?
+sina sona anu seme?
+sina kama anu seme?
+mije sona li jo e tomo anu seme?
+sina anu ona li kama?
+jan Susan anu jan Lisa li moku e suwi?
+sina jo e kili anu telo nasa? 
+sina toki tawa mi anu ona? 
+sina kama tan ma Elopa anu ma Amelika?
+ona anu jan ante li ike? 
+sina kama anu seme?
+sina wile moku anu seme?
+sina wile e mani anu seme?
+mi en sina li jan pona.
+mi pona e tomo pi sina en ona.
+mi pona e tomo pi jan Lope en ona.
+jan lili en jan suli li toki.
+kalama musi en meli li pona tawa mi.
+kalama musi en meli li pona, tawa mi.
+mi wile e moku e telo.
+mi moku e kili. 
+mi toki kepeken toki pona. 
+mi toki kepeken, toki pona. 
+tomo pi jan Keli en mije ona li suli. 
+jan lili pi jan Ken en jan Lisa li suwi. 
+taso mi jo ala e moku.
+taso mi lon ma ante.
+taso meli mi li pakala.
+jan Lisa taso li kama.
+mi sona e ni taso.
+mi musi taso. 
+mi pali taso.
+mi lukin taso e meli ni! 
+mi kin tawa kin. 
+mi moku kin.
+mi lukin kin e ona.
+seli li lon.
+lete li lon.
+seli mute li lon.
+seli lili li lon.
+lete mute li lon.
+lete lili li lon.
+ilo ni li pilin lete.
+ni li pilin lete mute. 
+ni li pilin seli lili.
+mi pilin pona.
+mi pilin ike.
+sina pilin seme?
+mi pilin e ni: sina ike.
+sina pilin e seme?
+mi pilin ijo.
+mi pilin pi meli ni. 
+sina wile kama anu seme?
+sina wile e moku anu telo?
+mi wile kin tawa tomo mi.
+lipu ni li pilin lete.
+mani pi ma ante li pona tawa mi.
+taso mi ken ala.
+mi taso li lon.
+mi olin kin e sina.
+mi pilin e ni: ona li jo ala e mani. 
+mi wile lukin e ma ante. 
+mi lukin taso. 
+mi pilin lete. 
+sina wile toki tawa mije anu meli? 
+sina wile toki, tawa mije anu meli? 
+mi kin moku. 
+mi lukin e mije anu meli. 
+mi kin tawa ma Elopa. 
+mi kin olin e sina. 
+mi kin lukin e ona. 
+mi kin wile tawa tomo mi. 
+mi kin olin e sina. 
+mi mute tawa ma Elopa. 
+%
+% jan Lopes DCG lessons 11
+%
+ni li kule seme? 
+mi kule e lipu.
+mi lukin ala e poki laso.
+jan laso jelo lili li kama tan sewi. 
+jan jelo laso lili li kama tan sewi.
+kule loje laso li pona tawa mi. 
+kule laso loje li pona tawa mi.
+sewi li laso.
+o lukin e pipi loje ni.
+mi wile e sitelen ma.
+sina lukin ala lukin e sitelen tawa X-Files?
+kule seme li pona tawa sina?
+suno li jelo.
+telo suli li laso.
+mi wile moku e kili loje.
+ona li kule e tomo tawa.
+ma mi li pimeja.
+kalama ala li lon. 
+mi lape. 
+mi sona. 
+%
+% jan Lopes DCG lessons 12
+%
+soweli ni li pona moku.
+mi wile moku e waso.
+pipi li moli.
+soweli li kama moli.
+jan li moli e waso.
+mi wile e soweli lili.
+akesi li wile moku e mi!
+pipi li moku e mi.
+soweli li toki e mu.
+waso li tawa lon kon.
+mi mute o moku e kala.
+kasi kule li pona lukin.
+kasi li pona tawa mi.
+mama ona li kepeken kasi nasa. 
+akesi li pana e telo moli. 
+pipi li moku e kasi. 
+soweli mi li kama moli. 
+jan Pawe o, mi wile ala moli. 
+mi lon ma kasi.
+pan ni li moku ike.
+o pana e namako, tawa mi!
+o pana e namako tawa mi!
+moku ni li jo e namako mute!
+ona li wile alasa li kama jo e ilo alasa e len loje.
+jan Mawijo li kepeken ilo alasa.
+ona li seli e soweli e pan.
+akesi mu li tawa.
+%
+% jan Lopes DCG lessons 13
+%
+mi kute e toki sina. 
+mi kute e kalama musi.
+o pilin e uta mi kepeken uta sina.
+mi wile pana e telo jelo.
+linja mi li telo.
+ijo li lon oko mi.
+mi ken ala kute e toki sina.
+mi wile pana e ko jaki.
+lupa ni li suli.
+telo sijelo loje li kama tan nena kute mi! 
+selo mi li wile e ni: mi pilin e ona. 
+o pilin e nena. 
+o moli e pipi kepeken palisa. 
+luka mi li jaki. 
+mi wile telo e ona. 
+o pana e sike tawa mi. 
+mi pilin e seli sijelo sina.
+%
+% jan Lopes DCG lessons 14
+%
+jan mute li kama.
+jan mute kin li kama.
+jan mute mute mute li kama!
+jan mute lili li kama.
+jan luka luka tu li kama.
+jan nanpa luka luka tu li kama.
+ni li jan lili ona nanpa tu.
+meli mi nanpa wan li nasa.
+mi en meli mi li wan. 
+o tu e palisa ni.
+o weka e len sina.
+o weka e jan lili tan ni.
+o weka e jan lili, tan ni.
+ona li wile ala kute e ni.
+mi weka.
+mi wile tawa weka.
+tomo mi li weka tan ni. 
+tomo mi li weka, tan ni. 
+ma Elopa li weka tan ma Mewika.
+ma Mewika li weka ala tan ma Kupa.
+ma Mewika li weka ala, tan ma Kupa.
+mi nanpa e mani mi lon esun suli.
+mi nanpa e mani mi, lon esun suli.
+mi lukin e waso tu wan.
+jan mute li kama.
+jan nanpa wan li lon.
+mi jo e tomo tawa tu.
+jan mute lili li kama.
+o wan!
+mi weka e ijo tu ni. 
+o tu. 
+mi lukin e soweli luka. 
+mi weka.
+mi pali lon esun suli.
+ona li alasa e soweli tu.
+jan Nena li kalama musi e kalama pi sike kon mute mute mute mute luka luka luka tu tu. 
+ni li jan tu tu tu tu.
+%
+% jan Lopes DCG lessons 15
+%
+ken la tenpo pimeja la ni li pona.
+ken la ilo li pakala.
+ken la jan Lisa li jo e ona. 
+ken la ona li lape.
+ken la mi ken tawa ma Elopa.
+tenpo pini la mi weka.
+tenpo ni la mi lon.
+tenpo kama la mi lape. 
+tenpo pimeja pini la mi kama nasa.
+tenpo pi mute seme la sina sike e suno?
+tenpo tu tu la mi sike e suno.
+mama mi li moli la mi pilin ike.
+mi lape la ali li pona. 
+sina moku e telo nasa la sina nasa.
+sina moli la sina ken ala toki. 
+mi pali mute la mi pilin ike.
+ken la tenpo pimeja la ni li pona.
+mi pali mute, la mi pilin ike.
+jan Lisa li pona mute. 
+jan Susan li pona lili.
+ken la jan Susan li kama.
+tenpo pimeja pini la mi lukin e sitelen tawa X-Files.
+jan ike li kama la o seli e lipu ni.
+ken la ona li lon tomo sona.
+tenpo suno kama la mi wile pali.
+seli li lon la mi pana e telo tan selo mi.
+o open e lupa.
+tenpo pimeja ni la mun li suli.
+ken la jan lili li wile moku e telo. 
+tenpo ali la o kama sona! 
+sina sona e toki ni la sina sona e toki pona!
+tenpo kama la sina wile ala wile moku?
+tomo pi mute seme li lon?
+tan seme la soweli wawa pimeja li moku e ona?
+mama sina li kama lon tenpo seme?
+tenpo seme la mama sina li kama?
+taso sina ken kin kama sona e ijo sin.
+nimi pi ijo pona ni li Konipute. 
+sina jo e ilo MIRC la o pilin e nena ni.
+sina lukin e nena Proceed la o pilin e ona.
+sina jo ala e ilo MIRC la sina ken pali e ijo tu: sina ken kama jo e ilo MIRC.
+jan ike Kin li pakala e tenpo pona Kolisu!
+jan ike Kin li wile pakala e tenpo pona Kolisu.
+soweli Kipa li lili.
+tenpo suno pi jan moli li pona tawa soweli Kipa.
+ken la sina pilin e ni: mi toki e lon ala.
+taso mi pilin e ni: mi toki e lon.
+tenpo li pini la pipi en soweli en ijo sin mute li kama: ijo mute li moli.
+o lukin e sitelen ni: jan li lon!
+meli pona o a!
+meli mi o, mi olin e sina!
+nimi mi li Nikita.
+lon la toki pona li lili.
+waso ike li tawa sike lon lawa mi.
+telo pimeja ni li telo loje mi li ale mi.
+jan Kolonpo li tawa ma tomo Lisapon.
+ona li tawa kin ma Elopa mute kepeken tomo tawa telo.
+taso ni li ike: jan li wile tawa ma Asija la ona li tawa mute mute.
+jan Kolonpo li jo e tomo tawa Ninja e tomo tawa Pinta e tomo tawa Santamalija.
+pona mute!
+pona mute mute!
+pona mute mute mute!
+wile sona li mute e sona.
+nasin mani li ike.
+tenpo li sijelo e sijelo ike ale.
+jan Kolonpo li toki e ni: mi wile ala tawa lon poka pi ma Apika.
+jan Kolonpo li tawa jan lawa pi ma Potuke li toki e ni: mi ken tawa ma Asija kepeken nasin ante.
+jan Pusin pi ma Losi li moli e jan mute kin li ike mute kin!
+moku ni li jo e namako mute!
+o kipisi e linja tu ni.
+ona li kin tawa ma Elopa mute kepeken tomo tawa telo.
+mi wile tawa la tenpo ni. 
+ma sin ni li pona li jo e musi ala pini.
+ken la sina wile kama kin. 
+o kute e mi! 
+o tawa la tenpo kama lili. 
+mi jo ala e mani. 
+taso mi wile e ni: sina wile kama kin.
+mi wile tawa ma ante.
+ma sin li pona tan ni: mi wile tawa ma ante.
+ma sin li pona tan ni: jan li pilin e seli. 
+jan li pilin e olin.
+sike tu li pona li pona tawa mi li pona tawa ma.
+%
+% jan Lopes DCG lessons final
+%
+a!
+a a a!
+akesi ike a li moku e moku!
+akesi ike li moku e moku.
+akesi kin li moku e moku.
+akesi kin, tu kin li moku e moku.
+akesi kin, tu mi kin li moku e moku.
+akesi Kondo
+akesi li pakala e tomo e soweli pi mute seme?
+akesi Lolo
+akesi Lonlon
+akesi mi kin li moku e moku.
+akesi mi li moku e moku.
+akesi mi, tu li moku e moku.
+akesi mi tu taso li moku e moku.
+akesi pi jan Ana, en jan Lope li moku e moku.
+akesi pi jan Lope en jan Patala pona ni
+akesi pi mije Mawen li utala e ijo ni.
+akesi pona kin, tu kin li moku e moku.
+akesi pona kin, tu mi kin li moku e moku.
+akesi pona, tu kin li moku e moku.
+akesi pona tu li moku e moku.
+akesi pona, tu mi kin li moku e moku.
+akesi pona tu mi li moku e moku.
+akesi suli ike li moku e moku.
+akesi suli ike mi li moku e moku.
+akesi suli jelo ike li moku e moku.
+akesi suli jelo mi li moku e moku.
+akesi suli jelo mi, tu wan li moku e moku.
+akesi suli jelo, tu wan mi kin li moku e moku.
+akesi suli jelo, tu wan mi li moku e moku.
+akesi suli li moku e moku.
+akesi suli mi kin li moku e moku.
+akesi suli mi li moku e moku.
+ala.
+anu jaki!
+anu mi moku e moku!
+anu mi moku e moku.
+anu mi moku e moku a!
+anu mi moku e moku a.
+en moku
+en moku a
+en o moku e moku!
+en o moku e telo a.
+en seme?
+en seme a?
+en sina o a
+en sina pona ala pona e tawa?
+ijo jelo seme li pakala e ona?
+ijo Lapalapala
+ijo MIRC
+ilo Alikali
+jaki!
+jan, ala
+jan, ale
+jan, ale ale luka wan
+jan, ale ale mute mute luka tu wan
+jan, ale luka tu
+jan, ale mute
+jan, ale mute luka tu wan
+jan, ale mute mute luka tu wan
+jan, ale tu tu
+jan Elopa
+jan God li toki e toki.
+jan ike Devil wawa li ike e ni.
+jan ike li moku e moku.
+jan Lalalalalala li toki e toki.
+jan Lapalapala
+jan, lili kin
+jan, lili lili lili
+jan li lukin e ma.
+jan li moku e moku.
+jan Lisa anu jan Lope li moku e moku?
+jan Lisa anu sina li moku e moku?
+jan Lisa li moku e moku.
+jan Lo
+jan Lomonopo
+jan Lope en jan Mewi li ' ona mute.
+jan Lope en jan Mewi li ona mute.
+jan Lope li moku e moku pona.
+jan Lope li ' ona.
+jan Lope li ona.
+jan Lope o, sina moku e moku a!
+jan Lope o, sina olin ala olin e mi?
+jan Lope o, toki a!
+jan Lope pi ma suli Elopa li ' lon ma Tosi.
+jan, luka
+jan, luka luka
+jan, luka luka wan
+jan, luka tu
+jan, luka tu tu
+jan, luka tu wan
+jan, luka wan
+jan Mawija li moku e moku.
+jan Mesiko
+jan, mute
+jan, mute kin
+jan, mute lili
+jan, mute mute luka tu wan
+jan, mute mute mute
+jan, mute mute mute li moku e moku.
+jan, mute tu wan
+jan, nanpa ala
+jan, nanpa ale mute luka tu wan
+jan, nanpa luka tu wan
+jan, nanpa mute mute mute li moku e moku.
+jan nanpa, nanpa tu tu
+jan nanpa, tu li moku e moku.
+jan, nanpa tu tu wan
+jan, nanpa tu wan li moku e moku.
+jan Nikita li toki e toki.
+jan ni li toki e ni, kepeken toki Inli.
+jan ni li toki e ni, kepeken toki Inli pona.
+jan ni li toki e ni, kepeken toki luka Inli pona.
+jan o pona e tomo!
+jan Osaka
+jan Pepe
+jan pi jan suli li moku e moku pona.
+jan pi kulupu Neje, en jan pi ma suli Apika li pona e ilo nanpa.
+jan pi kulupu Neje li pona e ilo.
+jan pi ma suli Elopa pona li moku e moku.
+jan pi ma Sumi lete ni li moku e moku.
+jan pi ma Sumi li moku e moku.
+jan pi ma tomo Pelin pona li moku e moku.
+jan pi nasin pona Patapali sewi li moku e moku.
+jan pi nasin sewi Patapali li moku e moku.
+jan pi nasin sewi Patapali li musi e jan ni.
+jan pi ona pona li moku e moku.
+jan pona Lisa ni li moku e moku.
+jan pona Mawija ni li moku e moku.
+jan pona Mesiko ni li toki e toki.
+jan pona Nikita suli ni li toki e toki.
+jan pona pi jan suli li moku e moku.
+jan pona pi meli en mije li moku e moku.
+jan pona pi meli en ona li moku e moku.
+jan pona pi meli en ona pona li moku e moku.
+jan pona pi meli pona en jan pona ni en ona li moku e moku.
+jan pona pi ona en meli en mije li moku e moku.
+jan pona pi ona en mije li moku e moku.
+jan pona pi ona en mije suwi li moku e moku.
+jan pona pi ona en sina li moku e moku.
+jan pona pi ona en sina pona li moku e moku.
+jan pona pi ona pona en sina li moku e moku.
+jan pona pi ona pona, en sina li moku e moku.
+jan pona Santa ni li pana e pona.
+jan pona seme li moku e moku?
+jan pona seme pi mama sina li moku e moku?
+jan pona seme pi mama sina pi mama ona li moku e moku?
+jan Santa li pana e pona.
+jan seme li moku e moku?
+jan seme pi mama sina li moku e moku?
+jan Susan
+jan, tu
+jan, tu li moku e moku.
+jan, tu tu
+jan, tu tu tu
+jan, tu tu tu wan
+jan, tu tu wan
+jan, tu wan
+jan, wan
+kama pona! "Welcome!"
+ken la jaki!
+ken la mi moku e moku!
+ken la mi moku e moku.
+ken la mi moku e moku la tenpo kama a!
+ken la mi pilin e ni: seme?
+ken la mi wile e ni: sina moku e moku!
+kepeken pi ilo MIRC li ' pona pi pilin pona, tawa ona.
+kin!
+kulupu Lapalapala
+kulupu Neje
+kulupu Neje pi ilo nanpa li ' nasa pi ma ni.
+kulupu pi kalama musi pi ma Inli li kalama e kalama musi.
+kulupu pi kalama musi pi ma Inli li ' pona pi kalama musi.
+kulupu pi kalama musi pi ma Inli pi meli pona li kalama e kalama musi.
+kulupu pi ma Inli pi ma suli Elopa li moku e moku.
+lape pona! 
+ma Kana
+ma Lapalapa
+ma seme li ' pona, tawa sina?
+ma seme li pona, tawa sina?
+ma seme pi mama sina li ' pona, tawa sina?
+ma suli Elopa
+ma suli Elopa pi pona lukin li ' pona pi pali ni, tawa mi.
+ma tomo Lapalapa
+ma tomo Pelin
+ma tomo seme li ' pona, tawa sina?
+ma tomo seme pi mama sina li ' pona, tawa sina?
+ma tomo suli ni pi ma suli Elopa li utala e kon.
+meli Elopa
+meli God li toki e toki.
+meli Lalalalalala li toki e toki.
+meli Lapalapala
+meli Lisa li moku e moku.
+meli Mawija
+meli Mawija li moku e moku.
+meli Mesiko
+meli Osaka
+meli pi jan Lope li pali e moku.
+meli pi pona lukin li moku e moku pi pona moku ni.
+meli pona en mije en mi li moku e moku.
+meli pona Lisa ni li moku e moku.
+meli pona Mawija ni li moku e moku.
+meli pona Mesiko suli li toki e toki.
+meli seme li moku e moku?
+meli seme pi jan ni pi tawa musi li ' pona, tawa sina?
+meli Susan
+mi alasa e soweli, kepeken ilo palisa, lon poka jan pona mi.
+mi alasa e soweli, kepeken ona suli.
+mi alasa, poka jan pona mi.
+mije Elopa
+mije God li toki e toki.
+mije Lalalalalala li toki e toki.
+mije Lapalapala
+mije Mesiko
+mije Nikita li toki e toki.
+mije Osaka
+mije Pepe
+mije pona Mesiko kin li toki e toki.
+mije pona Nikita suli li toki e toki.
+mije pona Santa ni li pana e pona.
+mije Santa
+mije Santa li pana e pona.
+mije seme li moku e moku?
+mije seme pi jan ni li ' pona, tawa sina?
+mi kute e mije anu meli.
+mi kute e ona anu sina.
+mi kute e ona pona anu sina pona.
+mi la mi moku e moku.
+mi lon ona pona.
+mi lon tomo pi kule loje.
+mi lon tomo pi kule loje anu tomo pi kule jelo.
+mi moku e moku!
+mi moku e moku.
+mi moku e moku a.
+mi moku e moku e telo.
+mi moku e moku e telo e kili.
+mi moku e moku e telo e kili e soweli.
+mi moku e moku li moku e telo la mi pilin pona.
+mi moku e moku li moku e telo, la, mi pilin pona.
+mi moku e moku, lon poka jan pona sina.
+mi olin e meli pi pona lukin.
+mi olin e meli pi pona lukin anu meli mi.
+mi olin e meli pi pona lukin e meli mi.
+mi olin e sina.
+mi olin e sina pona.
+mi olin e sina pona anu ona pona.
+mi olin e sina pona e ona pona.
+mi olin e sina pona e ona pona e mi pona.
+mi pali pona e ilo.
+mi pali pona mute e ilo.
+mi pona e ni, kepeken ilo wawa, kepeken telo pona, kepeken ilo suno.
+mi pona pona musi sama mute e ilo.
+mi pona pona mute ala e ilo.
+mi pona, tawa sina.
+mi wile e ni: mi moku e moku.
+mi wile e ni: sina moku e moku!
+mi wile kin moku e moku.
+mi wile moku e moku.
+mi wile moku kin e moku.
+mi wile tawa la tenpo ni.
+moku
+moku!
+moku.
+moku ala!
+moku ala.
+moku ala a!
+moku pi soweli suli
+moku pona! 
+moku soweli
+mu!
+musi pona! 
+name
+nasin sewi Lapalapala
+nasin sewi Patapali
+nasin sewi Patapali pi monsuta waso li ' musi pi pilin mi.
+ni a li moku e moku!
+ni li moku e moku.
+ni li ' ona mute, tawa mi mute.
+ni li ona mute, tawa mi mute.
+ni li pona, tawa mi.
+ni li pona, tawa mi pona.
+ni li pona, tawa sina.
+nimi mi li Devil.
+nimi mi li Lisa.
+nimi mi li ' Lope.
+nimi mi li Lope!
+nimi mi li Lope.
+nimi mi li Lopen.
+nimi mi li ' Mawija.
+nimi mi li Mawija.
+nimi mi li Mose.
+nimi pi kulupu mi li Neje.
+nimi pi kulupu mi li Patapali.
+nimi pi ma mi li ' Tosi.
+nimi pi ma mi li Tosi.
+nimi pi ma suli mi li Elopa.
+nimi pi ma tomo mi li Pelin.
+nimi pi nasin pona mi li Patapali.
+nimi pi nasin sewi mi li ' Patapali.
+nimi pi nasin sewi mi li Patapali.
+nimi pi sitelen tawa ni li X-Files.
+nimi pi toki luka mi li Tosi.
+nimi pi toki mi li Tosi.
+nimi pi tomo tawa mi li ' Pata.
+nimi pi tomo tawa mi li Pata.
+nimi pi tomo tawa mi li Tapan.
+nimi pi tomo tawa pona mi li Tapan.
+o!
+o moku e moku.
+o moku e telo a!
+ona a li pona e tawa!
+ona en ni la ona li moku e moku.
+ona en sina en mi a li moku e moku!
+ona en sina en mi li moku e moku.
+ona en sina en mi o a!
+ona en sina mute o pona e tomo!
+ona en sina o a!
+ona en sina pi mute seme li moku e telo?
+ona li esun e moku anu telo nasa.
+ona li jan pi pana sona seme?
+ona li ' jan pi pona mute.
+ona li jan pi pona mute.
+ona li ' jan pi pona mute, tawa mi mute.
+ona li jan pi pona mute, tawa mi mute.
+ona li kama, tan ma pi mama mi seme?
+ona li kama, tan ma tomo seme?
+ona li kama, tan seme?
+ona li kepeken.
+ona li kepeken sitelen pi ilo nanpa.
+ona li kepeken sitelen pi ilo nanpa, kepeken oko ona.
+ona li kepeken sitelen pi sina pona, kepeken oko ona.
+ona li lukin e ma, lon poka seme?
+ona li lukin jan pona seme?
+ona li moku e moku!
+ona li moku e moku.
+ona li moku e moku li jo e kili li pali e tomo li toki e ni.
+ona li moku e moku li jo e kili li toki e ni.
+ona li moku e moku li toki e ni.
+ona li moku e moku, lon poka seme?
+ona li moku e moku, lon seme?
+ona li moku e seme?
+ona li moku seme?
+ona li pakala e ijo e jan pona seme?
+ona li pakala e ijo e jan seme?
+ona li pakala e ijo e meli pona seme?
+ona li pakala e ijo e meli seme?
+ona li pakala e ijo e mije pona seme?
+ona li pakala e ijo e mije seme?
+ona li pakala e ijo pona seme?
+ona li pakala e ijo seme?
+ona li pakala e ijo tan, tan seme?
+ona li pakala e tomo, tan jan mije seme?
+ona li pakala e tomo, tan jan seme?
+ona li pakala e tomo, tan jan sona seme?
+ona li pakala e tomo, tan meli pona seme?
+ona li pakala e tomo, tan meli seme?
+ona li pakala e tomo, tan mije pona seme?
+ona li pakala e tomo, tan mije seme?
+ona li pona e tawa.
+ona li ' pona, lon seme?
+ona li pona, lon seme?
+ona li ' pona, tawa mi mute.
+ona li pona, tawa mi mute.
+ona li seme?
+ona li seme e ijo, kepeken ilo?
+ona li seme sitelen pi ilo nanpa?
+ona li seme sitelen pi ilo nanpa, kepeken oko?
+ona li seme sitelen pi ilo nanpa, mute, kepeken oko?
+ona li tawa ala tawa?
+ona li tawa ala tawa ni?
+ona li tawa ala tawa, tawa sina?
+ona li tawa e kiwen, kepeken ona, tawa anpa seme?
+ona li tawa e kiwen, tawa anpa seme?
+ona li tawa e kiwen, tawa seme?
+ona li unpa ala unpa sina?
+ona li wile kepeken.
+ona li wile mute kepeken.
+ona li wile mute kepeken mute.
+ona pona
+ona pona a li moku e moku!
+ona pona en sina en mi a li moku e moku!
+ona pona kin
+ona pona li moku e moku.
+ona pona li tawa ala tawa ni?
+ona pona o a!
+o pona e tomo!
+o tawa la tenpo kama lili.
+pakala!
+pali!
+pali.
+pona!
+pona mute mute mute! 
+pona mute! 
+pona tawa sina! 
+pona, tawa sina! 
+pona! 
+seme?
+seme la sina kama jo e mani?
+seme la sina pilin e ni?
+seme li moku e moku?
+seme li pakala e ilo?
+sina a moku e moku!
+sina anu ona li moku e moku?
+sina en ona anu sina en mi li moku e moku?
+sina ' jelo.
+sina jelo.
+sina jelo loje.
+sina ken mute seme?
+sina ken mute seme, kepeken ni?
+sina kepeken ilo pona seme?
+sina kepeken ilo seme?
+sina kepeken seme?
+sina kipisi e seme?
+sina kipisi e seme, kepeken ilo?
+sina kipisi e seme, kepeken ilo ni?
+sina lon ona pona anu tomo suli.
+sina moku e moku.
+sina moku e moku anu pona e ilo?
+sina moku e moku anu seme?
+sina moku e moku, kepeken ilo moku li toki e ni.
+sina moku e moku li toki e toki.
+sina moku e moku, li toki e toki.
+sina moku e moku, lon seme?
+sina moku e moku, lon tenpo pona seme?
+sina moku e moku, lon tenpo seme?
+sina namako lili e moku mute, poka seme?
+sina namako lili e moku, poka seme?
+sina namako lili, poka seme?
+sina o a!
+sina o, a a a!
+sina o, pakala!
+sina o pona e tomo!
+sina o, seme?
+sina o, sina moku e moku.
+sina o, sina moku e seme?
+sina o, sina o a!
+sina o, sina olin ala olin e mi?
+sina o, sina toki e ni!
+sina o, sina toki e ni.
+sina o, toki!
+sina pakala, tawa ijo pona seme?
+sina pakala, tawa ijo seme?
+sina pali e ni, kepeken nasin ike seme?
+sina pali e ni, kepeken nasin seme?
+sina pali e ni, kepeken seme?
+sina pali e tomo anu seme?
+sina pali e tomo anu seme, kepeken ilo?
+sina pali e tomo, tan seme?
+sina pona ala pona?
+sina pona ala pona e tomo ni, kepeken ilo ni?
+sina pona li moku e moku.
+sina ' seme?
+sina seme?
+sina seme e soweli suli?
+sina seme e soweli suli, kepeken palisa wawa?
+sina ' seme, kepeken ni?
+sina seme mi?
+sina unpa jan pi pona lukin, lon seme?
+sina unpa jan seme?
+sina wile ala wile alasa e soweli suli, kepeken palisa wawa?
+sina wile ala wile e soweli suli, kepeken linja?
+sina wile ala wile moku e telo?
+sina wile ala wile unpa?
+sina wile ala wile unpa ona?
+sina wile jo e mani pi mute seme, tan jan ni?
+sina wile jo e mani seme?
+sina wile jo e mani seme, tan jan ni? 
+sina wile moku e moku anu wile moku e telo?
+sitelen lon tomo
+sitelen tawa Lapalapala
+sitelen tawa X-Files
+sitelen tawa X-Files li ' nasa pi nasa ni, tawa mi.
+sitelen tawa X-Files ni kin
+sona Palala li pona e ilo.
+sona pona Palala suli kin li pana e ilo.
+soweli en akesi en pipi lili en mi a li moku e moku!
+soweli pi jan Lope li moku e moku.
+soweli pi jan pona mi li moku e moku.
+soweli pi mute seme li moku e telo?
+soweli suwi en akesi suli en pipi ike en mi li moku e moku.
+soweli suwi en akesi suli en pipi ike en sina en mi li moku e moku.
+suno pona! "Good day!"
+tan seme la soweli wawa pimeja li moku e ona?
+taso mi moku e moku.
+taso, mi moku e moku.
+tawa pona! "Good bye!"
+tenpo kama la ken la mi moku e moku.
+tenpo kama la, ken, la mi moku e moku.
+tenpo kama la mi moku e moku la ken.
+tenpo kama la mi wile e ni: ken la mi moku e moku.
+tenpo kama la mi wile e ni: ken la o moku e moku!
+tenpo kama la mi wile e ni: mi moku e moku.
+tenpo kama la o moku e moku!
+tenpo kama la o moku e moku la ken!
+tenpo kama la o wile e ni: o moku e moku!
+tenpo kama la o wile e ni: sina moku e moku!
+tenpo kama la seme: ken la mi moku e moku?
+tenpo kama la seme: ken la seme?
+tenpo kama la seme la ken?
+tenpo pi mute seme la sina sike e suno?
+tenpo pona seme la sina moku e moku?
+tenpo pona sina seme la sina moku e moku?
+tenpo seme la sina moku e moku?
+toki!
+toki Epelanto
+toki! 
+toki Inli pi ma Inli li ' pona pi pona ni, tawa jan ali.
+toki Lapalapa
+toki luka Inli
+toki luka Lapalapala
+tomo pi ona kin
+tomo tawa pi jan Lope en ona li utala e ilo ni.
+tomo tawa pi jan pona li tawa e mi.
+tomo tawa pi jan pona mi en ona li utala e ilo ni.
+tomo tawa pi jan wan li tawa e mi.
+tomo tawa pi ona en sina en ni ike li utala e ilo ni.
+tomo tawa pi ona en sina en ni li utala e ilo ni.
+tomo tawa, wan kin li tawa e ni.
+tomo tawa, wan taso li tawa e ni.
+wile.
+wile ala!
+wile ala.
+wile ala moku.
+wile moku.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Learn toki pona in a fortnight https://www.reddit.com/r/tokipona14days
+%
+% 1
+telo li moku.
+telo li suli.
+moku li moku.
+mi jan Sakana.
+sina mi.
+%2
+tomo sina li jaki.
+mi jo e kili mute.
+ona li wile jo e pipi e ijo.
+jan utala li pakala e ijo ike.
+ona li lawa pona e jan.
+% 3
+mi mute li wile pona e ijo kepeken ilo.
+sina wile tawa tomo ona kepeken tomo tawa.
+ona mute li toki kepeken toki pona.
+sina kama jo e jan pona.
+ona li wile e ni: pipi li lon.
+% 4
+kili lili li sama kili ni.
+sewi suli li lon sewi jan.
+anpa li lon anpa mi.
+ona li pona tan ni: moku li lon insa ona.
+pipi li wile e kili tan ni: kili li pona tawa pipi.
+% 5
+sina wile ala wile moku e kili pona ni?
+mi wile ala toki lon ma tan ni: jan li ike tawa mi.
+ona li pana e sona tawa mi.
+% 6
+mama mije mi li toki tawa mama meli mi.
+mi awen pali lon tomo sona.
+pipi o, sina wile ala wile tawa? 
+sina sona ala sona e mama mi?
+ona li toki e mu.
+% 7
+sina wile tawa tan seme?
+jan seme li suwi lukin?
+ona li kama sona e toki seme?
+nimi ona li seme?
+ona li moku e seme?
+sina lon ala lon supa?
+jan seme li pali e supa ni?
+sina wile ala wile e suwi sin?
+jan lili ni li suwi lukin!
+% 8
+jan lili pi ma Nu Silen li sona lili e toki Moli.
+jan sona mute li lon insa pi tomo sona.
+tomo pi jan Susan li pona lukin.
+kalama musi pi jan Lolina Mikenitu li pona tawa mi.
+jan Konan li moku e kili pi mute seme? 
+% 9
+jan lili li jo e kili anu suwi?
+jan mute li pana e mani ona tawa tomo mani.
+lipu mani li pona anu ike?
+telo kili sina li lete pilin anu seli pilin?
+ma ante li jo e jan mute.
+% 10
+laso li pona tawa mi.
+kasi mute li laso jelo.
+sitelen mute li jo e kule mute.
+pipi walo li moku poka pipi pimeja.
+kule ali li pona.
+% 11
+soweli lili li pona tawa mi.
+kasi li jo e pipi e waso.
+mi jo e soweli wan taso.
+soweli mi li pona mute!
+mi wile ala e soweli ante.
+% 12
+o tawa kepeken nasin pi nena kon sina.
+linja lawa ona li suli mute!
+mi wile pana e telo jelo.
+ma nena li lon poka pi ma kasi.
+selo pi kasi ni li kiwen pilin anu kiwen pilin ala?
+% 13
+o kipisi e linja tu ni.
+jan wan taso li lon.
+mi weka e ike tawa sina.
+% 14
+tenpo pimeja la mi wile lape.
+mi lape la mi wile lape pona.
+tenpo suno kama la mi tawa tomo ante.
+ona li lon tomo pi kama sona la ona li kama sona e toki Nijon.
+ken la ona li tawa e kiwen.
+%
+% eof
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,130 @@
+% wrong Toki Pona sentences
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% pu, The Toki Pona book of Sonja Lang released 2014, http://tokipona.org
+%
+jan Epawam Linkan li tan ma Merwika. % pu page 38, right is "Epawan"
+jan Mawijo li kepeken ilo alasa, taso linja li pakala. % pu page 59, "," --> "." 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% jan Lopes DCG lessons 01
+suno suli.
+mi li suli.
+li telo.
+moku jan.
+%
+% jan Lopes DCG lessons 02
+%
+mi li moku e wile.
+mi moku li pakala li.
+ona e pona li moku.
+%
+% jan Lopes DCG lessons 03
+%
+mi moku e moku mute mute mi. 
+jan sewi li ilo li. 
+jan sewi e ilo li pona. 
+%
+% jan Lopes DCG lessons 04
+%
+sina: mi wile moku.
+mi kepeken e ilo.
+sina wile kepeken e ilo.
+mi kepeken e poki ni.
+%
+% jan Lopes DCG lessons 05
+%
+mi kepeken e poki e ilo moku.
+%
+% jan Lopes DCG lessons 06
+%
+sina wile ala mute moku?
+sina lukin ala moku e kiwen?
+sina sona ala pona e toki mi?
+ni li musi ala pona?
+sina kepeken ala kepeken e ni?
+%
+% jan Lopes DCG lessons 07
+%
+mi wile wile wile wile wile wile wile ni: mi lon.
+mi wile wile wile ni.
+%
+% jan Lopes DCG lessons 08
+%
+mute seme?
+ni li lili li suli tawa sina?
+mi li lon seme?
+mi tan seme?
+mi li tan seme?
+ma Elopa lon seme?
+ma tomo Pelin lon seme?
+mi li kama tan seme?
+%
+% jan Lopes DCG lessons 09
+%
+jan pi mute pi mute mute li kama.
+kili pi ona li ike. 
+jan pi wawa ala pi pona mute pi pana sona pi unpa pona li kama.
+kili ni li pi mi.
+tomo ni li pi jan Tami.
+ilo ni li pi sina.
+ma ni li pi jan Tosi.
+toki ni li pi mi mute.
+%
+% jan Lopes DCG lessons 10
+%
+sina toki pi mama anu jan lili? 
+sina anu seme?
+sina anu?
+sina anu li?
+sina anu ona li?
+mi pona e tomo pi jan Lope en.
+%
+% jan Lopes DCG lessons 11
+%
+mi pona e tomo pi jan Lope en.
+%
+% jan Lopes DCG lessons 12
+%
+mama ona li kepeken e kasi nasa. 
+%
+% jan Lopes DCG lessons 13
+%
+%
+% jan Lopes DCG lessons 14
+%
+jan pi nanpa wan li lon.
+jan pi pona pi mute mute mute li kama.
+ni li jan lili ona pi nanpa tu.
+meli mi pi nanpa wan li nasa.
+ni li jan nanpa mute ale mute mute luka tu wan.
+ni li jan luka wan luka.
+%
+% jan Lopes DCG lessons 15
+%
+taso sina kin ken kama sona e ijo sin.
+tenpo pi mute seme? 
+ona li tomo pi toki pona en pi nanpa wan!
+telo pimeja ni li telo loje mi, li ale mi.
+jan Kolonpo li tawa ma tomo Lisbon.
+mi ken ala weka pi tan lawa e kama ni pi lon lon pi selo insa oko mi pi pali mute.
+mi ken ala weka pi tan lawa e ni: insa nasin la kiwen li lon.
+jan li soweli e sama la ona li weka e ike jan.
+anu ike pilin?
+%
+% jan Lopes DCG lessons 16
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Learn toki pona in a fortnight https://www.reddit.com/r/tokipona14days
+%
+musi pona lon ma! 
+ona mute li sona e ni: jan ala li sona e ni: ona mute li jo e moku mute mute. 
+%
+% eof
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
