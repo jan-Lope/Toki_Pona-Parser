@@ -1,9 +1,9 @@
 #!/usr/bin/env swipl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 % Main Program
-% 
+%
 % by Robert Warnke http://rowa.giso.de
 % released under the GNU General Public License
 % twitter: #tokipona #SWIprolog
@@ -116,8 +116,8 @@
 % This file contains the DCG and Prolog rules for a user friendly input.
 :- ['toki-pona-io-rules.pro'].
 
-% Start the io loop if we are not called for compiling
+
+% Start the io loop if we are not called for compiling: ./Toki_Pona.pro --stand_alone=false
 :- current_prolog_flag(os_argv,Argv),               % get all args for prolog
    \+ member('--stand_alone=true',Argv) -> io_loop  % start if not compiling
    ; true.                                          % just avoid warning.
-
