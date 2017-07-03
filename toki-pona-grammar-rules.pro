@@ -5,6 +5,11 @@
 % released under the GNU General Public License
 % twitter: #tokipona #SWIprolog
 %
+% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
+% the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
+% the lessons of jan Lope ( https://jan-lope.github.io ).
+% These scripts do not support Toki Pona slangs!
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % paragraph and sentences
@@ -21,7 +26,7 @@ paragraph(P) -->
   {removing_extraneous_tree_nodes_ab(P,S1,S2)}.
 
 % A paragraph can consists of of a headline.
-% A special separator is needed for this script version. 
+% A special separator is needed for this script version.
 paragraph(P) -->
   headline(H),
   {removing_extraneous_tree_nodes_a(P,H)}.
@@ -4086,7 +4091,7 @@ number_radix_2(epsilon) --> [].
 number_radix_2(RADIX) -->
   numeral(NMR,tu),
   number_radix_2(RAD),
-  {removing_extraneous_tree_nodes_abcde(RADIX,NMR,RAD)}.
+  {removing_extraneous_tree_nodes_ab(RADIX,NMR,RAD)}.
 
 % The digit is
 % + 1: "wan"

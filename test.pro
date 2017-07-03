@@ -1,21 +1,15 @@
 #!/usr/bin/env swipl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 % Test Program
+%
+% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
+% the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
+% the lessons of jan Lope ( https://jan-lope.github.io ).
+% These scripts do not support Toki Pona slangs!
 
 
-:- ['Toki_Pona.pro'].
-
-:- initialization go.
-
-go :- 
-	prompt(_, 'Write a Toki Pona sentece: '),
-	check_grammar(P), 
-	write(P),
-	nl.
-go :- 
-	halt.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
