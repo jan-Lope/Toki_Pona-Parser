@@ -5,7 +5,7 @@ Toki Pona is a constructed, minimal language. This parser based on swi-prolog an
 
 These scripts are based on the offical Toki Pona book of Sonja Lang ( [tokipona.org](http://tokipona.org) ), 
 the lessons of jan Pije ( [tokipona.net/tp/janpije](http://tokipona.net/tp/janpije/) ) and
-the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io).
+the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io) ).
 
 
 First you have to install swi-prolog.
