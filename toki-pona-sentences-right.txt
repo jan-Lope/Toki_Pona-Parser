@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
-% Correct Toki Pona entences for Tests
+% Correct Toki Pona sentences for Tests
 % by Robert Warnke http://rowa.giso.de
 % released under the GNU General Public License
 %
@@ -46,7 +46,9 @@ jan li ijo.
 soweli li meli.
 kili li ijo.
 ni li lipu.
+%
 % pu lesson 3
+%
 telo li pona.
 telo kili li suli.
 meli li lili.
@@ -1286,7 +1288,7 @@ jan, tu tu tu wan
 jan, tu tu wan
 jan, tu wan
 jan, wan
-kama pona! "Welcome!"
+kama pona! 
 ken la jaki!
 ken la mi moku e moku!
 ken la mi moku e moku.
@@ -1608,11 +1610,11 @@ soweli pi jan pona mi li moku e moku.
 soweli pi mute seme li moku e telo?
 soweli suwi en akesi suli en pipi ike en mi li moku e moku.
 soweli suwi en akesi suli en pipi ike en sina en mi li moku e moku.
-suno pona! "Good day!"
+suno pona! 
 tan seme la soweli wawa pimeja li moku e ona?
 taso mi moku e moku.
 taso, mi moku e moku.
-tawa pona! "Good bye!"
+tawa pona!
 tenpo kama la ken la mi moku e moku.
 tenpo kama la, ken, la mi moku e moku.
 tenpo kama la mi moku e moku la ken.
