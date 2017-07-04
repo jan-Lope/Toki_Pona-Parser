@@ -32,8 +32,8 @@ print_line(CL) :- atom_codes(L,CL), write(L), nl.
 % check a line that should be correct
 check_right_line :-
     read_file_line(CL), wordlist(WL,CL,[]), !,
-    (sentence(_,WL,[]) -> true
-    ; write('failed: '), print_line(CL)).
+    (paragraph(_,WL,[]) -> true
+    ; flag(testFailed,_,1), write('Error - wrongly fails: '), print_line(CL)).
 
 % check file with correct lines.
 check_right :-
@@ -42,7 +42,9 @@ check_right :-
 % check a line that should be wrong
 check_wrong_line :-
     read_file_line(CL), wordlist(WL,CL,[]), !,
-    (sentence(_,WL,[]) -> write('succeeded: '), print_line(CL)
+    (paragraph(_,WL,[]) -> flag(testFailed,_,1),
+     write('Error - wrongly passes: '), print_line(CL),
+     foreach(paragraph(P,WL,[]),(write('-> '), write(P), nl))
      ; true).
 
 % check file with correct lines.
@@ -81,9 +83,13 @@ check_read(File,Pred) :-
 % This file contains the DCG and Prolog rules for a user friendly input.
 :- ['toki-pona-io-rules.pro'].
 
+% reset error flag. This is not really needed as any 'flag' is initialized
+% to 0 by Prolog. But so we know what we do
+:- flag(testFailed,_,0).
+
 % Run the tests
 :- check_read('toki-pona-sentences-right.txt',check_right).
-% :- check_read('toki-pona-sentences-wrong.txt',check_wrong).
+:- check_read('toki-pona-sentences-wrong.txt',check_wrong).
 
-% exit
-:- halt.
+% exit, returning the result of the tests
+:- flag(testFailed,Value,0), halt(Value).
