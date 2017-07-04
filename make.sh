@@ -7,18 +7,24 @@
 ###############################################################################
 #
 PROLOG_MAIN_FILE="Toki_Pona"
+PROLOG_TEST_FILE="toki-pona-test-files"
 #
 echo " "
 echo "########################################################################"
 echo "start $0"
 echo " "
 #
+echo "start toki-pona-test-files.pro"
+./toki-pona-test-files.pro
+if [ $? != 0  ]; then
+        echo "ERROR"
+        exit 1
+fi
+#
 rm -f *.out
 echo "make $PROLOG_MAIN_FILE.out"
-
 # '-t io_loop' is needed to start the loop in the stand alone version
 swipl -nodebug -g true -t io_loop -O -q --stand_alone=true -o  "$PROLOG_MAIN_FILE.out" -c "$PROLOG_MAIN_FILE.pro" > /dev/null 2> /dev/null
-
 if [ $? != 0  ]; then
         echo "ERROR"
         exit 1
@@ -27,6 +33,7 @@ if [ ! -f $PROLOG_MAIN_FILE.out ]; then
         echo "ERROR"
         exit 1
 fi
+echo "make _build directory"
 #
 rm -rf _build
 mkdir -p _build
@@ -38,6 +45,8 @@ if [ ! -f _build/$PROLOG_MAIN_FILE.out ]; then
 fi
 #
 # _build/Toki_Pona.out 
+
+
 
 
 

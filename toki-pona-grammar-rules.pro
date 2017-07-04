@@ -1,11 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Learn Definite Clause Grammars with toki pona
+%
 % Toki Pona - Grammar Rules
 % by Robert Warnke http://rowa.giso.de
 % released under the GNU General Public License
 % twitter: #tokipona #SWIprolog
 %
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
+% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ),
 % the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
 % These scripts do not support Toki Pona slangs!
@@ -101,7 +101,7 @@ sentence(S) -->
   separator(Sep,'.'),
   {removing_extraneous_tree_nodes_pr_abcd('s',S,C,SE,I,Sep)}.
 
-% An exclamatory sentence can consists a optional conjunction, interjections and end with an optional interjection word and an exclamation mark.
+% An exclamatory sentence can consists a optional conjunction, interjections and end with an optional interjection word and an exclamation mark or full stop..
 % examples:
 % anu jaki!
 sentence(S) -->
@@ -192,6 +192,28 @@ sentence_declarative(S) -->
   vocativ(V),
   {removing_extraneous_tree_nodes_pr_a('dec',S,V)}.
 
+% A declarative sentence can be a salutation.
+% examples:
+% jan Lope o, toki a!
+sentence_declarative(S) -->
+  salutation(Sa),
+  {removing_extraneous_tree_nodes_pr_a('dec',S,Sa)}.
+
+% A declarative sentence can be an interjection.
+% examples:
+% ken la jaki!
+sentence_declarative(S) -->
+  la_phrases(L),
+  interjection(I),
+  {removing_extraneous_tree_nodes_pr_ab('dec',S,L,I)}.
+
+% A declarative sentence can be an interjection and vocativ sentence.
+% examples:
+% sina o, toki!
+sentence_declarative(S) -->
+  vocativ_interjection(V),
+  {removing_extraneous_tree_nodes_pr_a('dec',S,V)}.
+
 % A declarative sentence can be an special sentence for designate.
 % examples:
 % nimi mi li Lope.
@@ -268,6 +290,7 @@ sentence_exclamatory(S) -->
 sentence_exclamatory(S) -->
   vocativ_interjection(V),
   {removing_extraneous_tree_nodes_pr_a('exc',S,V)}.
+
 % A exclamatory sentence can be an special sentence for designate.
 % examples:
 % nimi mi li Lope!

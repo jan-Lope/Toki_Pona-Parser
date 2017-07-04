@@ -1,3 +1,4 @@
+#!/usr/bin/env swipl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Learn Definite Clause Grammars
 % Read a line of words from the user and check the grammar.
@@ -5,7 +6,7 @@
 % by Robert Warnke http://rowa.giso.de
 % released under the GNU General Public License
 %
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
+% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ),
 % the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
 % These scripts do not support Toki Pona slangs!
@@ -82,7 +83,7 @@ check_read(File,Pred) :-
 
 % Run the tests
 :- check_read('toki-pona-sentences-right.txt',check_right).
-:- check_read('toki-pona-sentences-wrong.txt',check_wrong).
+% :- check_read('toki-pona-sentences-wrong.txt',check_wrong).
 
 % exit
 :- halt.
