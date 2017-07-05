@@ -5,7 +5,7 @@
 % by Robert Warnke http://rowa.giso.de
 % released under the GNU General Public License
 %
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
+% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ),
 % the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
 % These scripts do not support Toki Pona slangs!
@@ -19,11 +19,13 @@ io_loop :- repeat, check_grammar, halt.
 check_grammar :-
     read_line(CL),                                 % read a line
     ( CL = [] -> true                              % exit loop on empty line
-      ; wordlist(WL,CL,[]), !, sentence(P,WL,[]),  % analyze
+      ; wordlist(WL,CL,[]), !, paragraph(P,WL,[]),  % analyze
       write(P), nl, fail).                         % print results and loop
 
-% check_grammar(P)          :- read_line(CL), wordlist(WL,CL,[]), !, sentence(P,WL,[]).   % Read a line from the user, put it in a list of words and check it with "sentence".
-check_grammar(P)          :- read_line(CL), wordlist(WL,CL,[]), !, paragraph(P,WL,[]).   % Read a line from the user, put it in a list of words and check it with "sentence".
+% Read a line from the user, put it in a list of words and check it with "sentence".
+check_grammar(P) :-
+     read_line(CL),
+     wordlist(WL,CL,[]), !, paragraph(P,WL,[]).
 
 read_line(WL)             :- get0(C), codelist(C,WL).                           % Read a character code and put it in a list of codes.
 
