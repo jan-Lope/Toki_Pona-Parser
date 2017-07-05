@@ -462,8 +462,6 @@ pipi li lukin li unpa.
 mi moku li pakala. 
 mi moku e kili e telo.
 mi wile lukin e ma e suno.
-mi wile lukin e ma e suno e ni e sina e ona.
-mi wile lukin e ma e suno e ni e sina e ona li pona e ijo.
 mi lukin e ni.
 mi wile unpa e ona.
 jan li wile jo e ma.
@@ -478,7 +476,6 @@ mi lukin e ni.
 jan li wile jo e ma.
 mi jan li suli. 
 mi moku li pakala li pakala.
-mi moku li ma li pona li pipi li pakala li kili li lukin.
 %
 % jan Lopes DCG lessons 03
 %
@@ -672,8 +669,8 @@ pipi li lon ala lon poka mi.
 % jan Lopes DCG lessons 07
 %
 ma suli Elopa li pona. 
-ma Elopa li pona.
-ma suli Wawawa li ike. 
+ma Elopa li ' pona.
+ma Wawawa li ' ike. 
 ma Kanata li pona. 
 ma Lanlan li nasa. 
 ma Italija li pona lukin.
@@ -874,7 +871,7 @@ kalama musi en meli li pona, tawa mi.
 mi wile e moku e telo.
 mi moku e kili. 
 mi toki kepeken toki pona. 
-mi toki kepeken, toki pona. 
+mi toki, kepeken toki pona. 
 tomo pi jan Keli en mije ona li suli. 
 jan lili pi jan Ken en jan Lisa li suwi. 
 taso mi jo ala e moku.
@@ -885,7 +882,6 @@ mi sona e ni taso.
 mi musi taso. 
 mi pali taso.
 mi lukin taso e meli ni! 
-mi kin tawa kin. 
 mi moku kin.
 mi lukin kin e ona.
 seli li lon.
@@ -921,10 +917,10 @@ sina wile toki, tawa mije anu meli?
 mi kin moku. 
 mi lukin e mije anu meli. 
 mi kin tawa ma Elopa. 
-mi kin olin e sina. 
-mi kin lukin e ona. 
-mi kin wile tawa tomo mi. 
-mi kin olin e sina. 
+mi kin li olin sina. 
+mi kin li lukin ona. 
+mi kin li wile tawa tomo mi. 
+mi kin li olin e sina. 
 mi mute tawa ma Elopa. 
 %
 % jan Lopes DCG lessons 11
@@ -1135,7 +1131,6 @@ akesi ike li moku e moku.
 akesi kin li moku e moku.
 akesi kin, tu kin li moku e moku.
 akesi kin, tu mi kin li moku e moku.
-akesi Kondo
 akesi li pakala e tomo e soweli pi mute seme?
 akesi Lolo
 akesi Lonlon
@@ -1400,7 +1395,6 @@ moku pona!
 moku soweli
 mu!
 musi pona! 
-name
 nasin sewi Lapalapala
 nasin sewi Patapali
 nasin sewi Patapali pi monsuta waso li ' musi pi pilin mi.
@@ -1703,10 +1697,11 @@ jan seme li pali e supa ni?
 sina wile ala wile e suwi sin?
 jan lili ni li suwi lukin!
 % 8
-jan lili pi ma Nu Silen li sona lili e toki Moli.
+% jan lili pi ma Nu Silen li sona lili e toki Moli.      % Two unofficial words are not supported at the momemt.
+jan lili pi ma Silen li sona lili e toki Moli.
 jan sona mute li lon insa pi tomo sona.
 tomo pi jan Susan li pona lukin.
-kalama musi pi jan Lolina Mikenitu li pona tawa mi.
+% kalama musi pi jan Lolina Mikenitu li pona tawa mi.    % Two unofficial words are not supported at the momemt.
 jan Konan li moku e kili pi mute seme? 
 % 9
 jan lili li jo e kili anu suwi?
@@ -1742,6 +1737,11 @@ mi lape la mi wile lape pona.
 tenpo suno kama la mi tawa tomo ante.
 ona li lon tomo pi kama sona la ona li kama sona e toki Nijon.
 ken la ona li tawa e kiwen.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% paragraphs
+% 
+en moku / sina moku e moku. mi moku e moku. ni li ' pona pi sijelo mi.
 %
 % eof
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

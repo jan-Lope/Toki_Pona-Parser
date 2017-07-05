@@ -11,29 +11,50 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
+akesi Axolotl li moku.
 anu ike pilin?
+e mi moku. 
+e mo moku:
+e mo moku! 
+e mo moku? 
+e mo moku. 
 ilo ni li pi sina.
 jan Epawam li tan ma Merwika. 
 jan Kolonpo li tawa ma tomo Lisbon.
 jan li soweli e sama la ona li weka e ike jan.
 jan Mawijo li kepeken ilo alasa, taso linja li pakala. 
+jan pi kama, sona li moku.
 jan pi mute pi mute mute li kama.
-jan pi nanpa wan li lon.
 jan pi pona pi mute mute mute li kama.
 jan pi wawa ala pi pona mute pi pana sona pi unpa pona li kama.
 jan pi wawa pi pona mute li kama.
+jan Putin li pona.
 jan sewi e ilo li pona. 
 jan sewi li ilo li. 
+jan Trump li sona.
 jan wan tu li kama
+ken la:
+ken la!
 ken la?
+ken la la mi moku.
+ken la li mi moku.
+ken la: mi moku.
+ken: la mi moku.
+ken la pi mi moku.
+ken li la mi moku.
+ken pi la mi moku.
 kili ni li pi mi.
 kili pi ona li ike. 
+la mi moku:
+la mi moku!
+la mi moku?
+la mi moku.
 li telo.
+Lope li moku.
 ma Elopa lon seme?
 mama ona li kepeken e kasi nasa. 
 ma ni li pi jan Tosi.
 ma tomo Pelin lon seme?
-meli mi pi nanpa wan li nasa.
 mi ken ala weka pi tan lawa e kama ni pi lon lon pi selo insa oko mi pi pali mute.
 mi ken ala weka pi tan lawa e ni: insa nasin la kiwen li lon.
 mi kepeken e ilo.
@@ -45,42 +66,88 @@ mi li lon seme?
 mi li moku e wile.
 mi li suli.
 mi li tan seme?
-mi moku e moku mute mute mi. 
+:mi moku!
+:mi moku?
+:mi moku.
+mi moku:!
+mi moku:?
+mi moku?:
+mi moku?!
+mi moku??
+mi moku?.
+mi moku.:
+mi moku.!
+mi moku.?
+mi: moku?
+mi moku e:
+mi moku e!
+mi moku e?
+mi moku e.
+mi moku e la moku.
+mi moku e li moku.
+mi moku e, moku.
+mi moku e: moku.
+mi moku, e moku.
+mi moku: e moku.
+mi moku e o moku pona.
+mi moku e pi:
+mi moku e pi!
+mi moku e pi?
+mi moku e pi.
+mi moku e pi moku pona.
+mi moku la e moku.
+mi moku li:
+mi moku li!
+mi moku li?
+mi moku li.
+mi moku li e moku.
+mi moku li o moku.
 mi moku li pakala li.
+mi moku li pi moku.
+mi moku o e moku pona.
+mi moku o li moku.
+mi moku pi e moku pona.
+mi moku pi li moku.
 mi pona e tomo pi jan Lope en.
-mi tan seme?
+mi wile e ni:: mi moku.
 mi wile wile wile ni.
 mi wile wile wile wile wile wile wile ni: mi lon.
 moku jan.
 musi pona lon ma! 
 mute seme?
-ni li jan lili ona pi nanpa tu.
 ni li jan luka wan luka.
-ni li jan nanpa mute ale mute mute luka tu wan.
+ni li jan pi: sona mute.
+ni li jan: pi sona mute.
 ni li lili li suli tawa sina?
 ni li musi ala pona?
 ona e pona li moku.
+ona li: moku.
+ona: li moku.
 ona li tomo pi toki pona en pi nanpa wan!
 ona mute li sona e ni: jan ala li sona e ni: ona mute li jo e moku mute mute. 
+o pi moku!
+pi mi moku:
+pi mi moku!
+pi mi moku?
+pi mi moku.
+pi o moku!
 sina anu?
 sina anu li?
 sina anu ona li?
 sina anu seme?
-sina kepeken ala kepeken e ni?
 sina lukin ala moku e kiwen?
 sina: mi wile moku.
+sina, o toki!
+sina, o, toki!
 sina sona ala pona e toki mi?
 sina toki pi mama anu jan lili? 
 sina wile ala mute moku?
 sina wile kepeken e ilo.
 suno suli.
 taso sina kin ken kama sona e ijo sin.
-telo pimeja ni li telo loje mi, li ale mi.
 tenpo pi mute seme? 
 toki ni li pi mi mute.
 tomo ni li pi jan Tami.
-5 A right sentence for test:
-mi moku.
 %
 % eof
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
