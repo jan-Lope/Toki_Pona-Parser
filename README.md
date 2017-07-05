@@ -170,24 +170,7 @@ You can check more complicated sentences also.
         sim(np(sub(pronoun(sina))), vp((verb_pre(kama), verb_tra(sona)), obj_d(sep(e), (noun(toki), adjective(pona)))))), sep(!)) ;  
 
 
-If you type a wrong sentence you see no results. 
-If you type the kay "enter" only the script will stop.
-
-
-Questions, suggestions, ... Please write to me via [twitter](https://twitter.com/jan__Lope) or this [contact form](http://rowa.giso.de/languages/toki-pona/english/contact.php)
-
-Here an [introduction to definite clause grammars (DCG)](http://cmsmcq.com/2004/lgintro.html).
-
-For edit the source code you can use the [atom editor](https://atom.io) with the prolog plugin. 
-On MS Windows you can use the the [swi-prolog editor](http://arbeitsplattform.bildung.hessen.de/fach/informatik/swiprolog/indexe.html) also.
-
-
-
-## In Progress
-
-
 You can check a paragraph with an optional headline and several sentences. But if you use sentences with ambiguity grammar you will get many results.
-
 At the end of a headline you have to type the sign "/" because you can't use a new line in this version of the script. For example:
 
 en moku  
@@ -200,6 +183,22 @@ ni li ' pona pi sijelo mi.
         s(dec(sim(np(sub(pronoun(sina))), vp(verb_tra(moku), obj_d(sep(e), noun(moku))))), sep('.')),   
         s(dec(sim(np(sub(pronoun(mi))), vp(verb_tra(moku), obj_d(sep(e), noun(moku))))), sep('.')),   
         s(dec(sim(np(sub(pronoun(ni)), sep(li)), vp(be, obj_be((noun(...), ..., ...))))), sep('.'))) ;  
+
+
+If you type a wrong sentence you see no results. 
+If you type the key "enter" only the script will stop.
+
+
+Questions, suggestions, ... Please write to me via [twitter](https://twitter.com/jan__Lope) or this [contact form](http://rowa.giso.de/languages/toki-pona/english/contact.php)
+
+Here an [introduction to definite clause grammars (DCG)](http://cmsmcq.com/2004/lgintro.html).
+
+For edit the source code you can use the [atom editor](https://atom.io) with the prolog plugin. 
+On MS Windows you can use the the [swi-prolog editor](http://arbeitsplattform.bildung.hessen.de/fach/informatik/swiprolog/indexe.html) also.
+
+
+
+## In Progress
 
 
 Linux user can use the generated [Toki_Pona.out](https://github.com/jan-Lope/Toki_Pona-Parser/blob/gh-pages/Toki_Pona.out) without installing swi-prolog. 

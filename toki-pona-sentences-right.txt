@@ -1647,6 +1647,9 @@ wile ala!
 wile ala.
 wile ala moku.
 wile moku.
+% paragraphs
+% 
+en moku / sina moku e moku. mi moku e moku. ni li ' pona pi sijelo mi.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -1739,9 +1742,10 @@ ona li lon tomo pi kama sona la ona li kama sona e toki Nijon.
 ken la ona li tawa e kiwen.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% paragraphs
-% 
-en moku / sina moku e moku. mi moku e moku. ni li ' pona pi sijelo mi.
+%
+
+
+
 %
 % eof
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
