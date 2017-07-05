@@ -514,6 +514,9 @@ vocativ_question(S) -->
 % pona!
 % kin!
 % a a a!
+% mama mi o!
+% jan sona pona o!
+% sewi mi o!
 interjection(S) -->
   interjection_phrases(IP),
   {removing_extraneous_tree_nodes_pr_a('inj',S,IP)}.
@@ -1608,25 +1611,30 @@ verb_phrase_whom(VPQ) -->
 % examples:
 % ona li pakala e ijo seme?
 % ona li pakala e ijo pona seme?
-
+% sina wile jo e mani seme, tan jan ni?
 verb_phrase_which(VPQ) -->
   verb_transitive_compound(VTC),
   object_direct_which(OQ),
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPQ,VTC,OQ)}.
+  objects_prepositional(OP),
+  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,OQ,OP)}.
 
 % sina kepeken ilo seme?
 % sina kepeken ilo pona seme?
+% sina kepeken ilo pona seme, kepeken nasin ni?
 verb_phrase_which(VPQ) -->
   verb_intransitive_compound(VIC),
   object_intrans_which(OQ),
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPQ,VIC,OQ)}.
+  objects_prepositional(OP),
+  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VIC,OQ,OP)}.
 
 % sina pakala, tawa ijo seme?
 % sina pakala, tawa ijo pona seme?
+% sina pakala e ilo, tawa ijo pona seme?
 verb_phrase_which(VPQ) -->
   verb_transitive_compound(VTC),
+  objects_direct(OD),
   object_prepositional_which(OQ),
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPQ,VTC,OQ)}.
+  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,OD,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% verb phrases (question when)
@@ -1667,12 +1675,13 @@ verb_phrase_how(VPQ) -->
 % A verb phrase (question how many) can consists of verb phrases and a special direct object.
 % examples:
 % akesi li pakala e tomo e soweli pi mute seme?
-% sina wile jo e mani seme, tan jan ni?                                         ??
+% sina wile jo e mani pi mute seme, tan jan ni?
 verb_phrase_how_many(VPQ) -->
   verb_phrases(VP),
   object_direct_how_many(OQ),
-  objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_abc(VPQ,VP,PO,OQ)}.
+  objects_prepositional(OP),
+  {removing_extraneous_tree_nodes_abc(VPQ,VP,OQ,OP)}.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1817,14 +1826,25 @@ vocativ_phrase(VOP) -->
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Interjection phrases can consists of interjection words, subjects, a noun or/and an adjectives.
+% Interjection phrases can consists of subjects and interjection words "o".
 % examples:
-% sina o a!     (very emotional)
+% mama mi o!
+% jan sona pona o!
+% sewi mi o!
 interjection_phrases(INP) -->
   subjects_all(SU),
-  separator(Sep,o),
-  interjection_word(IW,a),
-  {removing_extraneous_tree_nodes_pr_abc('emotional',INP,SU,Sep,IW)}.
+  interjection_word(IW,o),
+  {removing_extraneous_tree_nodes_pr_ab('emotional',INP,SU,IW)}.
+
+% A very emotional interjection phrases can consists of subjects,
+% the interjection words "o" and the interjection words "a".
+% examples:
+% sina o a!
+interjection_phrases(INP) -->
+  subjects_all(SU),
+  interjection_word(IW1,o),
+  interjection_word(IW2,a),
+  {removing_extraneous_tree_nodes_pr_abc('emotional',INP,SU,IW1,IW2)}.
 
 % examples:
 % a a a!        (laughing)
