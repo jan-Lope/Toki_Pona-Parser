@@ -1,7 +1,14 @@
-# Toki Pona Parser
-Toki Pona is a constructed, minimal language. This parser based on swi-prolog and definite clause grammars (dcg) and supports spelling, grammar check and ambiguity check of Toki Pona sentences.
+# Toki Pona Parser - A Tool for Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 
-## The Toki Pona Parser - A Tool for Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
+Toki Pona is a constructed, minimal language, designed by the translator and linguist Sonja Lang.
+Toki Pona favors simplicity over clarity, and touts itself as "the language of good. The simple way of life."
+
+By virtue of Toki Pona's extremely small vocabulary, and order-independent syntax, the language is good at talking about feelings and simple relationships, but not about the finer points of politics or silicon-on-insulator microchip fabrication techniques. Tokiponists believe this is exactly as it should be.
+
+Whether you accept the philosophy or not, Toki Pona is fun to speak. 
+
+
+## About
 
 This parser analyzes Toki Pona sentences. It ckecks the spelling and grammar. 
 Furthermore, it finds possible grammatical variants. That is, it finds grammatical ambiguities. 
@@ -19,6 +26,8 @@ It based on the offical Toki Pona book of Sonja Lang ( [tokipona.org](http://tok
 the lessons of jan Pije ( [tokipona.net/tp/janpije](http://tokipona.net/tp/janpije/) ),
 the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io) ) and many text examples.
 
+
+## Installation
 
 First you have to install swi-prolog.
 
