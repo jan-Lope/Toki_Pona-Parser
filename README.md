@@ -40,6 +40,9 @@ Alternatively you can get the scripts per git on the command line.
 
     $ git clone https://github.com/jan-Lope/Toki_Pona-Parser.git  
     $ cd Toki_Pona-Parser  
+    
+    
+## Usage
 
 Start swi-prolog in the directory where the scripts are. For example in Ubuntu you type swipl. You will see the Prolog prompt ?-
 
@@ -69,6 +72,7 @@ In this example it is the sentence "mi moku.".
     s(dec(sim(np(sub(pronoun(mi))), vp(verb_tra(moku)))), sep('.')) 
     s(dec(sim(np(sub(pronoun(mi))), vp(be, obj_be(adjective(moku))))), sep('.')) 
     s(dec(sim(np(sub(pronoun(mi))), vp(be, obj_be(noun(moku))))), sep('.')) 
+    |: 
 
 You can see this sentence has three grammar variants and at least three meanings. Here can "moku" be a transitive verb (verb_tra), an adjective or a noun.
 
