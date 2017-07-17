@@ -13,7 +13,7 @@ SWI-Prolog supported the Definite Clause Grammar (DCG).
 DCG is a logic way of expressing grammar, either for natural or formal languages. 
 These scripts contain DCG rules for describing the Toki Pona grammar.
 
-In short: This tool analyzes Toki Pona sentences based on logic.
+In short: This tool analyzes Toki Pona sentences based on logic and not on "maybe" or "could be". 
 
 It based on the offical Toki Pona book of Sonja Lang ( [tokipona.org](http://tokipona.org) ), 
 the lessons of jan Pije ( [tokipona.net/tp/janpije](http://tokipona.net/tp/janpije/) ),
