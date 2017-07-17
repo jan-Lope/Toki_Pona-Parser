@@ -1,11 +1,23 @@
 # Toki Pona Parser
 Toki Pona is a constructed, minimal language. This parser based on swi-prolog and definite clause grammars (dcg) and supports spelling, grammar check and ambiguity check of Toki Pona sentences.
 
-## The Tool for Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
+## The Toki Pona Parser - A Tool for Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 
-These scripts are based on the offical Toki Pona book of Sonja Lang ( [tokipona.org](http://tokipona.org) ), 
-the lessons of jan Pije ( [tokipona.net/tp/janpije](http://tokipona.net/tp/janpije/) ) and
-the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io) ).
+This parser analyzes Toki Pona sentences. It ckecks the spelling and grammar. 
+Furthermore, it finds possible grammatical variants. That is, it finds grammatical ambiguities. 
+It helps you to form correct and clear Toki Pona sentences.
+
+This parser is written in SWI-Prolog. SWI-Prolog is a free implementation of the programming language Prolog. 
+Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics. 
+SWI-Prolog supported the Definite Clause Grammar (DCG). 
+DCG is a logic way of expressing grammar, either for natural or formal languages. 
+These scripts contain DCG rules for describing the Toki Pona grammar.
+
+In short: This tool analyzes Toki Pona sentences based on logic.
+
+It based on the offical Toki Pona book of Sonja Lang ( [tokipona.org](http://tokipona.org) ), 
+the lessons of jan Pije ( [tokipona.net/tp/janpije](http://tokipona.net/tp/janpije/) ),
+the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io) ) and many text examples.
 
 
 First you have to install swi-prolog.
