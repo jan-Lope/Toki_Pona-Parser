@@ -23,7 +23,7 @@ tmp.*
 *.fot
 *.cb
 *.cb2
-.dvi
+*.dvi
 *.ps
 *.eps
 *.pdf
