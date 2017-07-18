@@ -234,7 +234,7 @@ jan lili ni li suwi lukin!
 jan lili pi jan Keli li musi.
 jan lili pi jan Ken en jan Lisa li suwi.
 jan lili pi jan lili mi o kama pona.
-% jan lili pi ma Nu Silen li sona lili e toki Moli.% Two unofficial words are not supported at the momemt.
+% jan lili pi ma Nu Silen li sona lili e toki Moli.
 jan lili pi ma Silen li sona lili e toki Moli.
 jan lili sina li suwi.
 jan lili wan li moli ala.
@@ -508,7 +508,7 @@ kalama musi en meli li pona tawa mi.
 kalama musi en meli li pona, tawa mi.
 kalama musi li pona tawa mi.
 kalama musi pi jan Enja li pona.
-% kalama musi pi jan Lolina Mikenitu li pona tawa mi.% Two unofficial words are not supported at the momemt.
+% kalama musi pi jan Lolina Mikenitu li pona tawa mi.
 kalama ni li seme?
 kalama pi ona ale li lon insa pi kiwen lili ale.
 kala wawa li moku e seme?
@@ -553,7 +553,7 @@ ken la sina pilin e ni: mi toki e lon ala.
 ken la sina wile kama kin.
 ken la tenpo pimeja la ni li pona.
 ken la toki mi li lon.
-% ken la toki mi ni li toki pi musi ike.% To Do
+ken la toki mi ni li toki pi musi ike.
 kepeken pi ilo MIRC li ' pona pi pilin pona, tawa ona.
 kili li ijo.
 kili li ike ala.
@@ -2170,3 +2170,7 @@ wile moku.
 wile pi jan ike li pakala e ijo.
 wile sona li mute e sona.
 wile sona nanpa wan li ni: ale li pona anu ike?
+kalama musi pi tenpo pimeja pi jan tawa / lape li lon sewi pi nena ali. sina pilin lili e kon lon lawa pi kasi suli. waso li kalama ala lon ma kasi. o awen. tenpo kama lili la sina kin li lape.
+jan Jon li pali e ni.
+akesi suli jelo, tu wan mi ni li moku e moku.
+akesi suli mi mi kin li moku e moku.

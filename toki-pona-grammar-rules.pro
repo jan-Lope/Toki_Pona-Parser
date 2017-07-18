@@ -3085,7 +3085,30 @@ pronoun_with_at_least_one_adjectives(PNC) -->
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% An optional pronoun
+%%%%%% optional pronoun(s)
+
+% Optional pronouns can consists of one or two different pronouns.
+pronouns_optional(epsilon) --> [].
+pronouns_optional(PNO) -->
+  pronoun(PN,_),
+  {removing_extraneous_tree_nodes_a(PNO,PN)}.
+% examples:
+% ken la toki mi ni li toki pi musi ike.
+pronouns_optional(PNO) -->
+  pronoun(PN1,_),
+  pronoun(PN2,_),
+  {PN1\=PN2},
+  {removing_extraneous_tree_nodes_ab(PNO,PN1,PN2)}.
+% examples:
+% akesi suli jelo, tu wan mi li moku e moku.
+pronouns_at_least_one(PNO) -->
+  pronoun(PN,_),
+  {removing_extraneous_tree_nodes_a(PNO,PN)}.
+pronouns_at_least_one(PNO) -->
+  pronoun(PN1,_),
+  pronoun(PN2,_),
+  {PN1\=PN2},
+  {removing_extraneous_tree_nodes_ab(PNO,PN1,PN2)}.
 
 % An optional pronoun can consists of an optional pronoun. ;-)
 pronoun_optional(epsilon) --> [].
@@ -3578,18 +3601,20 @@ adjectives(epsilon) --> [].
 % akesi suli ike li moku e moku.
 % akesi suli ike mi li moku e moku.
 % akesi suli jelo mi li moku e moku.
+% ken la toki sina ni li toki pi musi ike.
 adjectives(ADJs) -->
   adjectives_pure_optional(ADJp),
-  pronoun_optional(PNo),
+  pronouns_optional(PNo),
   {removing_extraneous_tree_nodes_ab(ADJs,ADJp,PNo)}.
 
 % Compund adjectives can be build of optional pure adjectives and a pronoun and a final adjective.
 % examples:
 % akesi mi kin li moku e moku.
 % akesi suli mi kin li moku e moku.
+% akesi suli mi ni kin li moku e moku.
 adjectives(ADJs) -->
   adjectives_pure_optional(ADJp1),
-  pronoun(PNo,_),
+  pronouns_at_least_one(PNo),
   adjective_final(ADJf),
   {removing_extraneous_tree_nodes_abc(ADJs,ADJp1,PNo,ADJf)}.
 
@@ -3605,7 +3630,7 @@ adjectives(ADJs) -->
 % akesi suli jelo mi, tu wan li moku e moku.
 adjectives(ADJs) -->
   adjectives_pure_optional(ADJ),
-  pronoun_optional(PNo),
+  pronouns_optional(PNo),
   numbers(NUMo),
   adjective_final_optional(ADJf),
   {removing_extraneous_tree_nodes_abcd(ADJs,ADJ,PNo,NUMo,ADJf)}.
@@ -3619,10 +3644,11 @@ adjectives(ADJs) -->
 % akesi pona tu mi li moku e moku.
 % akesi suli jelo, tu wan mi kin li moku e moku.
 % akesi suli jelo, tu wan mi li moku e moku.
+% akesi suli jelo, tu wan mi ni li moku e moku.
 adjectives(ADJs) -->
   adjectives_pure_optional(ADJ),
   numbers(NUMo),
-  pronoun(PNo,_),
+  pronouns_at_least_one(PNo),
   adjective_final_optional(ADJf),
   {removing_extraneous_tree_nodes_abcd(ADJs,ADJ,NUMo,PNo,ADJf)}.
 
