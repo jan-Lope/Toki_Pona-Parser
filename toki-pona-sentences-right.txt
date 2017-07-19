@@ -1,16 +1,3 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% Correct Toki Pona sentences for Tests
-% by Robert Warnke http://rowa.giso.de
-% released under the GNU General Public License
-%
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ),
-% the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
-% the lessons of jan Lope ( https://jan-lope.github.io ).
-% These scripts do not support Toki Pona slangs!
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 a!
 a a a!
 a a a.
@@ -45,6 +32,7 @@ akesi suli jelo mi li moku e moku.
 akesi suli jelo mi, tu wan li moku e moku.
 akesi suli jelo, tu wan mi kin li moku e moku.
 akesi suli jelo, tu wan mi li moku e moku.
+akesi suli jelo, tu wan mi ni li moku e moku.
 akesi suli li lon.
 akesi suli li moku e moku.
 akesi suli li moli la soweli li ken suli.
@@ -167,6 +155,7 @@ jan ike ni li jo e len nasa.
 jan Isa li tawa lili, li kama anpa, li toki e ni tawa sewi.
 jan Isa li toki e ni.
 jan jelo laso lili li kama tan sewi.
+jan Jon li pali e ni.
 jan Kanata li pona.
 jan kasi ni li pona lukin anu seme?
 jan Keli o, sina pona lukin.
@@ -509,6 +498,7 @@ kalama musi en meli li pona, tawa mi.
 kalama musi li pona tawa mi.
 kalama musi pi jan Enja li pona.
 % kalama musi pi jan Lolina Mikenitu li pona tawa mi.
+kalama musi pi tenpo pimeja pi jan tawa / lape li lon sewi pi nena ali. sina pilin lili e kon lon lawa pi kasi suli. waso li kalama ala lon ma kasi. o awen. tenpo kama lili la sina kin li lape.
 kalama ni li seme?
 kalama pi ona ale li lon insa pi kiwen lili ale.
 kala wawa li moku e seme?
@@ -2170,7 +2160,3 @@ wile moku.
 wile pi jan ike li pakala e ijo.
 wile sona li mute e sona.
 wile sona nanpa wan li ni: ale li pona anu ike?
-kalama musi pi tenpo pimeja pi jan tawa / lape li lon sewi pi nena ali. sina pilin lili e kon lon lawa pi kasi suli. waso li kalama ala lon ma kasi. o awen. tenpo kama lili la sina kin li lape.
-jan Jon li pali e ni.
-akesi suli jelo, tu wan mi ni li moku e moku.
-akesi suli mi mi kin li moku e moku.

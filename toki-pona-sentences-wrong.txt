@@ -1,17 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% Wrong Toki Pona entences for Tests
-% by Robert Warnke http://rowa.giso.de
-% released under the GNU General Public License
-%
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ),
-% the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
-% the lessons of jan Lope ( https://jan-lope.github.io ).
-% These scripts do not support Toki Pona slangs!
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
 akesi Axolotl li moku.
+akesi suli mi mi kin li moku e moku.
+akesi suli mi mi ni kin li moku e moku.
 anu ike pilin?
 e mi moku. 
 e mo moku:
@@ -148,4 +137,3 @@ taso sina kin ken kama sona e ijo sin.
 tenpo pi mute seme? 
 toki ni li pi mi mute.
 tomo ni li pi jan Tami.
-akesi suli mi mi kin li moku e moku.
