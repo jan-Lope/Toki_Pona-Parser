@@ -169,7 +169,31 @@ To mark numbers you can use a comma or a "#" (unofficial).
     |:  jan # lili li moku e moku.  
     s(dec(sim(np(sub((noun(jan), card(adjective(lili)))), sep(li)), vp(verb_tra(moku), obj_d(sep(e), noun(moku))))), sep('.')) 
 
-These scripts can help you to understand Toki Pona sentences. For example the sentence "ona li mama ala mama?" can not mean "Is she a mother?"
+These scripts can help you to better understand Toki Pona sentences. 
+For example the sentence “sina pona ala pona?” can not mean “Are you ok or not ok?”
+The verb "are" (or "be") doesn't exist in Toki Pona. 
+"pona" can only be a transitive verb here. 
+
+    |: sina pona ala pona?
+    s(int(yes_no(np(sub(pronoun(sina))),vp(verb_tra(pona),adverb(ala),verb_tra(pona)))),sep(?))
+
+This example make it more clear.
+
+    |: sina pona ala pona e ni?
+    s(int(yes_no(np(sub(pronoun(sina))),vp(verb_tra(pona),adverb(ala),verb_tra(pona),obj_d(sep(e),pronoun(ni))))),sep(?))
+
+To say “Are you ok or not ok?” use "sina ' pona anu seme?":
+
+    |: sina ' pona anu seme?
+    s(int(or_what(np(sub(pronoun(sina))), (vp(be,obj_be(adjective(pona))),conj(anu),question_word(seme)))),sep(?))
+    s(int(or_what(np(sub(pronoun(sina))), (vp(be,obj_be(noun(pona))),conj(anu),question_word(seme)))),sep(?))
+
+This sentence is clearer.
+
+    |: sina ' pona pi pilin en sijelo anu seme?
+    s(int(or_what(np(sub(pronoun(sina))), (vp(be,obj_be((noun(pona),sep(pi),noun(pilin),conj(en),noun(sijelo)))),conj(anu),question_word(seme)))),sep(?))
+
+An other example is the sentence "ona li mama ala mama?" can not mean "Is she a mother?"
 
     |: ona li mama ala mama?  
     s(int(yes_no(np(sub(pronoun(ona)), sep(li)), vp(verb_tra(mama), adverb(ala), verb_tra(mama)))), sep(?)) 
