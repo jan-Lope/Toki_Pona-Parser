@@ -223,16 +223,12 @@ On MS Windows you can use the the [swi-prolog editor](http://arbeitsplattform.bi
 
 
 
-## In Progress
+## To Do
 
+Several unofficial Names, for example "jan Eliku Kulaputon li jan sewi."
 
-Linux user can use the generated [Toki_Pona.out](https://github.com/jan-Lope/Toki_Pona-Parser/blob/gh-pages/Toki_Pona.out) without installing swi-prolog. 
-It is generated automatically by [travis-ci.org](https://travis-ci.org/jan-Lope/Toki_Pona-Parser).
+Quotation marks for Quotes and unofficial names.
 
-Download this file and start it.
-
-
-    ./Toki_Pona.out
 
 
 
