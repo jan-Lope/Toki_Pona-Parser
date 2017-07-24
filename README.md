@@ -39,7 +39,7 @@ Install SWI-Prolog:
 
 After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
 Use the button "Clone or download" and then "Download ZIP". 
-Unzip the downloaded file Toki_Pona-Parser-master.zip. 
+Unzip the file "Toki_Pona-Parser-master.zip". 
 Change to the new folder "Toki_Pona-Parser-master" and doppel click the file "Toki_Pona.pro". 
 A new window opens. After the prompt |: you can type Toki Pona sentences.
 
@@ -55,8 +55,9 @@ First you have to install swi-prolog. Here are the command for Ubuntu/Debian:
     $ sudo apt-get install swi-prolog  
 
 After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
+Use the button "Clone or download" and then "Download ZIP". 
 
-Unzip the downloaded file Toki_Pona-Parser-master.zip and chenged to the new directory.
+Unzip the file "Toki_Pona-Parser-master.zip" and changed to the new directory.
 
     $ unzip Toki_Pona-Parser-master.zip
     $ cd Toki_Pona-Parser-master
@@ -67,16 +68,17 @@ Under Linux you can start the script directly.
     |: 
 
 
-### Mac OS X 10.7 an later
+### Mac OS X 10.7 and later
 First you have to download and install install swi-prolog: [http://www.swi-prolog.org/download/stable](http://www.swi-prolog.org/download/stable)   
 
 After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
 Use the button "Clone or download" and then "Download ZIP". 
-Unzip the downloaded file Toki_Pona-Parser-master.zip. 
+
+Unzip the file "Toki_Pona-Parser-master.zip". 
 Change to the new folder "Toki_Pona-Parser-master" and doppel click the file "Toki_Pona.pro". 
 At the first time you will be asked for the program to open this file. 
-Please select SWI-Prolog.
-After this a new window opens. After the prompt |: you can type Toki Pona sentences.
+Please select "SWI-Prolog".
+A new window opens. After the prompt |: you can type Toki Pona sentences.
 
     |: 
   
