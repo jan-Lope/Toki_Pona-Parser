@@ -29,12 +29,24 @@ the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io) ) and
 ## Installation
 
 ### MS Windows
-First you have to download and install install swi-prolog: [http://www.swi-prolog.org/download/stable](http://www.swi-prolog.org/download/stable)   
+First you have to download SWI-Prolog for Windows: [http://www.swi-prolog.org/download/stable](http://www.swi-prolog.org/download/stable)   
+
+Install SWI-Prolog:
+
+    Select type of install: Typical
+    Destination Folder: C:\Program Files\swipl
+    Extension for Prolog files: pro
 
 After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
 Use the button "Clone or download" and then "Download ZIP". 
-Unzip the downloaded file Toki_Pona-Parser-master.zip
+Unzip the downloaded file Toki_Pona-Parser-master.zip. 
+Change to the new folder "Toki_Pona-Parser-master" and doppel click the file "Toki_Pona.pro". 
+A new window opens. After the prompt |: you can type Toki Pona sentences.
 
+    |: 
+
+
+![swi-prolog-windows](swi-prolog-windows.gif?raw=true "ding")
 
 
 ### Linux
@@ -52,6 +64,7 @@ Unzip the downloaded file Toki_Pona-Parser-master.zip and chenged to the new dir
 Under Linux you can start the script directly.
 
     $ ./Toki_Pona.pro  
+    |: 
 
 
 ### Mac OS X
@@ -62,28 +75,12 @@ After this you have to download the Toki Pona parser from this link [https://git
 Download and decompress these [scripts](https://github.com/jan-Lope/Toki_Pona-Parser). 
 
 
+
+
+
     
     
 ## Usage
-
-Start swi-prolog in the directory where the scripts are. For example in Ubuntu you type swipl. You will see the Prolog prompt ?-
-
-    $ swipl  
-    ?-  
-
-Now you can load the main script in the Prolog system.
-
-    ?- ['Toki_Pona.pro'].  
-
-Alternatively you start swi-prolog with the main script by one command.  
-
-    $ swipl -s Toki_Pona.pro
-    ?-
-
-Under Linux you can start the script directly.
-
-    ./Toki_Pona.pro  
-
 
 Now you can check the grammar of a Toki Pona sentence.
 After the prompt |: you can type a Toki Pona sentence. 
