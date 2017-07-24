@@ -26,20 +26,42 @@ It based on the offical Toki Pona book of Sonja Lang ( [tokipona.org](http://tok
 the lessons of jan Pije ( [tokipona.net/tp/janpije](http://tokipona.net/tp/janpije/) ),
 the lessons of jan Lope ( [jan-lope.github.io](https://jan-lope.github.io) ) and many text examples.
 
-
 ## Installation
 
-First you have to install swi-prolog.
+### MS Windows
+First you have to download and install install swi-prolog: [http://www.swi-prolog.org/download/stable](http://www.swi-prolog.org/download/stable)   
 
-    Windows, Mac OS X: http://www.swi-prolog.org/download/stable  
-    Ubuntu/Debian: sudo apt-get install swi-prolog  
+After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
+Use the button "Clone or download" and then "Download ZIP". 
+Unzip the downloaded file Toki_Pona-Parser-master.zip
+
+
+
+### Linux
+First you have to install swi-prolog. Here are the command for Ubuntu/Debian: 
+
+    $ sudo apt-get install swi-prolog  
+
+After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
+
+Unzip the downloaded file Toki_Pona-Parser-master.zip and chenged to the new directory.
+
+    $ unzip Toki_Pona-Parser-master.zip
+    $ cd Toki_Pona-Parser-master
+
+Under Linux you can start the script directly.
+
+    $ ./Toki_Pona.pro  
+
+
+### Mac OS X
+First you have to download and install install swi-prolog: [http://www.swi-prolog.org/download/stable](http://www.swi-prolog.org/download/stable)   
+
+After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser). 
 
 Download and decompress these [scripts](https://github.com/jan-Lope/Toki_Pona-Parser). 
 
-Alternatively you can get the scripts per git on the command line.  
 
-    $ git clone https://github.com/jan-Lope/Toki_Pona-Parser.git  
-    $ cd Toki_Pona-Parser  
     
     
 ## Usage
