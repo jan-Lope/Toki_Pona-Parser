@@ -219,6 +219,7 @@ noun(noun(Noun),Noun) --> [Noun], { member(Noun, [
      ken,          % possibility, ability, power to do things, permission
      kepeken,      % use, usage, tool
      kili,         % fruit, pulpy vegetable, mushroom
+     kin,          % reality, fact,
      kipisi,       % section, fragment, slice
      kiwen,        % hard thing, rock, stone, metal, mineral, clay
      ko,           % semi-solid or squishy substance; clay, clinging form, dough, glue, paste, powder, gum
@@ -379,6 +380,7 @@ verb_intransitive(verb_int(Verb_intransitive),Verb_intransitive) --> [Verb_intra
      pakala,       % to screw up, to fall apart, to break
      pali,         % to act, to work, to function
      pilin,        % to feel, to sense
+     pu,           % to read (the official Toki Pona book)
      sewi,         % to get up
      sona,         % to know, to understand
      tan,          % to come from, to originate from, to stem from, to be descended from, to emerge, to follow, to come out of
@@ -441,6 +443,7 @@ verb_transitive(verb_tra(Verb_transitive),Verb_transitive) --> [Verb_transitive]
      pini,         % to end, to stop, to turn off, to finish, to close
      poki,         % to box up, to put in, to can
      pona,         % to improve, to fix, to repair, to make good
+     pu,           % to apply (the official Toki Pona book) to
      sama,         % to equate, to make equal, to make similar to
      seli,         % to heat, to warm up, to cook
      selo,         % to shelter, to protect, to guard
