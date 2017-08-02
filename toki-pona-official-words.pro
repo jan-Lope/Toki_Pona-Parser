@@ -17,9 +17,9 @@ adjectiv(adjective(Adjectiv),Adjectiv) --> [Adjectiv], { member(Adjectiv, [
      alasa,        % hunting-, -hunting, hunting ...
      ale,          % all, every, complete, whole  (ale = ali), (depreciated)
      ali,          % all, every, complete, whole  (ale = ali)
+     anpa,         % low, lower, bottom, down
      ante,  	     % different, dissimilar, altered, changed, other, unequal, differential, variant
      awen,         % remaining, stationary, permanent, sedentary
-     anpa,         % low, lower, bottom, down
      esun,         % marketable, for sale, salable, deductible
      ijo,          % of something
      ike,          % bad, negative, wrong, evil, overly complex, (figuratively) unhealthy
@@ -89,17 +89,16 @@ adjectiv(adjective(Adjectiv),Adjectiv) --> [Adjectiv], { member(Adjectiv, [
      seli,         % hot, warm, cooked
      sewi,         % superior, elevated, religious, formal
      sijelo,       % physical, bodily, corporal, corporeal, material, carnal
-     sinpin,       % facial, frontal, anterior
+     sike,         % round, cyclical, of one year
+     sin,          % new, fresh, another, more
+     sinpin,       % facial, frontal, anterior, vertical
      sitelen,      % figurative, pictorial, metaphorical, metaphorisch
      sona,         % knowing, cognizant, shrewd
      soweli,       % animal
-     suwi,         % sweet, cute
-     sike,         % round, cyclical, of one year
-     sin,          % new, fresh, another, more
-     sinpin,       % vertical
      suli,         % big, tall, long, adult, important
      suno,         % sunny, sunnily
      supa,         % flat, shallow, flat-bottomed, horizontal
+     suwi,         % sweet, cute
      tan,          % causal,
      taso,         % only, sole
      tawa,         % moving, mobile
@@ -179,8 +178,8 @@ conjunction(conj(Conjunction),Conjunction) --> [Conjunction], { member(Conjuncti
 %     ante,         % otherwise, on the other hand
      anu,          % or (used for decision questions)
      en,           % and (used to coordinate head nouns)
-%     kin,          % moreover, in addition, likewise
 %     ike,          % unfortunately
+%     kin,          % moreover, in addition, likewise
 %     open,         % firstly, in the beginning
 %     pona,         % luckily
      taso          % but, however
@@ -200,8 +199,8 @@ noun(noun(Noun),Noun) --> [Noun], { member(Noun, [
      alasa,        % hunting
      ale,          % everything, anything, life, the universe, (depreciated)
      ali,          % everything, anything, life, the universe
-     ante,         % difference, distinction, differential, variation, variance, disagreement
      anpa,         % bottom, lower part, under, below, floor, beneath
+     ante,         % difference, distinction, differential, variation, variance, disagreement
      awen,         % inertia, continuity, continuum, stay
      esun,         % market, shop, fair, bazaar, business, transaction
      ijo,          % thing, something, stuff, anything, object
@@ -225,18 +224,18 @@ noun(noun(Noun),Noun) --> [Noun], { member(Noun, [
      ko,           % semi-solid or squishy substance; clay, clinging form, dough, glue, paste, powder, gum
      kon,          % air, wind, smell, soul
      kule,         % color, colour, paint, ink, dye, hue
-     kute,         % hearing, ear
      kulupu,       % group, community, society, company, people
+     kute,         % hearing, ear
      lape,         % sleep, rest
      laso,         % blue, blue-green
      lawa,         % head, mind
      len,          % clothing, cloth, fabric, network, internet
-     lili,         % smallness, youth, immaturity
-     lon,          % existence, being, presence
      lete,         % cold, chill, bleakness
+     lili,         % smallness, youth, immaturity
      linja,        % long and flexible thing; string, rope, hair, thread, cord, chain, line, yarn
      lipu,         % paper, card, ticket, sheet, page, flat and bendable thing, book, webpage, blog, list
      loje,         % red
+     lon,          % existence, being, presence
      luka,         % arm, hand, tacticle organ
      lukin,        % view, look, glance, sight, gaze, glimpse, seeing, vision, sight, attention
      lupa,         % hole, orifice, door, window
@@ -397,8 +396,8 @@ verb_transitive(verb_tra(Verb_transitive),Verb_transitive) --> [Verb_transitive]
      awen,         % to keep
      esun,         % to buy, to sell, to barter, to swap
      ijo,          % to objectify
-%     ilo,          % to work on with tools, to work with machines
      ike,          % to make bad, to worsen, to have a negative effect upon
+%     ilo,          % to work on with tools, to work with machines
      jaki,         % to pollute, to dirty
      jan,          % to personify, to humanize, to personalize
 %     jelo,         % to color yellow, to turn yellow
@@ -424,9 +423,9 @@ verb_transitive(verb_tra(Verb_transitive),Verb_transitive) --> [Verb_transitive]
      mama,         % to mother sb., to wet-nurse, mothering
      moku,         % to eat, to drink, to swallow, to ingest, to consume
      moli,         % to kill
+     mu,           % to make animal nois
      musi,         % to amuse, to entertain
      mute,         % to make many or much
-     mu,           % to make animal nois
      namako,       % to spice, to flavor, to decorate
      nanpa,        % to count
      nasa,         % to drive crazy, to make weird
@@ -459,8 +458,8 @@ verb_transitive(verb_tra(Verb_transitive),Verb_transitive) --> [Verb_transitive]
      suwi,         % to sweeten
      tawa,         % to move, to displace
      telo,         % to water, to wash with water, to put water to, to melt, to liquify
-     tomo,         % to build, to construct, to engineer
      toki,         % to speak, to talk, to say, to pronounce, to discourse
+     tomo,         % to build, to construct, to engineer
      tu,           % to divide, to double, to separate, to cut in two
      unpa,         % to have sex with, to sleep with, to fuck
      uta,          % to kiss, to osculate, to oral stimulate, to suck
