@@ -1432,7 +1432,6 @@ verb_phrase_what_object_i(VPQ)       -->
 % The preposition "lon" is for where-questions. "tan" is for why- and wherefrom-questions.
 % examples:
 % sina namako lili, poka seme?
-% sina namako lili e moku, poka seme?
 verb_phrase_what_object_p(VPQ)      -->
   verb_transitive_compound(VTC),
   objects_direct(DO),
@@ -2644,7 +2643,6 @@ object_prepositional(OP) -->
 % ni li pona, tawa mi pona.
 % mi pona, tawa sina.
 % mi alasa e soweli, kepeken ona suli.
-% mi alasa, poka jan pona mi.
 % mi alasa e soweli, kepeken ilo palisa, lon poka jan pona mi.
 object_prepositional(OP) -->
   comma_optional,
@@ -2705,8 +2703,7 @@ object_indirect_what(OQ) -->
 % an optional comma, a preposition and the question word "seme".
 % The preposition "lon" is for where-questions. "tan" is for why- and wherefrom-questions.
 % examples:
-% sina namako lili, poka seme?
-% sina namako lili e moku mute, poka seme?
+% ??
 object_prepositional_what(OQ) -->
   comma_optional,
   preposition(Prep,P), {P\=lon,P\=tan,P\=tawa},

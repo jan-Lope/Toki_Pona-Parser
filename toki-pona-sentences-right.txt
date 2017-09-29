@@ -807,7 +807,6 @@ meli Susan
 meli wan pi tomo ni li suli li pona lukin mute.
 mi alasa e soweli, kepeken ilo palisa, lon poka jan pona mi.
 mi alasa e soweli, kepeken ona suli.
-mi alasa, poka jan pona mi.
 mi anpa e jan utala.
 mi awen pali lon tomo sona.
 mi en meli mi li wan.
@@ -1524,7 +1523,6 @@ o tawa.
 o tawa e utala.
 o tawa kepeken nasin pi nena kon sina.
 o tawa la tenpo kama lili.
-o tawa ma tomo poka jan pona sina.
 o tawa musi poka mi.
 o tawa pona.
 o tawa sewi!
@@ -1566,7 +1564,6 @@ pipi li moli.
 pipi li wile e kili tan ni: kili li pona tawa pipi.
 pipi li wile moku e telo.
 pipi o, sina wile ala wile tawa?
-pipi walo li moku poka pipi pimeja.
 poka mi li pakala.
 poki ni li lon jaki.
 poki suli pi mani jelo mute li tawa insa tomo.
@@ -1703,9 +1700,6 @@ sina moli la sina ken ala toki.
 sina musi ala musi?
 sina mute li jo ala jo e tomo tawa?
 sina mute li lon seme?
-sina namako lili e moku mute, poka seme?
-sina namako lili e moku, poka seme?
-sina namako lili, poka seme?
 sina nanpa wan!
 sina o a!
 sina o, a a a!
