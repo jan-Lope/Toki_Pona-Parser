@@ -11,7 +11,6 @@
 % These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
 % the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
-% These scripts do not support Toki Pona slangs!
 %
 % First you have to install swi-prolog.
 %   Windows, Mac OS X: http://www.swi-prolog.org/download/stable
