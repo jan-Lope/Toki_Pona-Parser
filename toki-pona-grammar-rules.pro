@@ -2025,11 +2025,17 @@ salutation_phrase(SP) -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% answer yes
 
-% A answer-yes-phrase consists of an auxiliary verb or/and a transitive verb.
+% A answer-yes-phrase consists of an auxiliary verb or/and a (in)transitive verb.
 % examples:
 % moku.
 answer_yes_phrase(AYP) -->
   verb_transitive(VT,_),
+  {removing_extraneous_tree_nodes_pr_a('yes',AYP,VT)}.
+
+% examples:
+% lon.
+answer_yes_phrase(AYP) -->
+  verb_intransitive(VT,_),
   {removing_extraneous_tree_nodes_pr_a('yes',AYP,VT)}.
 
 % examples:
