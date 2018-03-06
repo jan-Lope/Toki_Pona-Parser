@@ -2063,6 +2063,13 @@ answer_no_phrase(ANP) -->
   {removing_extraneous_tree_nodes_pr_ab('no',ANP,VT,ADV)}.
 
 % examples:
+% lon ala.
+answer_no_phrase(ANP) -->
+  verb_intransitive(VT,_),
+  adverb(ADV,ala),
+  {removing_extraneous_tree_nodes_pr_ab('no',ANP,VT,ADV)}.
+
+% examples:
 % wile ala moku.
 answer_no_phrase(ANP) -->
   verb_pre(VP,Vpre),
