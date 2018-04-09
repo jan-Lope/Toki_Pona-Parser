@@ -168,7 +168,8 @@ adverb(adverb(Adverb),Adverb) --> [Adverb], { member(Adverb, [
      unpa,         % erotic, sexual
      uta,          % orally
      utala,        % fighting
-     wawa          % strongly, powerfully
+     wawa,         % strongly, powerfully
+     weka          % away
 %     wile          % necessary
  ])
 }.
