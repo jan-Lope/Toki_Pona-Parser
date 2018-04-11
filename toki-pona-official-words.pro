@@ -17,9 +17,9 @@ adjectiv(adjective(Adjectiv),Adjectiv) --> [Adjectiv], { member(Adjectiv, [
      ale,          % all, every, complete, whole  (ale = ali), (depreciated)
      ali,          % all, every, complete, whole  (ale = ali)
      anpa,         % low, lower, bottom, down
-     ante,  	     % different, dissimilar, altered, changed, other, unequal, differential, variant
+     ante,  	   % different, dissimilar, altered, changed, other, unequal, differential, variant
      awen,         % remaining, stationary, permanent, sedentary
-     esun,         % marketable, for sale, salable, deductible
+     esun,         % commercial, trade, marketable, for sale, salable, deductible
      ijo,          % of something
      ike,          % bad, negative, wrong, evil, overly complex, (figuratively) unhealthy
      ilo,          % useful
