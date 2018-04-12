@@ -321,7 +321,7 @@ numeral(numeral(Numeral),Numeral) --> [Numeral], { member(Numeral, [
 }.
 
 preposition(preposition(Preposition),Preposition) --> [Preposition], { member(Preposition, [
-     kepeken,      % with
+     kepeken,      % with, using
      lon,          % be (located) in/at/on
 %     poka,         % in the accompaniment of, with
      sama,         % like, as, seem
