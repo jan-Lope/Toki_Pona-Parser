@@ -375,6 +375,7 @@ verb_intransitive(verb_int(Verb_intransitive),Verb_intransitive) --> [Verb_intra
      lon,          % to be there, to be present, to be real/true, to exist, to be awake
      lukin,        % to look, to watch out, to pay attention
      moli,         % to die, to be dead
+     mu,           % to communicate animally
      musi,         % to play, to have fun
      pakala,       % to screw up, to fall apart, to break
      pali,         % to act, to work, to function
