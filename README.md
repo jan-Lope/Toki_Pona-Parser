@@ -260,7 +260,7 @@ If you type a wrong sentence you see no results.
 If you type the key "enter" only the script will stop.
 
 
-Questions, suggestions, ... Please write to me via [twitter](https://twitter.com/jan__Lope) or this [contact form](http://rowa.giso.de/languages/toki-pona/english/contact.php)
+Questions, suggestions, ... Please write to me via [twitter](https://twitter.com/jan__Lope).
 
 Here an [introduction to definite clause grammars (DCG)](http://cmsmcq.com/2004/lgintro.html).
 

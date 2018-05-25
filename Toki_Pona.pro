@@ -4,19 +4,19 @@
 % Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 % Main Program
 %
-% by Robert Warnke http://rowa.giso.de
+% by Robert Warnke https://jan-lope.github.io
 % released under the GNU General Public License
 % twitter: #tokipona #SWIprolog
 %
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
-% the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
+% These scripts are based on the offical Toki Pona book (first English edition 2014) of Sonja Lang (http://tokipona.org ), 
+% the lessons (2015) of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
 %
 % First you have to install swi-prolog.
 %   Windows, Mac OS X: http://www.swi-prolog.org/download/stable
 %   Ubuntu/Debian: sudo apt-get install swi-prolog
 %
-% Download and decompress these scripts: http://rowa.giso.de/languages/toki-pona/dcg/toki-pona-dcg.tar.gz
+% Download and decompress these scripts: https://jan-lope.github.io/languages/toki-pona/dcg/toki-pona-dcg.tar.gz
 %
 % Start swi-prolog in the directory where the scripts are (here in Ubuntu):
 %

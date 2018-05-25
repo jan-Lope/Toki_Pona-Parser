@@ -4,8 +4,8 @@
 % Spelling, Grammar Check and Ambiguity Check of Toki Pona Sentences
 % Test Program
 %
-% These scripts are based on the offical Toki Pona book of Sonja Lang (http://tokipona.org ), 
-% the lessons of jan Pije ( http://tokipona.net/tp/janpije/ ) and
+% These scripts are based on the offical Toki Pona book (first English edition 2014) of Sonja Lang (http://tokipona.org ), 
+% the lessons (2015) of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
 
 
