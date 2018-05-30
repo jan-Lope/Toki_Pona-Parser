@@ -437,18 +437,18 @@ headline_simple(HL) -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% simple sentence:
 
-% A simple sentence consist of a noun phrase and verb phrases.
+% A simple sentence consist of a subject phrase and predicate phrases.
 % examples:
 % jan li lukin e ma.
 sentence_simple(S) -->
-  noun_phrase(NP),
-  verb_phrases(VP),
+  subject_phrase(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('sim',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% answers yes/no
 
-% A yes answer consists of a verb phrase without "ala".
+% A yes answer consists of a predicate phrase without "ala".
 % examples:
 % pali.
 % pali!
@@ -456,7 +456,7 @@ answer_yes(S) -->
   answer_yes_phrase(AP),
   {removing_extraneous_tree_nodes_pr_a('answer',S,AP)}.
 
-% A no answer consists of a verb phrase with "ala".
+% A no answer consists of a predicate phrase with "ala".
 % examples:
 % wile ala.
 % wile ala!
@@ -520,12 +520,12 @@ interjection(S) -->
   interjection_phrases(IP),
   {removing_extraneous_tree_nodes_pr_a('inj',S,IP)}.
 
-% A interjection can consists of special noun phrase with an interjection word and verb phrases.
+% A interjection can consists of special subject phrase with an interjection word and predicate phrases.
 % examples:
 % ken la sina a kama!       (pu)
 interjection(S) -->
-  noun_phrase_interjection(NPI),
-  verb_phrases(VP),
+  subject_phrase_interjection(NPI),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('inj',S,NPI,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -542,86 +542,86 @@ salutation(S) -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% command
 
-% A command can consists ofa special noun phrase for a command and verb phrases.
+% A command can consists ofa special subject phrase for a command and predicate phrases.
 % examples:
 % o pona e tomo!
 command(S) -->
-  noun_phrase_command(NP),
-  verb_phrases(VP),
+  subject_phrase_command(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('com',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% designate
 
-% A designate consists of a special noun phrase and a special verb phrase.
+% A designate consists of a special subject phrase and a special predicate phrase.
 % examples:
 % nimi mi li Lope.
 designate(S) -->
-  noun_phrase_designate_person(NP),
-  verb_phrase_designate_person(VP),
+  subject_phrase_designate_person(NP),
+  predicate_phrase_designate_person(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi ma suli mi li Elopa.
 designate(S) -->
-  noun_phrase_designate_continent(NP),
-  verb_phrase_designate_continent(VP),
+  subject_phrase_designate_continent(NP),
+  predicate_phrase_designate_continent(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi ma mi li Tosi.
 designate(S) -->
-  noun_phrase_designate_country(NP),
-  verb_phrase_designate_country(VP),
+  subject_phrase_designate_country(NP),
+  predicate_phrase_designate_country(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi ma tomo mi li Pelin.
 designate(S) -->
-  noun_phrase_designate_city(NP),
-  verb_phrase_designate_city(VP),
+  subject_phrase_designate_city(NP),
+  predicate_phrase_designate_city(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi toki mi li Tosi.
 designate(S) -->
-  noun_phrase_designate_language(NP),
-  verb_phrase_designate_language(VP),
+  subject_phrase_designate_language(NP),
+  predicate_phrase_designate_language(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi toki luka mi li Tosi.
 designate(S) -->
-  noun_phrase_designate_sign_language(NP),
-  verb_phrase_designate_sign_language(VP),
+  subject_phrase_designate_sign_language(NP),
+  predicate_phrase_designate_sign_language(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi nasin sewi mi li Patapali.
 designate(S) -->
-  noun_phrase_designate_ideology(NP),
-  verb_phrase_designate_ideology(VP),
+  subject_phrase_designate_ideology(NP),
+  predicate_phrase_designate_ideology(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi kulupu mi li Neje.
 designate(S) -->
-  noun_phrase_designate_community(NP),
-  verb_phrase_designate_community(VP),
+  subject_phrase_designate_community(NP),
+  predicate_phrase_designate_community(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
 designate(S) -->
-  noun_phrase_designate_movie(NP),
-  verb_phrase_designate_movie(VP),
+  subject_phrase_designate_movie(NP),
+  predicate_phrase_designate_movie(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 % examples:
 % nimi pi tomo tawa mi li Pata.
 designate(S) -->
-  noun_phrase_designate_misc(NP),
-  verb_phrase_designate_misc(VP),
+  subject_phrase_designate_misc(NP),
+  predicate_phrase_designate_misc(VP),
   {removing_extraneous_tree_nodes_pr_ab('des',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -638,557 +638,557 @@ question(S) -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question yes no
 
-% A yes/no question consists of a noun phrase and a special verb phrase with "ala".
+% A yes/no question consists of a subject phrase and a special predicate phrase with "ala".
 % examples:
 % sina wile ala wile moku e telo?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_question_yn(VP),
+  subject_phrase(NP),
+  predicate_phrase_question_yn(VP),
   {removing_extraneous_tree_nodes_pr_ab('yes_no',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question decision
 
-% A decision question (subject) can consists of a special noun phrase with "anu" and a verb phrase.
+% A decision question (subject) can consists of a special subject phrase with "anu" and a predicate phrase.
 % examples:
 % sina anu ona li moku e moku?
 question(S) -->
-  noun_phrase_question_decision(NP),
-  verb_phrases(VP),
+  subject_phrase_question_decision(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('decision_subject',S,NP,VP)}.
 
-% A decision question (vp) can consists of a noun phrase and a special verb phrase with "anu".
+% A decision question (vp) can consists of a subject phrase and a special predicate phrase with "anu".
 % examples:
 % sina moku e moku anu pona e ilo?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrases_question_decision(VP),
+  subject_phrase(NP),
+  predicate_phrases_question_decision(VP),
   {removing_extraneous_tree_nodes_pr_ab('decision_vp',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question "or what"
 
-% A "or what" question consists of a noun phrase and a special verb phrase with "anu seme".
+% A "or what" question consists of a subject phrase and a special predicate phrase with "anu seme".
 % examples:
 % sina moku e moku anu seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrases_question_or_what(VP),
+  subject_phrase(NP),
+  predicate_phrases_question_or_what(VP),
   {removing_extraneous_tree_nodes_pr_ab('or_what',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question what
 
-% A "what" question (subject) consists of a special noun phrase with "seme" and verb phrases.
+% A "what" question (subject) consists of a special subject phrase with "seme" and verb phrases.
 % examples:
 % seme li pakala e ilo?
 question(S) -->
-  noun_phrase_what(NP),
-  verb_phrases(VP),
+  subject_phrase_what(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_subject',S,NP,VP)}.
 
-% A "what" question (direct object) consists of a noun phrase and a special verb phrases with "e" and "seme".
+% A "what" question (direct object) consists of a subject phrase and a special predicate phrases with "e" and "seme".
 % examples:
 % ona li moku e seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_what_object_d(VP),
+  subject_phrase(NP),
+  predicate_phrase_what_object_d(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_d_object',S,NP,VP)}.
 
-% A "what" question (indirect object) consists of a noun phrase and a special verb phrases with "seme".
+% A "what" question (indirect object) consists of a subject phrase and a special predicate phrases with "seme".
 % examples:
 % sina kepeken seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_what_object_i(VP),
+  subject_phrase(NP),
+  predicate_phrase_what_object_i(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_i_object',S,NP,VP)}.
 
-% A "what" question (prepositional object) consists of a noun phrase and a special verb phrases with a preposition and "seme".
+% A "what" question (prepositional object) consists of a subject phrase and a special predicate phrases with a preposition and "seme".
 % examples:
 % sina pali e ni, kepeken seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_what_object_p(VP),
+  subject_phrase(NP),
+  predicate_phrase_what_object_p(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_p_object',S,NP,VP)}.
 
-% A "what is" question (object) consists of a noun phrase and a special verb phrases with a noun and "seme".
+% A "what is" question (object) consists of a subject phrase and a special predicate phrases with a noun and "seme".
 % examples:
 % ona li moku seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_what_is_object(VP),
+  subject_phrase(NP),
+  predicate_phrase_what_is_object(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_is_object',S,NP,VP)}.
 
-% A "what" question (verb) consists of a noun phrase and a special verb phrases
+% A "what" question (verb) consists of a subject phrase and a special verb phrases
 % with "seme" as transitive or intransitive rb.
 % examples:
 % ona li seme e ijo, kepeken ilo?
 % sina seme mi?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrases_what_verb_trans(VP),
+  subject_phrase(NP),
+  predicate_phrases_what_verb_trans(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_verb',S,NP,VP)}.
 question(S) -->
-  noun_phrase(NP),
-  verb_phrases_what_verb_intrans(VP),
+  subject_phrase(NP),
+  predicate_phrases_what_verb_intrans(VP),
   {removing_extraneous_tree_nodes_pr_ab('what_verb',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% questions where, where from
 
-% A where-question consists of a noun phrase and a special verb phrases with the preposition "lon" and "seme".
+% A where-question consists of a subject phrase and a special predicate phrases with the preposition "lon" and "seme".
 % examples:
 % ona li moku e moku, lon seme?
 % ona li moku e moku, lon poka seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_where(VP),
+  subject_phrase(NP),
+  predicate_phrase_where(VP),
   {removing_extraneous_tree_nodes_pr_ab('where',S,NP,VP)}.
 
-% A where-from-question consists of a noun phrase and a special verb phrases with the preposition "tan" and "seme".
+% A where-from-question consists of a subject phrase and a special predicate phrases with the preposition "tan" and "seme".
 % examples:
 % ona li kama, tan ma tomo seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_wherefrom(VP),
+  subject_phrase(NP),
+  predicate_phrase_wherefrom(VP),
   {removing_extraneous_tree_nodes_pr_ab('where_from',S,NP,VP)}.
 
-% A where-to-question consists of a noun phrase and a special verb phrases with the preposition "tawa" and "seme".
+% A where-to-question consists of a subject phrase and a special predicate phrases with the preposition "tawa" and "seme".
 % examples:
 % ona li tawa e kiwen, tawa anpa seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_whereto(VP),
+  subject_phrase(NP),
+  predicate_phrase_whereto(VP),
   {removing_extraneous_tree_nodes_pr_ab('where_to',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question who
 
-% A who-question (subject) consists of a special noun phrase with "jan", "meli" or mije" and verb phrases.
+% A who-question (subject) consists of a special subject phrase with "jan", "meli" or mije" and verb phrases.
 % examples:
 % jan seme pi mama sina li moku e moku?
 % meli seme pi jan ni pi tawa musi li ' pona, tawa sina?
 % mije seme pi jan ni li ' pona, tawa sina?
 question(S) -->
-  noun_phrase_who(NP),
-  verb_phrases(VP),
+  subject_phrase_who(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('who',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question whom
 
-% A whom-question (object) consists of a noun phrase and a special verb phrase with "jan", "meli" or mije".
+% A whom-question (object) consists of a subject phrase and a special predicate phrase with "jan", "meli" or mije".
 % examples:
 % ona li pakala e ijo e jan pona seme?
 % ona li pakala e tomo, tan jan mije seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_whom(VP),
+  subject_phrase(NP),
+  predicate_phrase_whom(VP),
   {removing_extraneous_tree_nodes_pr_ab('whom',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question which
 
-% A which-question (subject) consists of a special noun phrase with a noun followed by "seme" as an adjective and verb phrases.
+% A which-question (subject) consists of a special subject phrase with a noun followed by "seme" as an adjective and verb phrases.
 % examples:
 % ma seme li pona, tawa sina?
 question(S) -->
-  noun_phrase_which(NP),
-  verb_phrases(VP),
+  subject_phrase_which(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('which_subject',S,NP,VP)}.
 
-% A which-question (object) consists of a noun phrase and a special verb phrase with a noun followed by "seme" as an adjective.
+% A which-question (object) consists of a subject phrase and a special predicate phrase with a noun followed by "seme" as an adjective.
 % examples:
 % sina pakala, tawa ijo seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_which(VP),
+  subject_phrase(NP),
+  predicate_phrase_which(VP),
   {removing_extraneous_tree_nodes_pr_ab('which_object',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question when
 
-% A when-question (object) consists of a noun phrase and a special verb phrase with the noun "tenpo" followed by "seme" as an adjective.
+% A when-question (object) consists of a subject phrase and a special predicate phrase with the noun "tenpo" followed by "seme" as an adjective.
 % examples:
 % sina moku e moku, lon tenpo seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_when(VP),
+  subject_phrase(NP),
+  predicate_phrase_when(VP),
   {removing_extraneous_tree_nodes_pr_ab('when_object',S,NP,VP)}.
 
 % A when-question ("la"-phrase") consists of a "la"-phrase with the noun "tenpo" followed by "seme" as an adjective,
-% a noun phrase and verb phrases.
+% a subject phrase and verb phrases.
 % examples:
 % tenpo seme la sina moku e moku?
 question(S) -->
   la_phrase_when(LA),
-  noun_phrase(NP),
-  verb_phrases(VP),
+  subject_phrase(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_abc('when_la',S,LA,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question why
 
-% A why-question (object) consists of a noun phrase and a special verb phrase with the preposition "tan" followed by "seme".
+% A why-question (object) consists of a subject phrase and a special predicate phrase with the preposition "tan" followed by "seme".
 % examples:
 % sina pali e tomo, tan seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_why(VP),
+  subject_phrase(NP),
+  predicate_phrase_why(VP),
   {removing_extraneous_tree_nodes_pr_ab('why_object',S,NP,VP)}.
 
-% A why-question ("la"-phrase") consists of a "la"-phrase with the preposition "tan" followed by "seme", a noun phrase and verb phrases.
+% A why-question ("la"-phrase") consists of a "la"-phrase with the preposition "tan" followed by "seme", a subject phrase and verb phrases.
 % examples:
 % tan seme la soweli wawa pimeja li moku e ona?
 question(S) -->
   la_phrase_why(LA),
-  noun_phrase(NP),
-  verb_phrases(VP),
+  subject_phrase(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_abc('why_la',S,LA,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question how
 
-% A how-question (object) consists of a noun phrase and a special verb phrase with the noun "nasin" followed by "seme".
+% A how-question (object) consists of a subject phrase and a special predicate phrase with the noun "nasin" followed by "seme".
 % examples:
 % sina pali e ni, kepeken nasin seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_how(VP),
+  subject_phrase(NP),
+  predicate_phrase_how(VP),
   {removing_extraneous_tree_nodes_pr_ab('how_object',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question how many
 
-% A how-many-question ("la"-phrase") consists of a "la"-phrase with "mute" followed by "seme", a noun phrase and verb phrases.
+% A how-many-question ("la"-phrase") consists of a "la"-phrase with "mute" followed by "seme", a subject phrase and verb phrases.
 % examples:
 % tenpo pi mute seme la sina sike e suno?
 question(S) -->
   la_phrase_how_many(LA),
-  noun_phrase(NP),
-  verb_phrases(VP),
+  subject_phrase(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_abc('how_many_la',S,LA,NP,VP)}.
 
-% A how-many-question (subject) consists of a special noun phrase with "mute" followed by "seme" and verb phrases.
+% A how-many-question (subject) consists of a special subject phrase with "mute" followed by "seme" and verb phrases.
 % examples:
 % soweli pi mute seme li moku e telo?
 question(S) -->
-  noun_phrase_how_many(NP),
-  verb_phrases(VP),
+  subject_phrase_how_many(NP),
+  predicate_phrases(VP),
   {removing_extraneous_tree_nodes_pr_ab('how_many_subject',S,NP,VP)}.
 
-% A how-many-question (object) consists of a noun phrase and a special verb phrase with "mute"" followed by "seme".
+% A how-many-question (object) consists of a subject phrase and a special predicate phrase with "mute"" followed by "seme".
 % examples:
 % akesi li pakala e tomo e soweli pi mute seme?
 question(S) -->
-  noun_phrase(NP),
-  verb_phrase_how_many(VP),
+  subject_phrase(NP),
+  predicate_phrase_how_many(VP),
   {removing_extraneous_tree_nodes_pr_ab('how_many_object',S,NP,VP)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%  noun phrases
+%  subject phrases
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% standard noun phrase
+%%%%%% standard subject phrase
 
-% A noun phrase can consists of a subject with the pronoun "mi" or "sina".
+% A subject phrase can consists of a subject with the pronoun "mi" or "sina".
 % examples:
 % mi moku e moku!
 % sina moku e moku.
-noun_phrase(NP) -->
+subject_phrase(NP) -->
   subject_no_li(SUB),
-  {removing_extraneous_tree_nodes_pr_a('np',NP,SUB)}.
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
-% A noun phrase can consists of a subject and the separator "li".
+% A subject phrase can consists of a subject and the separator "li".
 % The subject can't be only "mi" or "sina".
 % examples:
 % ona li moku e moku!
 % ni li moku e moku.
 % akesi ike li moku e moku.
-noun_phrase(NP) -->
+subject_phrase(NP) -->
   subject_with_li(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
-% A noun phrase can consists of several subjects and the separator "li".
+% A subject phrase can consists of several subjects and the separator "li".
 % examples:
 % ona li pona e tawa.
 % ni li pona, tawa sina.
-noun_phrase(NP) -->
+subject_phrase(NP) -->
   subjects(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% interjection noun phrase
+%%%%%% interjection subject phrase
 
-% A noun phrase (interjection) can consists of the pronoun "mi" or "sina" and the interjection word "a".
+% A subject phrase (interjection) can consists of the pronoun "mi" or "sina" and the interjection word "a".
 % examples:
 % sina a moku e moku!
-noun_phrase_interjection(NP) -->
+subject_phrase_interjection(NP) -->
   subject_no_li(SUB),
   interjection_word(IW,a),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,IW)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,IW)}.
 
-% A noun phrase (interjection) can consists of a subject, the interjection word "a" and the separator "li".
+% A subject phrase (interjection) can consists of a subject, the interjection word "a" and the separator "li".
 % The subject can't be only "mi" or "sina".
 % examples:
 % ona a li pona e tawa!
 % ona pona a li moku e moku!
 % ni a li moku e moku!
 % akesi ike a li moku e moku!
-noun_phrase_interjection(NP) -->
+subject_phrase_interjection(NP) -->
   subject_with_li(SUB),
   interjection_word(IW,a),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_abc('np',NP,SUB,IW,Sep)}.
+  {removing_extraneous_tree_nodes_pr_abc('sp',NP,SUB,IW,Sep)}.
 
-% A noun phrase (interjection) can consists of several subjects and the separator "li".
+% A subject phrase (interjection) can consists of several subjects and the separator "li".
 % examples:
 % ona en sina en mi a li moku e moku!
 % ona pona en sina en mi a li moku e moku!
 % soweli en akesi en pipi lili en mi a li moku e moku!
-noun_phrase_interjection(NP) -->
+subject_phrase_interjection(NP) -->
   subjects(SUB),
   interjection_word(IW,a),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_abc('np',NP,SUB,IW,Sep)}.
+  {removing_extraneous_tree_nodes_pr_abc('sp',NP,SUB,IW,Sep)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% question noun phrases
+%%%%%% question subject phrases
 
-% A noun phrase (question decision) can consists of subjects, the conjunction "anu", subjects, and the separator "li".
+% A subject phrase (question decision) can consists of subjects, the conjunction "anu", subjects, and the separator "li".
 % examples:
 % sina en ona anu sina en mi li moku e moku?
-noun_phrase_question_decision(NP) -->
+subject_phrase_question_decision(NP) -->
   subjects_all(Sub1),
   conjunction(Con,anu),
   subjects_all(Sub2),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_abcd('np',NP,Sub1,Con,Sub2,Sep)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sp',NP,Sub1,Con,Sub2,Sep)}.
 
-% A noun phrase (question what) can consists of the subject (what) and the separator "li".
+% A subject phrase (question what) can consists of the subject (what) and the separator "li".
 % examples:
 % seme li moku e moku?
-noun_phrase_what(NP) -->
+subject_phrase_what(NP) -->
   subject_what(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
-% A noun phrase (question who) consists of a subject (who) and the separator "li".
+% A subject phrase (question who) consists of a subject (who) and the separator "li".
 % examples:
 % jan seme li moku e moku?
 % jan pona seme li moku e moku?
 % jan seme pi mama sina li moku e moku?
 % jan pona seme pi mama sina li moku e moku?
-noun_phrase_who(NP) -->
+subject_phrase_who(NP) -->
   subject_who(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
-% A noun phrase (question which) can consists of a noun (no person), optional adjectives, the question word "seme" and the separator "li".
+% A subject phrase (question which) can consists of a noun (no person), optional adjectives, the question word "seme" and the separator "li".
 % examples:
 % ma seme li ' pona, tawa sina?
 % ma tomo seme li ' pona, tawa sina?
 % ma seme pi mama sina li ' pona, tawa sina?
 % ma tomo seme pi mama sina li ' pona, tawa sina?
 % ma tomo seme pi mama sina li ' pona, tawa sina?
-noun_phrase_which(NP) -->
+subject_phrase_which(NP) -->
   subject_which(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
-% A noun phrase (question how many) consists of the subject (how many) and the separator "li".
+% A subject phrase (question how many) consists of the subject (how many) and the separator "li".
 % examples:
 % soweli pi mute seme li moku e telo?
 % ona en sina pi mute seme li moku e telo?
-noun_phrase_how_many(NP) -->
+subject_phrase_how_many(NP) -->
   subject_how_many(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% command noun phrases
+%%%%%% command subject phrases
 
-% A noun phrase (command) can consists of optional subjects and the separator "o".
+% A subject phrase (command) can consists of optional subjects and the separator "o".
 % examples:
 % o pona e tomo!
 % sina o pona e tomo!
 % jan o pona e tomo!
 % ona en sina mute o pona e tomo!
 
-noun_phrase_command(NP) -->
+subject_phrase_command(NP) -->
   separator(Sep,o),
-  {removing_extraneous_tree_nodes_pr_a('np',NP,Sep)}.
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,Sep)}.
 
-noun_phrase_command(NP) -->
+subject_phrase_command(NP) -->
   subjects_all(SUBA),
   separator(Sep,o),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUBA,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUBA,Sep)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% designate noun phrases
+%%%%%% designate subject phrases
 
-% A noun phrase (designate) consists of a special subject and the separator "li".
+% A subject phrase (designate) consists of a special subject and the separator "li".
 % name
 % examples:
 % nimi mi li Lope.
-noun_phrase_designate_person(NP) -->
+subject_phrase_designate_person(NP) -->
   subject_designate_person(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % continent
 % examples:
 % nimi pi ma suli mi li Elopa.
-noun_phrase_designate_continent(NP) -->
+subject_phrase_designate_continent(NP) -->
   subject_designate_continent(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % country
 % examples:
 % nimi pi ma mi li Tosi.
-noun_phrase_designate_country(NP) -->
+subject_phrase_designate_country(NP) -->
   subject_designate_country(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % city
 % examples:
 % nimi pi ma tomo mi li Pelin.
-noun_phrase_designate_city(NP) -->
+subject_phrase_designate_city(NP) -->
   subject_designate_city(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % language
 % examples:
 % nimi pi toki mi li Tosi.
-noun_phrase_designate_language(NP) -->
+subject_phrase_designate_language(NP) -->
   subject_designate_language(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % sign language
 % examples:
 % nimi pi toki luka mi li Tosi.
-noun_phrase_designate_sign_language(NP) -->
+subject_phrase_designate_sign_language(NP) -->
   subject_designate_sign_language(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % ideology, religion
 % examples:
 % nimi pi nasin sewi mi li Patapali.
 % nimi pi nasin pona mi li Patapali.
-noun_phrase_designate_ideology(NP) -->
+subject_phrase_designate_ideology(NP) -->
   subject_designate_ideology(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % community
 % examples:
 % nimi pi kulupu mi li Patapali.
-noun_phrase_designate_community(NP) -->
+subject_phrase_designate_community(NP) -->
   subject_designate_community(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % movies
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
-noun_phrase_designate_movie(NP) -->
+subject_phrase_designate_movie(NP) -->
   subject_designate_movie(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 % miscellaneous
 % examples:
 % nimi pi tomo tawa mi li Tapan.
 % nimi pi tomo tawa pona mi li Tapan.
-noun_phrase_designate_misc(NP) -->
+subject_phrase_designate_misc(NP) -->
   subject_designate_misc(SUB),
   separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('np',NP,SUB,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-%  verb phrases
+%  predicate phrases
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Verb phrases consist of one verb phrase and optional up to three additional verb phrases.
+% Predicate phrases consist of one predicate phrase and optional up to three additional predicate phrases.
 % examples:
 % ona li moku e moku.
 % ona li moku e moku li toki e ni.
 % ona li moku e moku li jo e kili li toki e ni.
 % ona li moku e moku li jo e kili li pali e tomo li toki e ni.
 
-verb_phrases(VPS) -->
-  verb_phrase(VP),
+predicate_phrases(VPS) -->
+  predicate_phrase(VP),
   {removing_extraneous_tree_nodes_a(VPS,VP)}.
 
-verb_phrases(VPS) -->
-  verb_phrase(VP),
-  verb_phrase_add(VPA1),
+predicate_phrases(VPS) -->
+  predicate_phrase(VP),
+  predicate_phrase_add(VPA1),
   {removing_extraneous_tree_nodes_ab(VPS,VP,VPA1)}.
 
-verb_phrases(VPS) -->
-  verb_phrase(VP),
-  verb_phrase_add(VPA1),
-  verb_phrase_add(VPA2),
+predicate_phrases(VPS) -->
+  predicate_phrase(VP),
+  predicate_phrase_add(VPA1),
+  predicate_phrase_add(VPA2),
   {removing_extraneous_tree_nodes_abc(VPS,VP,VPA1,VPA2)}.
 
-verb_phrases(VPS) -->
-  verb_phrase(VP),
-  verb_phrase_add(VPA1),
-  verb_phrase_add(VPA2),
-  verb_phrase_add(VPA3),
+predicate_phrases(VPS) -->
+  predicate_phrase(VP),
+  predicate_phrase_add(VPA1),
+  predicate_phrase_add(VPA2),
+  predicate_phrase_add(VPA3),
   {removing_extraneous_tree_nodes_abcd(VPS,VP,VPA1,VPA2,VPA3)}.
 
-% A additional verb phrase consists of an optional comma (ignored here), the separator "li" and a verb phrase.
+% A additional predicate phrase consists of an optional comma (ignored here), the separator "li" and a predicate phrase.
 % examples:
 % sina moku e moku li toki e toki.
 % sina moku e moku, li toki e toki.
-verb_phrase_add(VPA) -->
+predicate_phrase_add(VPA) -->
   comma_optional,
   separator(Sep,li),
-  verb_phrase(VP),
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPA,Sep,VP)}.
+  predicate_phrase(VP),
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPA,Sep,VP)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases with different types of objects (direct, intrans, prepositional, after missing "be")
+%%%%%% predicate phrases with different types of objects (direct, intrans, prepositional, after missing "be")
 
-% A verb phrase can consist of a (compound) transitive verb, optional direct objects and optional prepositional objects.
+% A predicate phrase can consist of a (compound) transitive verb, optional direct objects and optional prepositional objects.
 % examples:
 % sina moku e moku, kepeken ilo moku li toki e ni.
-verb_phrase(VP) -->
+predicate_phrase(VP) -->
   verb_transitive_compound(VTC),
   objects_direct(DO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VP,VTC,DO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VP,VTC,DO,PO)}.
 
-% A verb phrase can consist of a compound intransitive verb, optional intransitive objects and optional prepositional objects.
+% A predicate phrase can consist of a compound intransitive verb, optional intransitive objects and optional prepositional objects.
 % examples:
 % ona li kepeken sitelen pi ilo nanpa.
 % ona li kepeken sitelen pi ilo nanpa, kepeken oko ona.
 % ona li kepeken sitelen pi sina pona, kepeken oko ona.
-verb_phrase(VP) -->
+predicate_phrase(VP) -->
   verb_intransitive_compound(VIC),
   objects_intrans(IO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VP,VIC,IO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VP,VIC,IO,PO)}.
 
 % In toki pona is no verb "to be".
-% A verb phrase can consists of an special object and optional prepositional objects.
+% A predicate phrase can consists of an special object and optional prepositional objects.
 % Inofficial: You can use an apostrophe instead of "to be".
 % examples:
 % sina jelo.
@@ -1206,16 +1206,16 @@ verb_phrase(VP) -->
 % ona li ' jan pi pona mute.
 % ona li jan pi pona mute, tawa mi mute.
 % ona li ' jan pi pona mute, tawa mi mute.
-verb_phrase(VP) -->
+predicate_phrase(VP) -->
   verb_be(Be),
-  object_be(OB),
+  predicate_be(OB),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VP,Be,OB,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VP,Be,OB,PO)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% special verb phrases for designate sentences.
+%%%%%% special predicate phrases for designate sentences.
 
-% A verb phrase (designate) consist of an special object.
+% A predicate phrase (designate) consist of an special object.
 % In toki pona is no verb "to be".
 % examples:
 % nimi mi li Mawija.
@@ -1225,345 +1225,345 @@ verb_phrase(VP) -->
 % nimi mi li ' Lope.
 % nimi mi li Devil.
 % nimi mi li Lopen.
-verb_phrase_designate_person(VPD) -->
+predicate_phrase_designate_person(VPD) -->
   verb_be(V),
-  object_be_designate_person(O), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,O)}.
+  predicate_be_designate_person(O), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,O)}.
 
 % examples:
 % nimi pi ma suli mi li Elopa.
-verb_phrase_designate_continent(VPD) -->
+predicate_phrase_designate_continent(VPD) -->
   verb_be(V),
-  object_be_designate_continent(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_continent(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi ma mi li ' Tosi.
-verb_phrase_designate_country(VPD) -->
+predicate_phrase_designate_country(VPD) -->
   verb_be(V),
-  object_be_designate_country(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_country(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi ma tomo mi li Pelin.
-verb_phrase_designate_city(VPD) -->
+predicate_phrase_designate_city(VPD) -->
   verb_be(V),
-  object_be_designate_city(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_city(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi toki mi li Tosi.
-verb_phrase_designate_language(VPD) -->
+predicate_phrase_designate_language(VPD) -->
   verb_be(V),
-  object_be_designate_language(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_language(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi toki luka mi li Tosi.
-verb_phrase_designate_sign_language(VPD) -->
+predicate_phrase_designate_sign_language(VPD) -->
   verb_be(V),
-  object_be_designate_sign_language(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_sign_language(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi nasin sewi mi li ' Patapali.
-verb_phrase_designate_ideology(VPD) -->
+predicate_phrase_designate_ideology(VPD) -->
   verb_be(V),
-  object_be_designate_ideology(OB) , !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_ideology(OB) , !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi kulupu mi li Neje.
-verb_phrase_designate_community(VPD) -->
+predicate_phrase_designate_community(VPD) -->
   verb_be(V),
-  object_be_designate_community(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_community(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
-verb_phrase_designate_movie(VPD) -->
+predicate_phrase_designate_movie(VPD) -->
   verb_be(V),
-  object_be_designate_movie(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_movie(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 % examples:
 % nimi pi tomo tawa mi li ' Pata.
-verb_phrase_designate_misc(VPD) -->
+predicate_phrase_designate_misc(VPD) -->
   verb_be(V),
-  object_be_designate_misc(OB), !,
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPD,V,OB)}.
+  predicate_be_designate_misc(OB), !,
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPD,V,OB)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (yes/no questions)
+%%%%%% predicate phrases (yes/no questions)
 
-% A verb phrase (yes/no question) can consists of a transitive verb, the adverb "ala",
+% A predicate phrase (yes/no question) can consists of a transitive verb, the adverb "ala",
 % the same transitive verb again, optional direct objects and optional prepositional objects.
 % examples:
 % sina pona ala pona?
 % sina pona ala pona e tomo ni, kepeken ilo ni?
-verb_phrase_question_yn(VPQ) -->
+predicate_phrase_question_yn(VPQ) -->
   verb_transitive(VT1,Verb),
   adverb(ADV,ala),
   verb_transitive(VT2,Verb),
   objects_direct(DO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abcde('vp',VPQ,VT1,ADV,VT2,DO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abcde('pp',VPQ,VT1,ADV,VT2,DO,PO)}.
 
-% A verb phrase (yes/no question) can consists of a auxiliary verb, the adverb "ala",
+% A predicate phrase (yes/no question) can consists of a auxiliary verb, the adverb "ala",
 % the same auxiliary verb again, a transitive verb, optional direct objects and optional prepositional objects.
 % examples:
 % sina wile ala wile alasa e soweli suli, kepeken palisa wawa?
-verb_phrase_question_yn(VPQ) -->
+predicate_phrase_question_yn(VPQ) -->
   verb_pre(VP1,Verb_pre),
   adverb(ADV,ala),
   verb_pre(VP2,Verb_pre),
   verb_transitive(VT,Verb),   { Verb \= Verb_pre },
   objects_direct(DO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abcdef('vp',VPQ,VP1,ADV,VP2,VT,DO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abcdef('pp',VPQ,VP1,ADV,VP2,VT,DO,PO)}.
 
-% A verb phrase (yes/no question) can consists of a auxiliary verb, the adverb "ala",
+% A predicate phrase (yes/no question) can consists of a auxiliary verb, the adverb "ala",
 % the same auxiliary verb again, optional direct objects and optional prepositional objects.
 % examples:
 % sina wile ala wile e soweli suli, kepeken linja?
-verb_phrase_question_yn(VPQ) -->
+predicate_phrase_question_yn(VPQ) -->
   verb_pre(VP1,Verb_pre),
   adverb(ADV,ala),
   verb_pre(VP2,Verb_pre),
   objects_direct(DO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abcde('vp',VPQ,VP1,ADV,VP2,DO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abcde('pp',VPQ,VP1,ADV,VP2,DO,PO)}.
 
-% A verb phrase (yes/no question) can consists of a intransitive verb, the adverb "ala",
+% A predicate phrase (yes/no question) can consists of a intransitive verb, the adverb "ala",
 % the same intransitive verb again, optional intransitive objects and optional prepositional objects.
 % examples:
 % ona li tawa ala tawa?
 % ona li tawa ala tawa ni?
 % ona li tawa ala tawa, tawa sina?
 % ona li unpa ala unpa sina?
-verb_phrase_question_yn(VPQ) -->
+predicate_phrase_question_yn(VPQ) -->
   verb_intransitive(VI1,Verb),
   adverb(ADV,ala),
   verb_intransitive(VI2,Verb),
   objects_intrans(IO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abcde('vp',VPQ,VI1,ADV,VI2,IO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abcde('pp',VPQ,VI1,ADV,VI2,IO,PO)}.
 
-% A verb phrase (yes/no question) can consists of a auxiliary verb, the adverb "ala",
+% A predicate phrase (yes/no question) can consists of a auxiliary verb, the adverb "ala",
 % the same auxiliary verb again, an intransitive verb and optional intransitive objects.
 % examples:
 % sina wile ala wile unpa?
 % sina wile ala wile unpa ona?
-verb_phrase_question_yn(VPQ) -->
+predicate_phrase_question_yn(VPQ) -->
   verb_pre(VP1,Verb_pre),
   adverb(ADV,ala),
   verb_pre(VP2,Verb_pre),
   verb_intransitive(VI,Verb),  { Verb \= Verb_pre },
   objects_intrans(IO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abcdef('vp',VPQ,VP1,ADV,VP2,VI,IO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abcdef('pp',VPQ,VP1,ADV,VP2,VI,IO,PO)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (desicsion questions)
+%%%%%% predicate phrases (desicsion questions)
 
-% Verb phrases (desicsion question) consist of verb phrases, the conjuncion "anu" and other verb phrases.
+% predicate phrases (desicsion question) consist of predicate phrases, the conjuncion "anu" and other predicate phrases.
 % examples:
 % sina wile moku e moku anu wile moku e telo?
-verb_phrases_question_decision(VPQ) -->
-  verb_phrases(VP1),
+predicate_phrases_question_decision(VPQ) -->
+  predicate_phrases(VP1),
   conjunction(CON,anu),
-  verb_phrases(VP2),
+  predicate_phrases(VP2),
   { VP1 \= VP2 },
   {removing_extraneous_tree_nodes_abc(VPQ,VP1,CON,VP2)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question "or what")
+%%%%%% predicate phrases (question "or what")
 
-% A verb phrase (question or what) consists of verb phrases,
-% the conjunction "anu", a special verb phase with "seme" and optional a prepositional object.
+% A predicate phrase (question or what) consists of predcicate phrases,
+% the conjunction "anu", a special predicate phase with "seme" and optional a prepositional object.
 % examples:
 % sina pali e tomo anu seme?
 % sina pali e tomo anu seme, kepeken ilo?
-verb_phrases_question_or_what(VPSQ) -->
-  verb_phrases(VP),
+predicate_phrases_question_or_what(VPSQ) -->
+  predicate_phrases(VP),
   conjunction(Con,anu),
-  verb_phrase_question_or_what(VPQ),
+  predicate_phrase_question_or_what(VPQ),
   objects_prepositional(PO),
   {removing_extraneous_tree_nodes_abcd(VPSQ,VP,Con,VPQ,PO)}.
 
-verb_phrase_question_or_what(VPQ) -->
+predicate_phrase_question_or_what(VPQ) -->
   question_word(QW,seme),
   {removing_extraneous_tree_nodes_a(VPQ,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question what direct object)
+%%%%%% predicate phrases (question what direct object)
 
-% A verb phrase (question what direct object) consists of transitive compound verb,
+% A predicate phrase (question what direct object) consists of transitive compound verb,
 % the separator "e", a special object and optional a prepositional object.
 % examples:
 % sina kipisi e seme?
 % sina kipisi e seme, kepeken ilo ni?
-verb_phrase_what_object_d(VPQ) -->
+predicate_phrase_what_object_d(VPQ) -->
   verb_transitive_compound(VTC),
   object_direct_what(OQ),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,OQ,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VTC,OQ,PO)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question what indirect object)
+%%%%%% predicate phrases (question what indirect object)
 
-% A verb phrase (question what intransitive object) consists of intransitive compound verb,
+% A predicate phrase (question what intransitive object) consists of intransitive compound verb,
 % a special indirect object and optional a prepositional object.
 % examples:
 % sina ken mute seme?
 % sina ken mute seme, kepeken ni?
-verb_phrase_what_object_i(VPQ)       -->
+predicate_phrase_what_object_i(VPQ)       -->
   verb_intransitive_compound(VTC),
   object_indirect_what(OQ),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,OQ,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VTC,OQ,PO)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question what prepositional object)
+%%%%%% predicate phrases (question what prepositional object)
 
-% A verb phrase (question what prepositional object) consists of transitive compound verb
+% A predicate phrase (question what prepositional object) consists of transitive compound verb
 % and a special prepositional object.
 % The preposition "lon" is for where-questions. "tan" is for why- and wherefrom-questions.
 % examples:
 % sina namako lili, poka seme?
-verb_phrase_what_object_p(VPQ)      -->
+predicate_phrase_what_object_p(VPQ)      -->
   verb_transitive_compound(VTC),
   objects_direct(DO),
   object_prepositional_what(OQ),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,DO,OQ)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VTC,DO,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question what object after missing "be")
+%%%%%% predicate phrases (question what object after missing "be")
 
-% A verb phrase (question what is object) consists of  a special object and optional prepositional objecs.
+% A predicate phrase (question what is object) consists of  a special object and optional prepositional objecs.
 % In toki pona is no verb "to be".
 % examples:
 % sina seme?
 % sina ' seme?
 % sina ' seme, kepeken ni?
-verb_phrase_what_is_object(VPQ) -->
+predicate_phrase_what_is_object(VPQ) -->
   verb_be(Be),
-  object_be_what_is(OQ),
+  predicate_be_what_is(OQ),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,Be,OQ,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,Be,OQ,PO)}.
 
-% A verb phrase (question what is object) consists of  a special object and optional prepositional objecs.
+% A predicate phrase (question what is object) consists of  a special object and optional prepositional objecs.
 % In toki pona is no verb "to be".
 % examples:
 % ona li jan pi pana sona seme?
-verb_phrase_what_is_object(VPQ) -->
+predicate_phrase_what_is_object(VPQ) -->
   verb_be(Be),
-  object_be_what_is_adjective(OQ),
+  predicate_be_what_is_adjective(OQ),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,Be,OQ,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,Be,OQ,PO)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question what transitive/intrasitive verb)
+%%%%%% predicate phrases (question what transitive/intrasitive verb)
 
-% A verb phrase (question what transitive verb) consists of the question word "seme" as transitive verb,
+% A predicate phrase (question what transitive verb) consists of the question word "seme" as transitive verb,
 % optional intransitive objects and optional prepositional objects.
 % examples:
 % sina seme?
 % sina seme e soweli suli?
 % sina seme e soweli suli, kepeken palisa wawa?
-verb_phrases_what_verb_trans(VPQ) -->
-  verb_phrase_what_verb_trans(VP),
+predicate_phrases_what_verb_trans(VPQ) -->
+  predicate_phrase_what_verb_trans(VP),
   objects_direct(DO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VP,DO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VP,DO,PO)}.
 
-verb_phrase_what_verb_trans(VPQ) -->
+predicate_phrase_what_verb_trans(VPQ) -->
   question_word(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('verb_tra',VPQ,QW)}.
 
-% A verb phrase (question what intransitive verb) consists of the question word "seme" as intransitive verb,
+% A predicate phrase (question what intransitive verb) consists of the question word "seme" as intransitive verb,
 % optional intransitive objects and optional prepositional objects.
 % examples:
 % ona li seme?
 % ona li seme sitelen pi ilo nanpa?
 % ona li seme sitelen pi ilo nanpa, kepeken oko?
 % ona li seme sitelen pi ilo nanpa, mute, kepeken oko?
-verb_phrases_what_verb_intrans(VPQ) -->
-  verb_phrase_what_verb_intrans(VP),
+predicate_phrases_what_verb_intrans(VPQ) -->
+  predicate_phrase_what_verb_intrans(VP),
   objects_intrans(IO),
   objects_prepositional(PO),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VP,IO,PO)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VP,IO,PO)}.
 
-verb_phrase_what_verb_intrans(VPQ) -->
+predicate_phrase_what_verb_intrans(VPQ) -->
   question_word(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('verb_int',VPQ,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question where)
+%%%%%% predicate phrases (question where)
 
-% A verb phrase (question where) can consists of a compound transitive verb,
+% A predicate phrase (question where) can consists of a compound transitive verb,
 % direct objects and a special prepositional object phrase..
 % examples:
 % sina moku e moku, lon seme?
-verb_phrase_where(VPQ) -->
+predicate_phrase_where(VPQ) -->
   verb_transitive_compound(VTC),
   objects_direct(DO),
   object_prepositional_where(OQ),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,DO,OQ)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VTC,DO,OQ)}.
 
-% A verb phrase (question where) can consists of a compound intransitive verb,
+% A predicate phrase (question where) can consists of a compound intransitive verb,
 % intransitive objects and a special prepositional object phrase..
 % examples:
 % sina unpa jan pi pona lukin, lon seme?
-verb_phrase_where(VPQ) -->
+predicate_phrase_where(VPQ) -->
   verb_intransitive_compound(VIC),
   objects_intrans(IO),
   object_prepositional_where(OQ),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VIC,IO,OQ)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VIC,IO,OQ)}.
 
-% A verb phrase (question where) can consists of a object (be),
+% A predicate phrase (question where) can consists of a object (be),
 % and a special prepositional object phrase..
 % In toki pona is no verb "to be".
 % examples:
 % ona li pona, lon seme?
 % ona li ' pona, lon seme?
-verb_phrase_where(VPQ) -->
+predicate_phrase_where(VPQ) -->
   verb_be(Be),
-  object_be(OB),
+  predicate_be(OB),
   object_prepositional_where(OQ),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,Be,OB,OQ)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,Be,OB,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question where from)
+%%%%%% predicate phrases (question where from)
 
-% A verb phrase (question where from) can consists of the transitive verb "kama"
+% A predicate phrase (question where from) can consists of the transitive verb "kama"
 % and a special prepositional object.
 % examples:
 % ona li kama, tan seme?
 % ona li kama, tan ma tomo seme?
-verb_phrase_wherefrom(VPQ) -->
+predicate_phrase_wherefrom(VPQ) -->
   verb_transitive(VT,kama),
   object_prepositional_wherefrom(OQ),
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPQ,VT,OQ)}.
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPQ,VT,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question where to)
+%%%%%% predicate phrases (question where to)
 
-% A verb phrase (question where to) can consists of normal verb phrases
+% A predicate phrase (question where to) can consists of normal verb phrases
 % and a special prepositional object.
 % examples:
 % ona li tawa e kiwen, tawa seme?
 % ona li tawa e kiwen, tawa anpa seme?
 % ona li tawa e kiwen, kepeken ona, tawa anpa seme?
-verb_phrase_whereto(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_whereto(VPQ) -->
+  predicate_phrases(VP),
   object_prepositional_whereto(OQ),
   {removing_extraneous_tree_nodes_ab(VPQ,VP,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question whom)
+%%%%%% predicate phrases (question whom)
 
-% A verb phrase (question whom) can consists of normal verb phrases and
+% A predicate phrase (question whom) can consists of normal predicate phrases and
 % a special object.
 % examples:
 % ona li pakala e ijo e jan seme?
@@ -1572,21 +1572,21 @@ verb_phrase_whereto(VPQ) -->
 % ona li pakala e ijo e meli pona seme?
 % ona li pakala e ijo e mije seme?
 % ona li pakala e ijo e mije pona seme?
-verb_phrase_whom(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_whom(VPQ) -->
+  predicate_phrases(VP),
   object_direct_whom(OQ),
   {removing_extraneous_tree_nodes_ab(VPQ,VP,OQ)}.
 
-% A verb phrase (question whom) can consists of intransitive verb and
+% A predicate phrase (question whom) can consists of intransitive verb and
 % a special object.
 % ona li lukin jan pona seme?
 % sina unpa jan seme?
-verb_phrase_whom(VPQ) -->
+predicate_phrase_whom(VPQ) -->
   verb_intransitive_compound(VIC),
   object_intrans_whom(OQ),
-  {removing_extraneous_tree_nodes_pr_ab('vp',VPQ,VIC,OQ)}.
+  {removing_extraneous_tree_nodes_pr_ab('pp',VPQ,VIC,OQ)}.
 
-% A verb phrase (question whom) can consists of normal verb phrases, an optional comma,
+% A predicate phrase (question whom) can consists of normal verb phrases, an optional comma,
 % a preposition, a noun_person  ("jan", "meli" or "mije"),
 % optional adjectives and the question word "seme".
 % examples:
@@ -1596,86 +1596,86 @@ verb_phrase_whom(VPQ) -->
 % ona li pakala e tomo, tan meli pona seme?
 % ona li pakala e tomo, tan mije seme?
 % ona li pakala e tomo, tan mije pona seme?
-verb_phrase_whom(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_whom(VPQ) -->
+  predicate_phrases(VP),
   object_prepositional_whom(OQ),
   {removing_extraneous_tree_nodes_ab(VPQ,VP,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question which)
+%%%%%% predicate phrases (question which)
 
-% A verb phrase (question which) can consists of a (in)transitive verb
+% A predicate phrase (question which) can consists of a (in)transitive verb
 % and a special object.
 % examples:
 % ona li pakala e ijo seme?
 % ona li pakala e ijo pona seme?
 % sina wile jo e mani seme, tan jan ni?
-verb_phrase_which(VPQ) -->
+predicate_phrase_which(VPQ) -->
   verb_transitive_compound(VTC),
   object_direct_which(OQ),
   objects_prepositional(OP),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,OQ,OP)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VTC,OQ,OP)}.
 
 % sina kepeken ilo seme?
 % sina kepeken ilo pona seme?
 % sina kepeken ilo pona seme, kepeken nasin ni?
-verb_phrase_which(VPQ) -->
+predicate_phrase_which(VPQ) -->
   verb_intransitive_compound(VIC),
   object_intrans_which(OQ),
   objects_prepositional(OP),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VIC,OQ,OP)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VIC,OQ,OP)}.
 
 % sina pakala, tawa ijo seme?
 % sina pakala, tawa ijo pona seme?
 % sina pakala e ilo, tawa ijo pona seme?
-verb_phrase_which(VPQ) -->
+predicate_phrase_which(VPQ) -->
   verb_transitive_compound(VTC),
   objects_direct(OD),
   object_prepositional_which(OQ),
-  {removing_extraneous_tree_nodes_pr_abc('vp',VPQ,VTC,OD,OQ)}.
+  {removing_extraneous_tree_nodes_pr_abc('pp',VPQ,VTC,OD,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question when)
+%%%%%% predicate phrases (question when)
 
-% A verb phrase (question when) can consists of verb phrases and a special prepositional object.
+% A predicate phrase (question when) can consists of predicate phrases and a special prepositional object.
 % examples:
 % sina moku e moku, lon tenpo seme?
-verb_phrase_when(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_when(VPQ) -->
+  predicate_phrases(VP),
   object_prepositional_when(OQ),
   {removing_extraneous_tree_nodes_ab(VPQ,VP,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question why)
+%%%%%% predicate phrases (question why)
 
-% A verb phrase (question why) can consists of verb phrases and a special prepositional object.
+% A predicate phrase (question why) can consists of predicate phrases and a special prepositional object.
 % examples:
 % sina pali e tomo, tan seme?
-verb_phrase_why(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_why(VPQ) -->
+  predicate_phrases(VP),
   object_prepositional_why(OQ),
   {removing_extraneous_tree_nodes_ab(VPQ,VP,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question how)
+%%%%%% predicate phrases (question how)
 
-% A verb phrase (question how) can consists of  verb phrases a special prepositional object.
+% A predicate phrase (question how) can consists of  predicate phrases a special prepositional object.
 % examples:
 % sina pali e ni, kepeken nasin seme?
-verb_phrase_how(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_how(VPQ) -->
+  predicate_phrases(VP),
   object_prepositional_how(OQ),
   {removing_extraneous_tree_nodes_ab(VPQ,VP,OQ)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% verb phrases (question how many)
+%%%%%% predicate phrases (question how many)
 
-% A verb phrase (question how many) can consists of verb phrases and a special direct object.
+% A predicate phrase (question how many) can consists of predicate phrases and a special direct object.
 % examples:
 % akesi li pakala e tomo e soweli pi mute seme?
 % sina wile jo e mani pi mute seme, tan jan ni?
-verb_phrase_how_many(VPQ) -->
-  verb_phrases(VP),
+predicate_phrase_how_many(VPQ) -->
+  predicate_phrases(VP),
   object_direct_how_many(OQ),
   objects_prepositional(OP),
   {removing_extraneous_tree_nodes_abc(VPQ,VP,OQ,OP)}.
@@ -2473,8 +2473,15 @@ object_intrans(OI) -->
   {removing_extraneous_tree_nodes_pr_ab('obj_i',OI,NC,OOA)}.
 
 
+
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% object after missing "be".
+%%%%%% predicate noun or predicate adjective after missing "be".
 
 % In toki pona is no verb "to be".
 % An object after a missing "be" can consists of at least one adjective and optional more adjectives.
@@ -2482,9 +2489,9 @@ object_intrans(OI) -->
 % sina jelo.
 % sina jelo loje.
 % ona li pona, tawa mi mute.
-object_be(OB) -->
+predicate_be(OB) -->
   adjectives_at_least_one(ADJ),
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,ADJ)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,ADJ)}.
 
 
 % An object after a missing "be" can consists of (compound) pronoun.
@@ -2492,17 +2499,17 @@ object_be(OB) -->
 % jan Lope li ona.
 % jan Lope en jan Mewi li ona mute.
 % ni li ona mute, tawa mi mute.
-object_be(OB) -->
+predicate_be(OB) -->
   pronoun_with_optional_adjectives(PNC),
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,PNC)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,PNC)}.
 
 % An object after a missing "be" can consists of a compound noun.
 % examples:
 % ona li jan pi pona mute.
 % ona li jan pi pona mute, tawa mi mute.
-object_be(OB) -->
+predicate_be(OB) -->
   noun_compound(NC),
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,NC)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,NC)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% special forms of an object after missing "be".
@@ -2510,94 +2517,108 @@ object_be(OB) -->
 % A special, designate object for a person consist of special adjective.
 % examples:
 % nimi mi li Mawija.
-object_be_designate_person(OB) -->
+predicate_be_designate_person(OB) -->
   adjective_female_prominent_personage(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi mi li Mose.
-object_be_designate_person(OB) -->
+predicate_be_designate_person(OB) -->
   adjective_male_prominent_personage(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi mi li Lisa.
-object_be_designate_person(OB) -->
+predicate_be_designate_person(OB) -->
   adjective_female_name(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi mi li Lope.
-object_be_designate_person(OB) -->
+predicate_be_designate_person(OB) -->
   adjective_male_name(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi mi li Devil.
-object_be_designate_person(OB) -->
+predicate_be_designate_person(OB) -->
   adjective_person_name(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi mi li Lopen.
-object_be_designate_person(OB) -->
+predicate_be_designate_person(OB) -->
   adjective_person_name_unknown(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % A special, designate object for a non person consist of special adjective.
 % examples:
 % nimi pi ma suli mi li Elopa.
-object_be_designate_continent(OB) -->
+predicate_be_designate_continent(OB) -->
   adjective_continent(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi ma mi li Tosi.
-object_be_designate_country(OB) -->
+predicate_be_designate_country(OB) -->
   adjective_country(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi ma tomo mi li Pelin.
-object_be_designate_city(OB) -->
+predicate_be_designate_city(OB) -->
   adjective_city(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi toki mi li Tosi.
-object_be_designate_language(OB) -->
+predicate_be_designate_language(OB) -->
   adjective_language(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi toki luka mi li Tosi.
-object_be_designate_sign_language(OB) -->
+predicate_be_designate_sign_language(OB) -->
   adjective_sign_language(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi nasin sewi mi li Patapali.
-object_be_designate_ideology(OB) -->
+predicate_be_designate_ideology(OB) -->
   adjective_ideology(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi kulupu mi li Neje.
-object_be_designate_community(OB) -->
+predicate_be_designate_community(OB) -->
   adjective_community(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
-object_be_designate_movie(OB) -->
+predicate_be_designate_movie(OB) -->
   adjective_movie(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
 
 % examples:
 % nimi pi tomo tawa mi li Pata.
-object_be_designate_misc(OB) -->
+predicate_be_designate_misc(OB) -->
   adjective_unofficial_words_miscellaneous(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OB,A)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% prepositional objects
@@ -2722,23 +2743,35 @@ object_prepositional_what(OQ) -->
   question_word(QW,seme),
   {removing_extraneous_tree_nodes_pr_ab('obj_p',OQ,Prep,QW)}.
 
+
+
+
+
+
+
+
 % A object for question (what is object) consists of the question word "seme".
 % In toki pona is no verb "to be".
 % examples:
 % sina ' seme?
 % sina ' seme, kepeken ni?
-object_be_what_is(OQ) -->
+predicate_be_what_is(OQ) -->
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_a('obj_be',OQ,QW)}.
+  {removing_extraneous_tree_nodes_pr_a('predicate',OQ,QW)}.
 
-% A verb phrase (question what is object) consists of a compound noun and the question word "seme".
+% A predicate phrase (question what is object) consists of a compound noun and the question word "seme".
 % In toki pona is no verb "to be".
 % examples:
 % ona li jan pi pana sona seme?
-object_be_what_is_adjective(OQ) -->
+predicate_be_what_is_adjective(OQ) -->
   noun_compound(NC),
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_ab('obj_be',OQ,NC,QW)}.
+  {removing_extraneous_tree_nodes_pr_ab('predicate',OQ,NC,QW)}.
+
+
+
+
+
 
 % A object for a question (where) can consists of an optional comma,
 % the preposition "lon" and the question word "seme".
@@ -3132,7 +3165,7 @@ pronoun_optional(PNO) -->
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% A compound noun can be build with a noun, optional adjectives and optional noun phrases with "pi".
+% A compound noun can be build with a noun, optional adjectives and optional "pi" phrases.
 % examples:
 % jan li moku e moku.
 % jan pi jan suli li moku e moku pona.
@@ -3234,7 +3267,7 @@ noun_pi_phrase(NPG) -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% "en" noun phrase
 
-% An "en" noun phrase consist of the conjuncion "en", a (pro)noun and optional adjectives.
+% An "en" subject phrase consist of the conjuncion "en", a (pro)noun and optional adjectives.
 % examples:
 % tomo tawa pi ona en sina en ni ike li utala e ilo ni.
 % tomo tawa pi ona en sina en ni li utala e ilo ni.
