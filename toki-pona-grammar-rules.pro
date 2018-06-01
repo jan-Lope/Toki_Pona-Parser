@@ -152,7 +152,7 @@ sentence(S) -->
 % ken la mi moku e moku.
 % tenpo kama la mi moku e moku la ken.
 sentence_declarative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   sentence_simple(SS),
   la_phrase_follow(L2),
   {removing_extraneous_tree_nodes_pr_abc('dec',S,L1,SS,L2)}.
@@ -163,10 +163,10 @@ sentence_declarative(S) -->
 % tenpo kama la mi wile e ni: mi moku e moku.
 % tenpo kama la mi wile e ni: ken la mi moku e moku.
 sentence_declarative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   sentence_simple(SS1),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   sentence_simple(SS2),
   {removing_extraneous_tree_nodes_pr_abcde('dec',S,L1,SS1,Sep,L2,SS2)}.
 
@@ -202,7 +202,7 @@ sentence_declarative(S) -->
 % examples:
 % ken la jaki!
 sentence_declarative(S) -->
-  la_phrases(L),
+  conditional_phrases(L),
   interjection(I),
   {removing_extraneous_tree_nodes_pr_ab('dec',S,L,I)}.
 
@@ -228,7 +228,7 @@ sentence_declarative(S) -->
 % ken la mi moku e moku!
 % ken la mi moku e moku la tenpo kama a!
 sentence_exclamatory(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   sentence_simple(SS),
   la_phrase_follow(L2),
   {removing_extraneous_tree_nodes_pr_abc('exc',S,L1,SS,L2)}.
@@ -238,10 +238,10 @@ sentence_exclamatory(S) -->
 % mi wile e ni: sina moku e moku!
 % ken la mi wile e ni: sina moku e moku!
 sentence_exclamatory(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   sentence_simple(SS1),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   sentence_simple(SS2),
   {removing_extraneous_tree_nodes_pr_abcde('exc',S,L1,SS1,Sep,L2,SS2)}.
 
@@ -279,7 +279,7 @@ sentence_exclamatory(S) -->
 % examples:
 % ken la jaki!
 sentence_exclamatory(S) -->
-  la_phrases(L),
+  conditional_phrases(L),
   interjection(I),
   {removing_extraneous_tree_nodes_pr_ab('exc',S,L,I)}.
 
@@ -306,7 +306,7 @@ sentence_exclamatory(S) -->
 % tenpo kama la o moku e moku!
 % tenpo kama la o moku e moku la ken!
 sentence_imperative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   command(CO),
   la_phrase_follow(L2),
   {removing_extraneous_tree_nodes_pr_abc('imp',S,L1,CO,L2)}.
@@ -315,10 +315,10 @@ sentence_imperative(S) -->
 % examples:
 % tenpo kama la mi wile e ni: ken la o moku e moku!
 sentence_imperative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   sentence_simple(SS),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   command(CO),
   {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,SS,Sep,L2,CO)}.
 
@@ -326,10 +326,10 @@ sentence_imperative(S) -->
 % examples:
 % tenpo kama la o wile e ni: sina moku e moku!
 sentence_imperative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   command(CO),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   sentence_simple(SS),
   {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,CO,Sep,L2,SS)}.
 
@@ -337,10 +337,10 @@ sentence_imperative(S) -->
 % examples:
 % tenpo kama la o wile e ni: o moku e moku!
 sentence_imperative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   command(CO1),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   command(CO2),
   {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,CO1,Sep,L2,CO2)}.
 
@@ -348,49 +348,49 @@ sentence_imperative(S) -->
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% interrogative sentences:
 
-% An interrogative sentence can be build of a question and "la" phrases.
+% An interrogative sentence can be build of a question and conditional phrases.
 % examples:
 % tenpo kama la seme la ken?
 sentence_interrogative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   question(Q),
   la_phrase_follow(L2),
   {removing_extraneous_tree_nodes_pr_abc('int',S,L1,Q,L2)}.
 
-% An interrogative sentence can be build of a sentence simple and a question separated by a colon and "la" phrases.
+% An interrogative sentence can be build of a sentence simple and a question separated by a colon and conditional phrases.
 % examples:
 % ken la mi pilin e ni: seme?
 sentence_interrogative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   sentence_simple(SS),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   question(Q),
   {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,SS,Sep,L2,Q)}.
 
-% An interrogative sentence can be build of a question and a sentence simple separated by a colon and "la" phrases.
+% An interrogative sentence can be build of a question and a sentence simple separated by a colon and conditional phrases.
 % examples:
 % tenpo kama la seme: ken la mi moku e moku?
 sentence_interrogative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   question(Q),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   sentence_simple(SS),
   {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,Q,Sep,L2,SS)}.
 
-% An interrogative sentence can be build of two questions separated by a colon and "la" phrases.
+% An interrogative sentence can be build of two questions separated by a colon and conditional phrases.
 % examples:
 % tenpo kama la seme: ken la seme?
 sentence_interrogative(S) -->
-  la_phrases(L1),
+  conditional_phrases(L1),
   question(Q1),
   separator(Sep,':'),
-  la_phrases(L2),
+  conditional_phrases(L2),
   question(Q2),
   {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,Q1,Sep,L2,Q2)}.
 
-% A question as "la" phrase.
+% A question as conditional phrase.
 % examples:
 % seme la sina pilin e ni?
 sentence_interrogative(S) -->
@@ -1684,65 +1684,65 @@ predicate_phrase_how_many(VPQ) -->
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% la phrases
+% conditional phrases ("la")
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% several "la" phrases
+%%%%%% several conditional phrases
 
-% "la" phrases can consists of nothing.
-la_phrases(epsilon) --> [].
+% Conditional phrases can consists of nothing.
+conditional_phrases(epsilon) --> [].
 
-% "la" phrases can consists of a "la" phrase.
+% Conditional phrases can consists of a conditional phrase.
 % examples:
 % ken la mi moku e moku.
-la_phrases(LPS) -->
-  la_phrase(LP),
+conditional_phrases(LPS) -->
+  conditional_phrase(LP),
   {removing_extraneous_tree_nodes_a(LPS,LP)}.
 
-% "la" phrases can consists of two "la" phrase.
+% Conditional phrases can consists of two conditional phrases.
 % examples:
 % tenpo kama la ken la mi moku e moku.
-la_phrases(LPS) -->
-  la_phrase(LP1),
-  la_phrase(LP2),
+conditional_phrases(LPS) -->
+  conditional_phrase(LP1),
+  conditional_phrase(LP2),
   {removing_extraneous_tree_nodes_ab(LPS,LP1,LP2)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% "la" phrase
+%%%%%% conditional phrase
 
-% A "la" phrase can consists of subjects, an optional separator "," (useless),
+% A conditional phrase can consists of subjects, an optional separator "," (useless),
 % the separator "la" and an optional separator "," (also useless).
 % examples:
 % tenpo kama la ken la mi moku e moku.
 % tenpo kama la, ken, la mi moku e moku.
 % mi la mi moku e moku.
 % ona en ni la ona li moku e moku.
-la_phrase(LP) -->
+conditional_phrase(LP) -->
   subjects_all(SUBA),
   comma_optional,
   separator(Sep,la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_ab('lp',LP,SUBA,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('cond',LP,SUBA,Sep)}.
 
-% A "la" phrase can consists of a simple sentence (noun phrase + verb phrases),
+% A conditional phrase can consists of a simple sentence (noun phrase + verb phrases),
 % an optional separator "," (useless),
 % the separator "la" and an optional separator "," (also useless).
 % examples:
 % mi moku e moku li moku e telo la mi pilin pona.
 % mi moku e moku li moku e telo, la, mi pilin pona.
-la_phrase(LP) -->
+conditional_phrase(LP) -->
   sentence_simple(SS),
   comma_optional,
   separator(Sep,la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_ab('lp',LP,SS,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('cond',LP,SS,Sep)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% "la" phrase as the end of a sentence
+%%%%%% conditional phrase as the end of a sentence
 
-% A "la" phrase at the end of a sentences can consists of the separator "la"
+% A conditional phrase at the end of a sentences can consists of the separator "la"
 % with optional commas (useless) and a compound noun.
 % examples:
 % mi wile tawa la tenpo ni.
@@ -1753,12 +1753,12 @@ la_phrase_follow(LPF) -->
   separator(Sep,la),
   comma_optional,
   subjects_all(SUBA),
-  {removing_extraneous_tree_nodes_pr_ab('lp',LPF,Sep,SUBA)}.
+  {removing_extraneous_tree_nodes_pr_ab('cond',LPF,Sep,SUBA)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% "la" phrase (question)
+%%%%%% conditional phrase (question)
 
-% A question as a "la" phrase.
+% A question as a conditional phrase.
 % examples:
 % seme la sina kama jo e mani?
 la_phrase_question(LPQ) -->
@@ -1766,9 +1766,9 @@ la_phrase_question(LPQ) -->
   comma_optional,
   separator(Sep,la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_ab('lp',LPQ,Q,Sep)}.
+  {removing_extraneous_tree_nodes_pr_ab('cond',LPQ,Q,Sep)}.
 
-% A "la" phrase can be a when-question.
+% A conditional phrase can be a when-question.
 % examples:
 % tenpo seme la sina moku e moku?
 % tenpo pona seme la sina moku e moku?
@@ -1778,18 +1778,18 @@ la_phrase_when(LPQ) -->
   adjectives(ADJS),
   question_word(QW,seme),
   separator(Sep,la),
-  {removing_extraneous_tree_nodes_pr_abcd('lp',LPQ,N,ADJS,QW,Sep)}.
+  {removing_extraneous_tree_nodes_pr_abcd('cond',LPQ,N,ADJS,QW,Sep)}.
 
-% A "la" phrase can be a why-question.
+% A conditional phrase can be a why-question.
 % examples:
 % tan seme la soweli wawa pimeja li moku e ona?
 la_phrase_why(LPQ) -->
   noun(N,tan),
   question_word(QW,seme),
   separator(Sep,la),
-  {removing_extraneous_tree_nodes_pr_abc('lp',LPQ,N,QW,Sep)}.
+  {removing_extraneous_tree_nodes_pr_abc('cond',LPQ,N,QW,Sep)}.
 
-% A "la" phrase can be a how-many-question.
+% A conditional phrase can be a how-many-question.
 % examples:
 % tenpo pi mute seme la sina sike e suno?
 la_phrase_how_many(LPQ) -->
@@ -1798,7 +1798,7 @@ la_phrase_how_many(LPQ) -->
   noun(N,mute),
   question_word(QW,seme),
   separator(Sep2,la),
-  {removing_extraneous_tree_nodes_pr_abcde('lp',LPQ,SU,Sep1,N,QW,Sep2)}.
+  {removing_extraneous_tree_nodes_pr_abcde('cond',LPQ,SU,Sep1,N,QW,Sep2)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2212,7 +2212,7 @@ subject_add(SUBA) -->
   comma_optional,
   conjunction(Con,en),
   subject(SUB),
-  {removing_extraneous_tree_nodes_pr_ab('sub',SUBA,Con,SUB)}.
+  {removing_extraneous_tree_nodes_ab(SUBA,Con,SUB)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% special subjects questions

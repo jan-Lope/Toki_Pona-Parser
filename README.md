@@ -123,7 +123,7 @@ This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subjec
   
     sp           subject phrase  
     pp           predicate phrase  
-    lp           "la" phrase  
+    cond         conditional phrase ("la")  
     vocp         vocativ phrase  
     salutp       salutation phrase  
   
@@ -238,7 +238,7 @@ A "pi" make it more clear. "mama" can only be a noun here.
 You can check more complicated sentences also.
 
     |: ken la jan Lope li wile e ni: sina kama sona e toki pona!  
-    s(exc(lp(sub(noun(ken)),sep(la)),sim(sp(sub((noun(jan),unofficial_male_name(known_male_name(Lope)))),sep(li)),pp(verb_tra(wile),obj_d(sep(e),pronoun(ni)))),sep(:),
+    s(exc(cond(sub(noun(ken)),sep(la)),sim(sp(sub((noun(jan),unofficial_male_name(known_male_name(Lope)))),sep(li)),pp(verb_tra(wile),obj_d(sep(e),pronoun(ni)))),sep(:),
       sim(sp(sub(pronoun(sina))),pp((verb_pre(kama),verb_tra(sona)),obj_d(sep(e), (noun(toki),adjective(pona)))))),sep(!))
 
 You can check a paragraph with an optional headline and several sentences. But if you use sentences with ambiguity grammar you will get many results.
