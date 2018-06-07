@@ -87,7 +87,7 @@ A new window opens. After the prompt |: you can type Toki Pona sentences.
 
 Now you can check the grammar of a Toki Pona sentence.
 After the prompt |: you can type a Toki Pona sentence. 
-Use neither a space before the sentence nor doppel spaces.
+Use neither a space before the sentence nor double spaces.
 In this example it is the sentence "mi moku.".
 
     |: mi moku.  
@@ -96,14 +96,14 @@ In this example it is the sentence "mi moku.".
     s(dec(sim(sp(sub(pronoun(mi))),pp(be,predicate(noun(moku))))),sep(.))    s(dec(sim(sp(sub(pronoun(mi))), pp(verb_tra(moku)))), sep('.')) 
     |: 
 
-You can see this sentence has three grammar variants and at least three meanings. Here can "moku" be a transitive verb (verb_tra), an predicate adjective or a predicate noun.
+You can see this sentence has three grammatical interpretations and at least three meanings. Here "moku" can be a transitive verb (verb_tra), a predicate adjective, or a predicate noun.
 
 Let's check the next sentence. 
 
     |: mi moku e moku.  
     s(dec(sim(sp(sub(pronoun(mi))),pp(verb_tra(moku),obj_d(sep(e),noun(moku))))),sep(.))
 
-The grammar of the sentence "mi moku e moku." is unambiguously. The first "moku" can only be a transitive verb and the second "moku" is a noun.
+The grammar of the sentence "mi moku e moku." is unambiguous. The first "moku" can only be a transitive verb and the second "moku" is a noun.
 This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subject phrase (sp) with a subject (sub) and a predicate phrase (pp) with a direct object (obj_d). Here are the abbreviations:
 
     s            sentence  
@@ -144,20 +144,20 @@ This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subjec
     verb_tra     verb transitive  
     be           The missing "be", "am", "are", "is" in Toki Pona.  
 
-Avoid ambiguous grammar as much as possible! Keep in mind if a sentence is clear for you it could be not clear for other people!
+Avoid ambiguous grammar as much as possible! Keep in mind that if a sentence is clear to you, it could still not be clear to other people!
 
-Next example: "ona li pakala e tomo tan jan seme?" This question has two grammar variants (whom, which_object).
+Next example: "ona li pakala e tomo tan jan seme?" This question has two grammatical readings (whom, which_object).
 
     |: ona li pakala e tomo tan jan seme?  
     s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),question_word(seme))))))
     s(int(which_object(sp(sub(pronoun(ona))),pp(verb_tra(pakala),obj_d(noun(tomo), (adjective(tan),adjective(jan)),question_word(seme))))))
 
-A comma before "tan" make the sentence to a whom question only, because "tan" can only be a preposition here.
+A comma before "tan" turns the sentence into a whom question, because "tan" can only be a preposition here.
 
     |: ona li pakala e tomo, tan jan seme?  
     s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),question_word(seme))))))
 
-In the next example a comma can make the grammar unambiguous. But maybe this is not what you mean.
+In the next example a comma can make the grammatical structure unambiguous. But maybe this is not what you mean.
 
     |: jan pona pi meli mi en mi li moku e moku.  
     s(dec(sim(sp(sub(((noun(jan),adjective(pona)), (noun(meli),pronoun(mi)),conj(en),pronoun(mi)))),pp(verb_tra(moku),obj_d(noun(moku))))))
@@ -167,18 +167,18 @@ In the next example a comma can make the grammar unambiguous. But maybe this is 
     s(dec(sim(sp((sub(((noun(jan),adjective(pona)),noun(meli),pronoun(mi))),conj(en),sub(pronoun(mi)))),pp(verb_tra(moku),obj_d(noun(moku))))))
 
 
-If you would like to mark the missing "be" you can use an apostrophe for the grammar check. This is not an official Toki Pona rule, but it avoid ambiguous.
+If you would like to mark the missing "be", you can use an apostrophe for the grammar check. This is not an official Toki Pona rule, but it avoids ambiguity.
 
     |: ni li ' moku.  
     s(dec(sim(sp(sub(pronoun(ni))),pp(be,predicate(adjective(moku))))))
     s(dec(sim(sp(sub(pronoun(ni))),pp(be,predicate(noun(moku))))))
 
-To reduce the object variants to a noun you can use "pi".  
+To reduce the object variants to a noun, you can use "pi".  
 
     |: ni li ' moku pi jan pona.  
     s(dec(sim(sp(sub(pronoun(ni))),pp(be,predicate((noun(moku),noun(jan),adjective(pona)))))))
 
-To mark numbers you can use a comma or a "#" (unofficial).
+To mark numbers, you can use a comma or a "#" (unofficial).
 
     |:  jan lili li moku e moku.  
     s(dec(sim(sp(sub((noun(jan),adjective(lili)))),pp(verb_tra(moku),obj_d(noun(moku))))))
@@ -198,7 +198,7 @@ The verb "are" (or "be") doesn't exist in Toki Pona.
     |: sina pona ala pona?
     s(int(yes_no(sp(sub(pronoun(sina))),pp(verb_tra(pona),adverb(ala),verb_tra(pona)))),sep(?))
 
-This example make it more clear.
+This example makes it clearer:
 
     |: sina pona ala pona e ni?
     s(int(yes_no(sp(sub(pronoun(sina))),pp(verb_tra(pona),adverb(ala),verb_tra(pona),obj_d(sep(e),pronoun(ni))))),sep(?))
@@ -214,7 +214,7 @@ This sentence is clearer.
     |: sina ' pona pi pilin en sijelo anu seme?
     s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate((noun(pona),noun(pilin),conj(en),noun(sijelo)))),conj(anu),question_word(seme)))))
 
-An other example is the sentence "ona li mama ala mama?" can not mean "Is she a mother?"
+An other example is the sentence "ona li mama ala mama?", which cannot mean "Is she a mother?"
 
     |: ona li mama ala mama?
     s(int(yes_no(sp(sub(pronoun(ona))),pp(verb_tra(mama),adverb(ala),verb_tra(mama)))))
@@ -227,7 +227,7 @@ The sentence "ona li ' mama anu seme?" could mean "Is she a mother?". But it can
     s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(adjective(mama))),conj(anu),question_word(seme)))))
     s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(noun(mama))),conj(anu),question_word(seme)))))
 
-A "pi" make it more clear. "mama" can only be a noun here.
+A "pi" make it clearer. "mama" can only be a noun here.
 
     |: ona li ' mama pi jan ni anu seme?  
     s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate((noun(mama),noun(jan),pronoun(ni)))),conj(anu),question_word(seme)))))
@@ -238,8 +238,8 @@ You can check more complicated sentences also.
     s(exc(cond(sub(noun(ken))),sim(sp(sub((noun(jan),unofficial_male_name(known_male_name(Lope))))),pp(verb_tra(wile),obj_d(pronoun(ni)))),
     sim(sp(sub(pronoun(sina))),pp((verb_pre(kama),verb_tra(sona)),obj_d((noun(toki),adjective(pona)))))))
 
-You can check a paragraph with an optional headline and several sentences. But if you use sentences with ambiguity grammar you will get many results.
-At the end of a headline you have to type the sign "/" because you can't use a new line in this version of the script. For example:
+You can check a paragraph with an optional heading and several sentences. But if you use sentences with ambiguous structure, you will get many results.
+At the end of a heading you have to type the sign "/", because you can't use a new line in this version of the script. For example:
 
 en moku  
 sina moku e moku.  
@@ -249,8 +249,8 @@ ni li ' pona pi sijelo mi.
     |: en moku / sina moku e moku. mi moku e moku. ni li ' pona pi sijelo mi.  
 
 
-If you type a wrong sentence you see no results. 
-If you type the key "enter" only the script will stop.
+If you type a wrong sentence, you will get no results. 
+If you press the "enter" key only, the script will stop.
 
 
 Questions, suggestions, ... Please write to me via [twitter](https://twitter.com/jan__Lope).
@@ -266,7 +266,7 @@ On MS Windows you can use the the [swi-prolog editor](http://arbeitsplattform.bi
 
 Several unofficial Names, for example "jan Eliku Kulaputon li jan sewi."
 
-Quotation marks for Quotes and unofficial names.
+Quotation marks for quotes and unofficial names.
 
 
 
