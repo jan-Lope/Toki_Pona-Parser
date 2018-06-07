@@ -33,7 +33,7 @@ paragraph(P) -->
 % A paragraph can consists of of a headline and at least one sentences.
 paragraph(P) -->
   headline(H),
-  separator(_,'/'),
+  separator('/'),
   sentences(S),
   sentences(Ss),
   {removing_extraneous_tree_nodes_abc(P,H,S,Ss)}.
@@ -74,8 +74,8 @@ headline(S) -->
 sentence(S) -->
   conjunction_optional(C),
   sentence_declarative(SD),
-  separator(Sep,'.'),
-  {removing_extraneous_tree_nodes_pr_abc('s',S,C,SD,Sep)}.
+  separator('.'),
+  {removing_extraneous_tree_nodes_pr_ab('s',S,C,SD)}.
 
 % An exclamatory sentence can start with a optional conjunction and end with an optional interjection word and an exclamation mark.
 % examples:
@@ -86,8 +86,8 @@ sentence(S) -->
   conjunction_optional(C),
   sentence_exclamatory(SE),
   interjection_optional(I),
-  separator(Sep,'!'),
-  {removing_extraneous_tree_nodes_pr_abcd('s',S,C,SE,I,Sep)}.
+  separator('!'),
+  {removing_extraneous_tree_nodes_pr_abc('s',S,C,SE,I)}.
 
 % An exclamatory sentence can start with a optional conjunction and end with an interjection word and a full stop.
 % examples:
@@ -97,8 +97,8 @@ sentence(S) -->
   conjunction_optional(C),
   sentence_exclamatory(SE),
   interjections(I),
-  separator(Sep,'.'),
-  {removing_extraneous_tree_nodes_pr_abcd('s',S,C,SE,I,Sep)}.
+  separator('.'),
+  {removing_extraneous_tree_nodes_pr_abc('s',S,C,SE,I)}.
 
 % An exclamatory sentence can consists a optional conjunction, interjections and end with an optional interjection word and an exclamation mark or full stop..
 % examples:
@@ -106,22 +106,29 @@ sentence(S) -->
 sentence(S) -->
   conjunction_optional(C),
   interjection(I),
-  separator(Sep,'!'),
-  {removing_extraneous_tree_nodes_pr_abc('s',S,C,I,Sep)}.
+  separator('!'),
+  {removing_extraneous_tree_nodes_pr_ab('s',S,C,I)}.
 
 % An imperative sentence can start with a optional conjunction and end with an optional interjection word
-% and a full stop or an an exclamation mark.
+% and a full stop or an exclamation mark.
 % examples:
 % o moku e moku.
-% en o moku e moku!
-% o moku e telo a!
 % en o moku e telo a.
 sentence(S) -->
   conjunction_optional(C),
   sentence_imperative(SI),
   interjection_optional(I),
-  (separator(Sep,'!') ; separator(Sep,'.')),                           % '!' or '.'
-  {removing_extraneous_tree_nodes_pr_abcd('s',S,C,SI,I,Sep)}.
+  separator('.'),
+  {removing_extraneous_tree_nodes_pr_abc('s',S,C,SI,I)}.
+% examples:
+% en o moku e moku!
+% o moku e telo a!
+sentence(S) -->
+  conjunction_optional(C),
+  sentence_imperative(SI),
+  interjection_optional(I),
+  separator('!'),
+  {removing_extraneous_tree_nodes_pr_abc('s',S,C,SI,I)}.
 
 % An interrogative sentence can start with a optional conjunction and end with an optional interjection word with and a question mark.
 % examples:
@@ -133,8 +140,8 @@ sentence(S) -->
   conjunction_optional(C),
   sentence_interrogative(SI),
   interjection_optional(I),
-  separator(Sep,'?'),
-  {removing_extraneous_tree_nodes_pr_abcd('s',S,C,SI,I,Sep)}.
+  separator('?'),
+  {removing_extraneous_tree_nodes_pr_abc('s',S,C,SI,I)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,10 +172,10 @@ sentence_declarative(S) -->
 sentence_declarative(S) -->
   conditional_phrases(L1),
   sentence_simple(SS1),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   sentence_simple(SS2),
-  {removing_extraneous_tree_nodes_pr_abcde('dec',S,L1,SS1,Sep,L2,SS2)}.
+  {removing_extraneous_tree_nodes_pr_abcd('dec',S,L1,SS1,L2,SS2)}.
 
 % A declarative sentence can be a yes answer.
 % examples:
@@ -240,10 +247,10 @@ sentence_exclamatory(S) -->
 sentence_exclamatory(S) -->
   conditional_phrases(L1),
   sentence_simple(SS1),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   sentence_simple(SS2),
-  {removing_extraneous_tree_nodes_pr_abcde('exc',S,L1,SS1,Sep,L2,SS2)}.
+  {removing_extraneous_tree_nodes_pr_abcd('exc',S,L1,SS1,L2,SS2)}.
 
 % A exclamatory sentence can be a yes answer.
 % examples:
@@ -317,10 +324,10 @@ sentence_imperative(S) -->
 sentence_imperative(S) -->
   conditional_phrases(L1),
   sentence_simple(SS),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   command(CO),
-  {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,SS,Sep,L2,CO)}.
+  {removing_extraneous_tree_nodes_pr_abcd('imp',S,L1,SS,L2,CO)}.
 
 % An imperative sentence can build of a command and a simple sentence separated by a colon with optional "la"-phrases.
 % examples:
@@ -328,10 +335,10 @@ sentence_imperative(S) -->
 sentence_imperative(S) -->
   conditional_phrases(L1),
   command(CO),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   sentence_simple(SS),
-  {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,CO,Sep,L2,SS)}.
+  {removing_extraneous_tree_nodes_pr_abcd('imp',S,L1,CO,L2,SS)}.
 
 % An imperative sentence can build of two commands separated by a colon with optional "la"-phrases.
 % examples:
@@ -339,10 +346,10 @@ sentence_imperative(S) -->
 sentence_imperative(S) -->
   conditional_phrases(L1),
   command(CO1),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   command(CO2),
-  {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,CO1,Sep,L2,CO2)}.
+  {removing_extraneous_tree_nodes_pr_abcd('imp',S,L1,CO1,L2,CO2)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -363,10 +370,10 @@ sentence_interrogative(S) -->
 sentence_interrogative(S) -->
   conditional_phrases(L1),
   sentence_simple(SS),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   question(Q),
-  {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,SS,Sep,L2,Q)}.
+  {removing_extraneous_tree_nodes_pr_abcd('int',S,L1,SS,L2,Q)}.
 
 % An interrogative sentence can be build of a question and a sentence simple separated by a colon and conditional phrases.
 % examples:
@@ -374,10 +381,10 @@ sentence_interrogative(S) -->
 sentence_interrogative(S) -->
   conditional_phrases(L1),
   question(Q),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   sentence_simple(SS),
-  {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,Q,Sep,L2,SS)}.
+  {removing_extraneous_tree_nodes_pr_abcd('int',S,L1,Q,L2,SS)}.
 
 % An interrogative sentence can be build of two questions separated by a colon and conditional phrases.
 % examples:
@@ -385,10 +392,10 @@ sentence_interrogative(S) -->
 sentence_interrogative(S) -->
   conditional_phrases(L1),
   question(Q1),
-  separator(Sep,':'),
+  separator(':'),
   conditional_phrases(L2),
   question(Q2),
-  {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,Q1,Sep,L2,Q2)}.
+  {removing_extraneous_tree_nodes_pr_abcd('int',S,L1,Q1,L2,Q2)}.
 
 % A question as conditional phrase.
 % examples:
@@ -911,8 +918,8 @@ subject_phrase(NP) -->
 % akesi ike li moku e moku.
 subject_phrase(NP) -->
   subject_with_li(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % A subject phrase can consists of several subjects and the separator "li".
 % examples:
@@ -920,8 +927,8 @@ subject_phrase(NP) -->
 % ni li pona, tawa sina.
 subject_phrase(NP) -->
   subjects(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -932,8 +939,8 @@ subject_phrase(NP) -->
 % sina a moku e moku!
 subject_phrase_interjection(NP) -->
   subject_no_li(SUB),
-  interjection_word(IW,a),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,IW)}.
+  interjection_word(_,a),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % A subject phrase (interjection) can consists of a subject, the interjection word "a" and the separator "li".
 % The subject can't be only "mi" or "sina".
@@ -944,9 +951,9 @@ subject_phrase_interjection(NP) -->
 % akesi ike a li moku e moku!
 subject_phrase_interjection(NP) -->
   subject_with_li(SUB),
-  interjection_word(IW,a),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_abc('sp',NP,SUB,IW,Sep)}.
+  interjection_word(_,a),
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % A subject phrase (interjection) can consists of several subjects and the separator "li".
 % examples:
@@ -955,9 +962,9 @@ subject_phrase_interjection(NP) -->
 % soweli en akesi en pipi lili en mi a li moku e moku!
 subject_phrase_interjection(NP) -->
   subjects(SUB),
-  interjection_word(IW,a),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_abc('sp',NP,SUB,IW,Sep)}.
+  interjection_word(_,a),
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% question subject phrases
@@ -969,16 +976,16 @@ subject_phrase_question_decision(NP) -->
   subjects_all(Sub1),
   conjunction(Con,anu),
   subjects_all(Sub2),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_abcd('sp',NP,Sub1,Con,Sub2,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_abc('sp',NP,Sub1,Con,Sub2)}.
 
 % A subject phrase (question what) can consists of the subject (what) and the separator "li".
 % examples:
 % seme li moku e moku?
 subject_phrase_what(NP) -->
   subject_what(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % A subject phrase (question who) consists of a subject (who) and the separator "li".
 % examples:
@@ -988,8 +995,8 @@ subject_phrase_what(NP) -->
 % jan pona seme pi mama sina li moku e moku?
 subject_phrase_who(NP) -->
   subject_who(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % A subject phrase (question which) can consists of a noun (no person), optional adjectives, the question word "seme" and the separator "li".
 % examples:
@@ -1000,8 +1007,8 @@ subject_phrase_who(NP) -->
 % ma tomo seme pi mama sina li ' pona, tawa sina?
 subject_phrase_which(NP) -->
   subject_which(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % A subject phrase (question how many) consists of the subject (how many) and the separator "li".
 % examples:
@@ -1009,8 +1016,8 @@ subject_phrase_which(NP) -->
 % ona en sina pi mute seme li moku e telo?
 subject_phrase_how_many(NP) -->
   subject_how_many(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% command subject phrases
@@ -1021,15 +1028,14 @@ subject_phrase_how_many(NP) -->
 % sina o pona e tomo!
 % jan o pona e tomo!
 % ona en sina mute o pona e tomo!
-
 subject_phrase_command(NP) -->
-  separator(Sep,o),
-  {removing_extraneous_tree_nodes_pr_a('sp',NP,Sep)}.
+  interjection_word(IW,o),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,IW)}.
 
 subject_phrase_command(NP) -->
   subjects_all(SUBA),
-  separator(Sep,o),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUBA,Sep)}.
+  interjection_word(_,o),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUBA)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% designate subject phrases
@@ -1040,48 +1046,48 @@ subject_phrase_command(NP) -->
 % nimi mi li Lope.
 subject_phrase_designate_person(NP) -->
   subject_designate_person(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % continent
 % examples:
 % nimi pi ma suli mi li Elopa.
 subject_phrase_designate_continent(NP) -->
   subject_designate_continent(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % country
 % examples:
 % nimi pi ma mi li Tosi.
 subject_phrase_designate_country(NP) -->
   subject_designate_country(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % city
 % examples:
 % nimi pi ma tomo mi li Pelin.
 subject_phrase_designate_city(NP) -->
   subject_designate_city(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % language
 % examples:
 % nimi pi toki mi li Tosi.
 subject_phrase_designate_language(NP) -->
   subject_designate_language(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % sign language
 % examples:
 % nimi pi toki luka mi li Tosi.
 subject_phrase_designate_sign_language(NP) -->
   subject_designate_sign_language(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % ideology, religion
 % examples:
@@ -1089,24 +1095,24 @@ subject_phrase_designate_sign_language(NP) -->
 % nimi pi nasin pona mi li Patapali.
 subject_phrase_designate_ideology(NP) -->
   subject_designate_ideology(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % community
 % examples:
 % nimi pi kulupu mi li Patapali.
 subject_phrase_designate_community(NP) -->
   subject_designate_community(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % movies
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
 subject_phrase_designate_movie(NP) -->
   subject_designate_movie(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 % miscellaneous
 % examples:
@@ -1114,8 +1120,8 @@ subject_phrase_designate_movie(NP) -->
 % nimi pi tomo tawa pona mi li Tapan.
 subject_phrase_designate_misc(NP) -->
   subject_designate_misc(SUB),
-  separator(Sep,li),
-  {removing_extraneous_tree_nodes_pr_ab('sp',NP,SUB,Sep)}.
+  separator(li),
+  {removing_extraneous_tree_nodes_pr_a('sp',NP,SUB)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1159,9 +1165,9 @@ predicate_phrases(VPS) -->
 % sina moku e moku, li toki e toki.
 predicate_phrase_add(VPA) -->
   comma_optional,
-  separator(Sep,li),
+  separator(li),
   predicate_phrase(VP),
-  {removing_extraneous_tree_nodes_pr_ab('pp',VPA,Sep,VP)}.
+  {removing_extraneous_tree_nodes_pr_a('pp',VPA,VP)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1722,9 +1728,9 @@ conditional_phrases(LPS) -->
 conditional_phrase(LP) -->
   subjects_all(SUBA),
   comma_optional,
-  separator(Sep,la),
+  separator(la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_ab('cond',LP,SUBA,Sep)}.
+  {removing_extraneous_tree_nodes_pr_a('cond',LP,SUBA)}.
 
 % A conditional phrase can consists of a simple sentence (noun phrase + verb phrases),
 % an optional separator "," (useless),
@@ -1735,9 +1741,9 @@ conditional_phrase(LP) -->
 conditional_phrase(LP) -->
   sentence_simple(SS),
   comma_optional,
-  separator(Sep,la),
+  separator(la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_ab('cond',LP,SS,Sep)}.
+  {removing_extraneous_tree_nodes_pr_a('cond',LP,SS)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% conditional phrase as the end of a sentence
@@ -1750,10 +1756,10 @@ conditional_phrase(LP) -->
 la_phrase_follow(epsilon) --> [].
 la_phrase_follow(LPF) -->
   comma_optional,
-  separator(Sep,la),
+  separator(la),
   comma_optional,
   subjects_all(SUBA),
-  {removing_extraneous_tree_nodes_pr_ab('cond',LPF,Sep,SUBA)}.
+  {removing_extraneous_tree_nodes_pr_a('cond',LPF,SUBA)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% conditional phrase (question)
@@ -1764,9 +1770,9 @@ la_phrase_follow(LPF) -->
 la_phrase_question(LPQ) -->
   question(Q),
   comma_optional,
-  separator(Sep,la),
+  separator(la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_ab('cond',LPQ,Q,Sep)}.
+  {removing_extraneous_tree_nodes_pr_a('cond',LPQ,Q)}.
 
 % A conditional phrase can be a when-question.
 % examples:
@@ -1777,8 +1783,8 @@ la_phrase_when(LPQ) -->
   noun(N,tenpo),
   adjectives(ADJS),
   question_word(QW,seme),
-  separator(Sep,la),
-  {removing_extraneous_tree_nodes_pr_abcd('cond',LPQ,N,ADJS,QW,Sep)}.
+  separator(la),
+  {removing_extraneous_tree_nodes_pr_abc('cond',LPQ,N,ADJS,QW)}.
 
 % A conditional phrase can be a why-question.
 % examples:
@@ -1786,19 +1792,19 @@ la_phrase_when(LPQ) -->
 la_phrase_why(LPQ) -->
   noun(N,tan),
   question_word(QW,seme),
-  separator(Sep,la),
-  {removing_extraneous_tree_nodes_pr_abc('cond',LPQ,N,QW,Sep)}.
+  separator(la),
+  {removing_extraneous_tree_nodes_pr_ab('cond',LPQ,N,QW)}.
 
 % A conditional phrase can be a how-many-question.
 % examples:
 % tenpo pi mute seme la sina sike e suno?
 la_phrase_how_many(LPQ) -->
   subjects_all(SU),
-  separator(Sep1,pi),
+  separator(pi),
   noun(N,mute),
   question_word(QW,seme),
-  separator(Sep2,la),
-  {removing_extraneous_tree_nodes_pr_abcde('cond',LPQ,SU,Sep1,N,QW,Sep2)}.
+  separator(la),
+  {removing_extraneous_tree_nodes_pr_abc('cond',LPQ,SU,N,QW)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1813,9 +1819,9 @@ la_phrase_how_many(LPQ) -->
 % jan Lope o, sina olin ala olin e mi?
 vocativ_phrase(VOP) -->
   subjects_all(SU),
-  separator(S1,o),
-  separator(S2,','),
-  {removing_extraneous_tree_nodes_pr_abc('vocp',VOP,SU,S1,S2)}.
+  interjection_word(_,o),
+  separator(','),
+  {removing_extraneous_tree_nodes_pr_a('vocp',VOP,SU)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1831,8 +1837,8 @@ vocativ_phrase(VOP) -->
 % sewi mi o!
 interjection_phrases(INP) -->
   subjects_all(SU),
-  interjection_word(IW,o),
-  {removing_extraneous_tree_nodes_pr_ab('emotional',INP,SU,IW)}.
+  interjection_word(_,o),
+  {removing_extraneous_tree_nodes_pr_a('emotional',INP,SU)}.
 
 % A very emotional interjection phrases can consists of subjects,
 % the interjection words "o" and the interjection words "a".
@@ -1840,17 +1846,17 @@ interjection_phrases(INP) -->
 % sina o a!
 interjection_phrases(INP) -->
   subjects_all(SU),
-  interjection_word(IW1,o),
-  interjection_word(IW2,a),
-  {removing_extraneous_tree_nodes_pr_abc('emotional',INP,SU,IW1,IW2)}.
+  interjection_word(_,o),
+  interjection_word(_,a),
+  {removing_extraneous_tree_nodes_pr_a('emotional',INP,SU)}.
 
 % examples:
 % a a a!        (laughing)
 interjection_phrases(INP) -->
-  interjection_word(I1,a),
-  interjection_word(I2,a),
-  interjection_word(I3,a),
-  {removing_extraneous_tree_nodes_pr_abc('laughing',INP,I1,I2,I3)}.
+  interjection_word(IW1,a),
+  interjection_word(IW2,a),
+  interjection_word(IW3,a),
+  {removing_extraneous_tree_nodes_pr_abc('laughing',INP,IW1,IW2,IW3)}.
 
 % examples:
 % a!
@@ -2256,10 +2262,10 @@ subject_which(SUB) -->
 % ona en sina pi mute seme li moku e telo?
 subject_how_many(SUB) -->
   subjects_all(SU),
-  separator(Sep1,pi),
+  separator(pi),
   noun(N,mute),
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,SU,Sep1,N,QW)}.
+  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,SU,N,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% special subjects designate
@@ -2278,53 +2284,53 @@ subject_designate_person(SUB) -->
 % nimi pi ma suli mi li Elopa.
 subject_designate_continent(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,ma),
   adjectiv(ADJ,suli),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 
 % country
 % examples:
 % nimi pi ma mi li Tosi.
 subject_designate_country(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,ma),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,Sep,N2,PN)}.
+  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,N1,N2,PN)}.
 
 % city
 % examples:
 % nimi pi ma tomo mi li Pelin.
 subject_designate_city(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,ma),
   adjectiv(ADJ,tomo),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 
 % language
 % examples:
 % nimi pi toki mi li Tosi.
 subject_designate_language(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,toki),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,Sep,N2,PN)}.
+  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,N1,N2,PN)}.
 
 % sign language
 % examples:
 % nimi pi toki luka mi li Tosi.
 subject_designate_sign_language(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,toki),
   adjectiv(ADJ,luka),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 
 % ideology, religion
 % examples:
@@ -2332,39 +2338,39 @@ subject_designate_sign_language(SUB) -->
 % nimi pi nasin pona mi li Patapali.
 subject_designate_ideology(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,nasin),
   adjectiv(ADJ,sewi),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 subject_designate_ideology(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,nasin),
   adjectiv(ADJ,pona),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 
 % community
 % examples:
 % nimi pi kulupu mi li Patapali.
 subject_designate_community(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,kulupu),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,Sep,N2,PN)}.
+  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,N1,N2,PN)}.
 
 % movies
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
 subject_designate_movie(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,sitelen),
   adjectiv(ADJ,tawa),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 
 % miscellaneous
 % examples:
@@ -2372,12 +2378,12 @@ subject_designate_movie(SUB) -->
 % nimi pi tomo tawa pona mi li Tapan.
 subject_designate_misc(SUB) -->
   noun(N1,nimi),
-  separator(Sep,pi),
+  separator(pi),
   noun(N2,X),
   adjectives(ADJ),
   pronoun(PN,_),
   {X\=jan,X\=meli,X\=mije,X\=ma,X\=toki,X\=nasin,X\=kulupu,X\=sitelen},
-  {removing_extraneous_tree_nodes_pr_abcde('sub',SUB,N1,Sep,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2427,20 +2433,20 @@ objects_direct(OSD) -->
 % mi olin e sina pona e ona pona e mi pona.
 % mi olin e sina pona anu ona pona.
 object_direct(OD) -->
-  separator(Sep,e),
+  separator(e),
   pronoun_with_optional_adjectives(PNC),
   object_optional_add(OOA),
-  {removing_extraneous_tree_nodes_pr_abc('obj_d',OD,Sep,PNC,OOA)}.
+  {removing_extraneous_tree_nodes_pr_ab('obj_d',OD,PNC,OOA)}.
 
 % examples:
 % mi olin e meli pi pona lukin.
 % mi olin e meli pi pona lukin e meli mi.
 % mi olin e meli pi pona lukin anu meli mi.
 object_direct(OD) -->
-  separator(Sep,e),
+  separator(e),
   noun_compound(NC),
   object_optional_add(OOA),
-  {removing_extraneous_tree_nodes_pr_abc('obj_d',OD,Sep,NC,OOA)}.
+  {removing_extraneous_tree_nodes_pr_ab('obj_d',OD,NC,OOA)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% intransitive objects
@@ -2720,9 +2726,9 @@ object_optional_add(OA) -->
 % sina kipisi e seme?
 % sina kipisi e seme, kepeken ilo?
 object_direct_what(OQ) -->
-  separator(Sep,e),
+  separator(e),
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_ab('obj_d',OQ,Sep,QW)}.
+  {removing_extraneous_tree_nodes_pr_a('obj_d',OQ,QW)}.
 
 % An object for a question (what indirect object) consist of the question word "seme".
 % examples:
@@ -2848,11 +2854,11 @@ object_prepositional_whereto(OQ) -->
 % ona li pakala e ijo e mije seme?
 % ona li pakala e ijo e mije pona seme?
 object_direct_whom(OQ) -->
-  separator(Sep,e),
+  separator(e),
   noun(N,X), {X=jan;X=meli;X=mije},
   adjectives(ADJ),
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_abcd('obj_d',OQ,Sep,N,ADJ,QW)}.
+  {removing_extraneous_tree_nodes_pr_abc('obj_d',OQ,N,ADJ,QW)}.
 
 % A indirect object for a question (whom) can consists of
 % a noun_person  ("jan", "meli" or "mije"), optional adjectives and the question word "seme".
@@ -2888,11 +2894,11 @@ object_prepositional_whom(OQ) -->
 % ona li pakala e ijo seme?
 % ona li pakala e ijo pona seme?
 object_direct_which(OQ) -->
-  separator(Sep,e),
+  separator(e),
   noun(No,N), {N\=jan,N\=meli,N\=mije,N\=tan,N\=tenpo},
   adjectives(ADJ),
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_abcd('obj_d',OQ,Sep,No,ADJ,QW)}.
+  {removing_extraneous_tree_nodes_pr_abc('obj_d',OQ,No,ADJ,QW)}.
 
 % A indirect object for a question (which) can consists of
 % a noun (except jan, meli, mije, tan tenpo), optional adjectives and the question word "seme".
@@ -2962,12 +2968,12 @@ object_prepositional_how(OQ) -->
 % sina wile jo e mani seme?
 % sina wile jo e mani pi mute seme, tan jan ni?
 object_direct_how_many(OQ) -->
-  separator(Sep1,e),
+  separator(e),
   noun_compound(NC),
-  separator(Sep2,pi),
+  separator(pi),
   noun(N,mute),
   question_word(QW,seme),
-  {removing_extraneous_tree_nodes_pr_abcde('obj_d',OQ,Sep1,NC,Sep2,N,QW)}.
+  {removing_extraneous_tree_nodes_pr_abc('obj_d',OQ,NC,N,QW)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3001,6 +3007,10 @@ conjunction_optional(C) -->
 % o moku e telo a!
 % en o moku e telo a.
 % en seme a?
+
+% ??
+
+
 interjection_optional(epsilon) --> [].
 
 interjection_optional(IJO) -->
@@ -3044,7 +3054,7 @@ interjections(IJS) -->
 %
 % An optional comma will be ignored.
 comma_optional --> [].
-comma_optional --> separator(_,',').
+comma_optional --> separator(',').
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3211,14 +3221,14 @@ noun_pi_phrases(NPGs) -->
 % jan pi ona pona li moku e moku.
 
 noun_pi_phrase(NPG) -->
-  separator(Sep,pi),
+  separator(pi),
   noun_with_at_least_one_adjectives(NWA),
-  {removing_extraneous_tree_nodes_ab(NPG,Sep,NWA)}.
+  {removing_extraneous_tree_nodes_a(NPG,NWA)}.
 
 noun_pi_phrase(NPG) -->
-  separator(Sep,pi),
+  separator(pi),
   pronoun_with_at_least_one_adjectives(PNC),
-  {removing_extraneous_tree_nodes_ab(NPG,Sep,PNC)}.
+  {removing_extraneous_tree_nodes_a(NPG,PNC)}.
 
 % In a "pi" phrase it is possible to combine a (pro)noun with an "en" noun phrase.
 % After the (pro)noun can be optional adjectives.
@@ -3233,16 +3243,16 @@ noun_pi_phrase(NPG) -->
 % jan pona pi ona pona en sina li moku e moku.
 % jan pona pi ona en sina pona li moku e moku.
 noun_pi_phrase(NPG) -->
-  separator(Sep,pi),
+  separator(pi),
   noun_with_optional_adjectives(NC),
   noun_en_phrase(NSG),
-  {removing_extraneous_tree_nodes_abc(NPG,Sep,NC,NSG)}.
+  {removing_extraneous_tree_nodes_ab(NPG,NC,NSG)}.
 
 noun_pi_phrase(NPG) -->
-  separator(Sep,pi),
+  separator(pi),
   pronoun_with_optional_adjectives(PNC),
   noun_en_phrase(NSG),
-  {removing_extraneous_tree_nodes_abc(NPG,Sep,PNC,NSG)}.
+  {removing_extraneous_tree_nodes_ab(NPG,PNC,NSG)}.
 
 % In a "pi" phrase it is possible to combine a (pro)nouns with two "en" noun phrases.
 % After the (pro)noun can be optional adjectives.
@@ -3251,18 +3261,18 @@ noun_pi_phrase(NPG) -->
 % jan pona pi ona en meli, en mije li moku e moku.                 % different meaning
 % jan pona pi meli pona en jan pona ni en ona li moku e moku.
 noun_pi_phrase(NPG) -->
-  separator(Sep,pi),
+  separator(pi),
   noun_with_optional_adjectives(NC),
   noun_en_phrase(NSG1),
   noun_en_phrase(NSG2),
-  {removing_extraneous_tree_nodes_abcd(NPG,Sep,NC,NSG1,NSG2)}.
+  {removing_extraneous_tree_nodes_abc(NPG,NC,NSG1,NSG2)}.
 
 noun_pi_phrase(NPG) -->
-  separator(Sep,pi),
+  separator(pi),
   pronoun_with_optional_adjectives(PNC),
   noun_en_phrase(NSG1),
   noun_en_phrase(NSG2),
-  {removing_extraneous_tree_nodes_abcd(NPG,Sep,PNC,NSG1,NSG2)}.
+  {removing_extraneous_tree_nodes_abc(NPG,PNC,NSG1,NSG2)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% "en" noun phrase
@@ -4020,7 +4030,7 @@ vowel_small(Vowel_small) -->
 % jan lili                    (little person, some persons)
 % jan # lili                  (some persons)
 number_sign_optional --> [].
-number_sign_optional --> separator(_,'#').
+number_sign_optional --> separator('#').
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Cardinal ans ordinal numbers.

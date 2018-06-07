@@ -4,7 +4,7 @@
 % by Robert Warnke https://jan-lope.github.io
 % released under the GNU General Public License
 %
-% These scripts are based on the offical Toki Pona book (first English edition 2014) of Sonja Lang (http://tokipona.org ), 
+% These scripts are based on the offical Toki Pona book (first English edition 2014) of Sonja Lang (http://tokipona.org ),
 % the lessons (2015) of jan Pije ( http://tokipona.net/tp/janpije/ ) and
 % the lessons of jan Lope ( https://jan-lope.github.io ).
 %
@@ -186,6 +186,7 @@ conjunction(conj(Conjunction),Conjunction) --> [Conjunction], { member(Conjuncti
  ])
 }.
 
+% interjection_word(Interjection_word) --> [Interjection_word], { member(Interjection_word, [
 interjection_word(interjection(Interjection_word),Interjection_word) --> [Interjection_word], { member(Interjection_word, [
      a,            % ah, ha, uh, oh, ooh, aw, well (emotion word)
      mu,           % woof! meow! moo! etc. (cute animal noise)
@@ -343,7 +344,8 @@ question_word(question_word(Question_word),Question_word) --> [Question_word], {
  ])
 }.
 
-separator(sep(Separator),Separator) --> [Separator], { member(Separator, [
+% separator(sep(Separator),Separator) --> [Separator], { member(Separator, [
+separator(Separator) --> [Separator], { member(Separator, [
      e,            % introduces a direct object
      la,           % between the context phrase and the main sentence
      li,           % between any subject except mi and sina and its verb
