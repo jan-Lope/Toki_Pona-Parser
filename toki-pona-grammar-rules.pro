@@ -160,9 +160,10 @@ sentence(S) -->
 % tenpo kama la mi moku e moku la ken.
 sentence_declarative(S) -->
   conditional_phrases(L1),
-  sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
   la_phrase_follow(L2),
-  {removing_extraneous_tree_nodes_pr_abc('dec',S,L1,SS,L2)}.
+  {removing_extraneous_tree_nodes_pr_abcd('dec',S,L1,SP,PP,L2)}.
 
 % A declarative sentence can build of two simple sentences separated by a colon with optional "la"-phrases.
 % examples:
@@ -171,11 +172,15 @@ sentence_declarative(S) -->
 % tenpo kama la mi wile e ni: ken la mi moku e moku.
 sentence_declarative(S) -->
   conditional_phrases(L1),
-  sentence_simple(SS1),
+  % sentence_simple(SS1),
+  subject_phrase(SP1),
+  predicate_phrases(PP1),
   separator(':'),
   conditional_phrases(L2),
-  sentence_simple(SS2),
-  {removing_extraneous_tree_nodes_pr_abcd('dec',S,L1,SS1,L2,SS2)}.
+  % sentence_simple(SS2),
+  subject_phrase(SP2),
+  predicate_phrases(PP2),
+  {removing_extraneous_tree_nodes_pr_abcdef('dec',S,L1,SP1,PP1,L2,SP2,PP2)}.
 
 % A declarative sentence can be a yes answer.
 % examples:
@@ -236,9 +241,11 @@ sentence_declarative(S) -->
 % ken la mi moku e moku la tenpo kama a!
 sentence_exclamatory(S) -->
   conditional_phrases(L1),
-  sentence_simple(SS),
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
   la_phrase_follow(L2),
-  {removing_extraneous_tree_nodes_pr_abc('exc',S,L1,SS,L2)}.
+  {removing_extraneous_tree_nodes_pr_abcd('exc',S,L1,SP,PP,L2)}.
 
 % A exclamatory sentence can build of two simple sentences separated by a colon with optional "la"-phrases.
 % examples:
@@ -246,11 +253,15 @@ sentence_exclamatory(S) -->
 % ken la mi wile e ni: sina moku e moku!
 sentence_exclamatory(S) -->
   conditional_phrases(L1),
-  sentence_simple(SS1),
+  %sentence_simple(SS1),
+  subject_phrase(SP1),
+  predicate_phrases(PP1),
   separator(':'),
   conditional_phrases(L2),
-  sentence_simple(SS2),
-  {removing_extraneous_tree_nodes_pr_abcd('exc',S,L1,SS1,L2,SS2)}.
+  % sentence_simple(SS2),
+  subject_phrase(SP2),
+  predicate_phrases(PP2),
+  {removing_extraneous_tree_nodes_pr_abcdef('exc',S,L1,SP1,PP1,L2,SP2,PP2)}.
 
 % A exclamatory sentence can be a yes answer.
 % examples:
@@ -323,11 +334,13 @@ sentence_imperative(S) -->
 % tenpo kama la mi wile e ni: ken la o moku e moku!
 sentence_imperative(S) -->
   conditional_phrases(L1),
-  sentence_simple(SS),
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
   separator(':'),
   conditional_phrases(L2),
   command(CO),
-  {removing_extraneous_tree_nodes_pr_abcd('imp',S,L1,SS,L2,CO)}.
+  {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,SP,PP,L2,CO)}.
 
 % An imperative sentence can build of a command and a simple sentence separated by a colon with optional "la"-phrases.
 % examples:
@@ -337,8 +350,10 @@ sentence_imperative(S) -->
   command(CO),
   separator(':'),
   conditional_phrases(L2),
-  sentence_simple(SS),
-  {removing_extraneous_tree_nodes_pr_abcd('imp',S,L1,CO,L2,SS)}.
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
+  {removing_extraneous_tree_nodes_pr_abcde('imp',S,L1,CO,L2,SP,PP)}.
 
 % An imperative sentence can build of two commands separated by a colon with optional "la"-phrases.
 % examples:
@@ -369,11 +384,13 @@ sentence_interrogative(S) -->
 % ken la mi pilin e ni: seme?
 sentence_interrogative(S) -->
   conditional_phrases(L1),
-  sentence_simple(SS),
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
   separator(':'),
   conditional_phrases(L2),
   question(Q),
-  {removing_extraneous_tree_nodes_pr_abcd('int',S,L1,SS,L2,Q)}.
+  {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,SP,PP,L2,Q)}.
 
 % An interrogative sentence can be build of a question and a sentence simple separated by a colon and conditional phrases.
 % examples:
@@ -383,8 +400,10 @@ sentence_interrogative(S) -->
   question(Q),
   separator(':'),
   conditional_phrases(L2),
-  sentence_simple(SS),
-  {removing_extraneous_tree_nodes_pr_abcd('int',S,L1,Q,L2,SS)}.
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
+  {removing_extraneous_tree_nodes_pr_abcde('int',S,L1,Q,L2,SP,PP)}.
 
 % An interrogative sentence can be build of two questions separated by a colon and conditional phrases.
 % examples:
@@ -402,8 +421,10 @@ sentence_interrogative(S) -->
 % seme la sina pilin e ni?
 sentence_interrogative(S) -->
   la_phrase_question(LQ),
-  sentence_simple(SS),
-  {removing_extraneous_tree_nodes_pr_ab('int',S,LQ,SS)}.
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
+  {removing_extraneous_tree_nodes_pr_abc('int',S,LQ,SP,PP)}.
 
 % An interrogative sentence (question) can be a vocativ question.
 % examples:
@@ -447,10 +468,10 @@ headline_simple(HL) -->
 % A simple sentence consist of a subject phrase and predicate phrases.
 % examples:
 % jan li lukin e ma.
-sentence_simple(S) -->
-  subject_phrase(NP),
-  predicate_phrases(VP),
-  {removing_extraneous_tree_nodes_pr_ab('sim',S,NP,VP)}.
+% sentence_simple(S) -->
+%  subject_phrase(NP),
+%   predicate_phrases(VP),
+%  {removing_extraneous_tree_nodes_pr_ab('sim_to_do',S,NP,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% answers yes/no
@@ -481,8 +502,10 @@ answer_no(S) -->
 % sina o, sina toki e ni!
 vocativ(S) -->
   vocativ_phrase(VO),
-  sentence_simple(SS),
-  {removing_extraneous_tree_nodes_pr_ab('voc',S,VO,SS)}.
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
+  {removing_extraneous_tree_nodes_pr_abc('voc',S,VO,SP,PP)}.
 
 % A vocativ salutation consists of a vocativ phrase and a salutation phrase.
 % examples:
@@ -533,7 +556,7 @@ interjection(S) -->
 interjection(S) -->
   subject_phrase_interjection(NPI),
   predicate_phrases(VP),
-  {removing_extraneous_tree_nodes_pr_ab('inj',S,NPI,VP)}.
+  {removing_extraneous_tree_nodes_pr_ab('inj_to_do',S,NPI,VP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% salutation
@@ -1739,11 +1762,13 @@ conditional_phrase(LP) -->
 % mi moku e moku li moku e telo la mi pilin pona.
 % mi moku e moku li moku e telo, la, mi pilin pona.
 conditional_phrase(LP) -->
-  sentence_simple(SS),
+  % sentence_simple(SS),
+  subject_phrase(SP),
+  predicate_phrases(PP),
   comma_optional,
   separator(la),
   comma_optional,
-  {removing_extraneous_tree_nodes_pr_a('cond',LP,SS)}.
+  {removing_extraneous_tree_nodes_pr_ab('cond',LP,SP,PP)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% conditional phrase as the end of a sentence
