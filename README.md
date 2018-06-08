@@ -148,13 +148,13 @@ Avoid ambiguous grammar as much as possible! Keep in mind if a sentence is clear
 Next example: "ona li pakala e tomo tan jan seme?" This question has two grammar variants (whom, which_object).
 
     |: ona li pakala e tomo tan jan seme?  
-    s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),question_word(seme))))))
-    s(int(which_object(sp(sub(pronoun(ona))),pp(verb_tra(pakala),obj_d(noun(tomo), (adjective(tan),adjective(jan)),question_word(seme))))))
+    s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),pronoun_question(seme))))))
+    s(int(which_object(sp(sub(pronoun(ona))),pp(verb_tra(pakala),obj_d(noun(tomo), (adjective(tan),adjective(jan)),pronoun_question(seme))))))
 
 A comma before "tan" make the sentence to a whom question only, because "tan" can only be a preposition here.
 
     |: ona li pakala e tomo, tan jan seme?  
-    s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),question_word(seme))))))
+    s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),pronoun_question(seme))))))
 
 In the next example a comma can make the grammar unambiguous. But maybe this is not what you mean.
 
@@ -205,13 +205,13 @@ This example make it more clear.
 To say “Are you ok or not ok?” use "sina ' pona anu seme?":
 
     |: sina ' pona anu seme?
-    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate(adjective(pona))),conj(anu),question_word(seme)))))
-    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate(noun(pona))),conj(anu),question_word(seme)))))
+    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate(adjective(pona))),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate(noun(pona))),conj(anu),pronoun_question(seme)))))
 
 This sentence is clearer.
 
     |: sina ' pona pi pilin en sijelo anu seme?
-    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate((noun(pona),noun(pilin),conj(en),noun(sijelo)))),conj(anu),question_word(seme)))))
+    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate((noun(pona),noun(pilin),conj(en),noun(sijelo)))),conj(anu),pronoun_question(seme)))))
 
 An other example is the sentence "ona li mama ala mama?" can not mean "Is she a mother?"
 
@@ -222,14 +222,14 @@ An other example is the sentence "ona li mama ala mama?" can not mean "Is she a 
 
 The sentence "ona li ' mama anu seme?" could mean "Is she a mother?". But it can also mean "Is she maternal?".
 
-    |: ona li ' mama anu seme?  
-    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(adjective(mama))),conj(anu),question_word(seme)))))
-    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(noun(mama))),conj(anu),question_word(seme)))))
+    |: ona li ' mama anu seme?
+    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(adjective(mama))),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(noun(mama))),conj(anu),pronoun_question(seme)))))
 
 A "pi" make it more clear. "mama" can only be a noun here.
 
     |: ona li ' mama pi jan ni anu seme?  
-    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate((noun(mama),noun(jan),pronoun(ni)))),conj(anu),question_word(seme)))))
+    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate((noun(mama),noun(jan),pronoun(ni)))),conj(anu),pronoun_question(seme)))))
 
 You can check more complicated sentences also.
 

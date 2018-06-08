@@ -339,7 +339,7 @@ pronoun(pronoun(Pronoun),Pronoun) --> [Pronoun], { member(Pronoun, [
  ])
 }.
 
-question_word(question_word(Question_word),Question_word) --> [Question_word], { member(Question_word, [
+pronoun_question(pronoun_question(Question_word),Question_word) --> [Question_word], { member(Question_word, [
 	seme           % what, which, wh- (question word)
  ])
 }.
