@@ -126,8 +126,6 @@ This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subjec
     vocp         vocativ phrase  
     salutp       salutation phrase  
 
-    subj         subject  
-
     obj_d        object direct after a transitive verb  
     obj_i        object after a intransitive verb  
     obj_p        object after a prepositiion  

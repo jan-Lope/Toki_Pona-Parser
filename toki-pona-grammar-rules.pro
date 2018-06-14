@@ -2190,11 +2190,11 @@ subjects(SUBS) -->
 % tenpo pi mute seme la sina sike e suno?
 subject(SUB) -->
   pronoun_with_optional_adjectives(PNC),
-  {removing_extraneous_tree_nodes_pr_a('sub',SUB,PNC)}.
+  {removing_extraneous_tree_nodes_a(SUB,PNC)}.
 
 subject(SUB) -->
   noun_compound(NC),
-  {removing_extraneous_tree_nodes_pr_a('sub',SUB,NC)}.
+  {removing_extraneous_tree_nodes_a(SUB,NC)}.
 
 % A subject_no_li can consists of the pronoun "mi" or "sina".
 % examples:
@@ -2202,11 +2202,11 @@ subject(SUB) -->
 % sina moku e moku.
 subject_no_li(SUB) -->
   pronoun(PN,mi),
-  {removing_extraneous_tree_nodes_pr_a('sub',SUB,PN)}.
+  {removing_extraneous_tree_nodes_a(SUB,PN)}.
 
 subject_no_li(SUB) -->
   pronoun(PN,sina),
-  {removing_extraneous_tree_nodes_pr_a('sub',SUB,PN)}.
+  {removing_extraneous_tree_nodes_a(SUB,PN)}.
 
 % A subject_with_li can consists of the pronoun "ona" or the pronoun "ni" or an compound pronoun or an compound noun.
 % examples:
@@ -2217,19 +2217,19 @@ subject_no_li(SUB) -->
 % jan ike li moku e moku.
 subject_with_li(SUB) -->
     pronoun(PN,ona),
-    {removing_extraneous_tree_nodes_pr_a('sub',SUB,PN)}.
+    {removing_extraneous_tree_nodes_a(SUB,PN)}.
 
 subject_with_li(SUB) -->
     pronoun(PN,ni),
-    {removing_extraneous_tree_nodes_pr_a('sub',SUB,PN)}.
+    {removing_extraneous_tree_nodes_a(SUB,PN)}.
 
 subject_with_li(SUB) -->
     pronoun_with_at_least_one_adjectives(PNC),
-    {removing_extraneous_tree_nodes_pr_a('sub',SUB,PNC)}.
+    {removing_extraneous_tree_nodes_a(SUB,PNC)}.
 
 subject_with_li(SUB) -->
     noun_compound(NC),
-    {removing_extraneous_tree_nodes_pr_a('sub',SUB,NC)}.
+    {removing_extraneous_tree_nodes_a(SUB,NC)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% additional subject
@@ -2253,7 +2253,7 @@ subject_add(SUBA) -->
 % seme li moku e moku?
 subject_what(SUB) -->
   pronoun_question(QW,seme),
-  {removing_extraneous_tree_nodes_pr_a('sub',SUB,QW)}.
+  {removing_extraneous_tree_nodes_a(SUB,QW)}.
 
 % A subject (who) consist of a noun (person), optional adjectives, the question word "seme" and optional noun_pi_phrases.
 % examples:
@@ -2269,7 +2269,7 @@ subject_who(SUB) -->
   adjectives(A),
   pronoun_question(QW,seme),
   noun_pi_phrases(NPG),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N,A,QW,NPG)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N,A,QW,NPG)}.
 
 % A subject (which) consist of a noun (no person), optional adjectives, the question word "seme" and optional noun_pi_phrases.
 % examples:
@@ -2279,7 +2279,7 @@ subject_which(SUB) -->
   adjectives(A),
   pronoun_question(QW,seme),
   noun_pi_phrases(NPG),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N,A,QW,NPG)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N,A,QW,NPG)}.
 
 % A subject (how many) consists of subjects, the separator "pi", the noun "mute" and the question word "seme".
 % examples:
@@ -2290,7 +2290,7 @@ subject_how_many(SUB) -->
   separator(pi),
   noun(N,mute),
   pronoun_question(QW,seme),
-  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,SU,N,QW)}.
+  {removing_extraneous_tree_nodes_abc(SUB,SU,N,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% special subjects designate
@@ -2302,7 +2302,7 @@ subject_how_many(SUB) -->
 subject_designate_person(SUB) -->
   noun(N,nimi),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_ab('sub',SUB,N,PN)}.
+  {removing_extraneous_tree_nodes_ab(SUB,N,PN)}.
 
 % continent
 % examples:
@@ -2313,7 +2313,7 @@ subject_designate_continent(SUB) -->
   noun(N2,ma),
   adjectiv(ADJ,suli),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 
 % country
 % examples:
@@ -2323,7 +2323,7 @@ subject_designate_country(SUB) -->
   separator(pi),
   noun(N2,ma),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,N1,N2,PN)}.
+  {removing_extraneous_tree_nodes_abc(SUB,N1,N2,PN)}.
 
 % city
 % examples:
@@ -2334,7 +2334,7 @@ subject_designate_city(SUB) -->
   noun(N2,ma),
   adjectiv(ADJ,tomo),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 
 % language
 % examples:
@@ -2344,7 +2344,7 @@ subject_designate_language(SUB) -->
   separator(pi),
   noun(N2,toki),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,N1,N2,PN)}.
+  {removing_extraneous_tree_nodes_abc(SUB,N1,N2,PN)}.
 
 % sign language
 % examples:
@@ -2355,7 +2355,7 @@ subject_designate_sign_language(SUB) -->
   noun(N2,toki),
   adjectiv(ADJ,luka),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 
 % ideology, religion
 % examples:
@@ -2367,14 +2367,14 @@ subject_designate_ideology(SUB) -->
   noun(N2,nasin),
   adjectiv(ADJ,sewi),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 subject_designate_ideology(SUB) -->
   noun(N1,nimi),
   separator(pi),
   noun(N2,nasin),
   adjectiv(ADJ,pona),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 
 % community
 % examples:
@@ -2384,7 +2384,7 @@ subject_designate_community(SUB) -->
   separator(pi),
   noun(N2,kulupu),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abc('sub',SUB,N1,N2,PN)}.
+  {removing_extraneous_tree_nodes_abc(SUB,N1,N2,PN)}.
 
 % movies
 % examples:
@@ -2395,7 +2395,7 @@ subject_designate_movie(SUB) -->
   noun(N2,sitelen),
   adjectiv(ADJ,tawa),
   pronoun(PN,_),
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 
 % miscellaneous
 % examples:
@@ -2408,7 +2408,7 @@ subject_designate_misc(SUB) -->
   adjectives(ADJ),
   pronoun(PN,_),
   {X\=jan,X\=meli,X\=mije,X\=ma,X\=toki,X\=nasin,X\=kulupu,X\=sitelen},
-  {removing_extraneous_tree_nodes_pr_abcd('sub',SUB,N1,N2,ADJ,PN)}.
+  {removing_extraneous_tree_nodes_abcd(SUB,N1,N2,ADJ,PN)}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
