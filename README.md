@@ -120,11 +120,11 @@ This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subjec
     com          command sentence  
     des          designate sentence  
 
-    sp           subject phrase  
-    pp           predicate phrase  
-    cond         conditional phrase ("la")  
-    vocp         vocativ phrase  
-    salutp       salutation phrase  
+    subj_p       subject phrase  
+    pred_p       predicate phrase  
+    cond_p       conditional phrase ("la")  
+    voca_p       vocativ phrase  
+    salu_p       salutation phrase  
 
     obj_d        object direct after a transitive verb  
     obj_i        object after a intransitive verb  
@@ -137,8 +137,9 @@ This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subjec
     ord          ordinal number  
 
     conj         conjunction  
-    verb_int     verb_intransitive  
-    verb_tra     verb transitive  
+    verb_i       verb_intransitive  
+    verb_t       verb transitive 
+    verb_p       verb pre
     be           The missing "be", "am", "are", "is" in Toki Pona.  
 
 Avoid ambiguous grammar as much as possible! Keep in mind if a sentence is clear for you it could be not clear for other people!

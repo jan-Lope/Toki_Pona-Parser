@@ -363,7 +363,7 @@ separator(Separator) --> [Separator], { member(Separator, [
  ])
 }.
 
-verb_intransitive(verb_int(Verb_intransitive),Verb_intransitive) --> [Verb_intransitive], { member(Verb_intransitive, [
+verb_intransitive(verb_i(Verb_intransitive),Verb_intransitive) --> [Verb_intransitive], { member(Verb_intransitive, [
      anpa,         % to prostrate oneself
      awen,         % to stay, to wait,to remain
      ike,          % to be bad, to suck
@@ -392,7 +392,7 @@ verb_intransitive(verb_int(Verb_intransitive),Verb_intransitive) --> [Verb_intra
  ])
 }.
 
-verb_transitive(verb_tra(Verb_transitive),Verb_transitive) --> [Verb_transitive], { member(Verb_transitive, [
+verb_transitive(verb_t(Verb_transitive),Verb_transitive) --> [Verb_transitive], { member(Verb_transitive, [
      alasa,        % to hunt, to forage
      anpa,         % to defeat, to beat, to vanquish, to conquer, to enslave
      ante,         % to change, to alter, to modify
@@ -475,7 +475,7 @@ verb_transitive(verb_tra(Verb_transitive),Verb_transitive) --> [Verb_transitive]
  ])
 }.
 
-verb_pre(verb_pre(Verb_pre),Verb_pre) --> [Verb_pre], { member(Verb_pre, [
+verb_pre(verb_p(Verb_pre),Verb_pre) --> [Verb_pre], { member(Verb_pre, [
      kama,         % to become, to mange to
      ken,          % to can, may
      kepeken,      % to use
