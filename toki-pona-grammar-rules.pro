@@ -2522,7 +2522,7 @@ object_intrans(OI) -->
 % ona li pona, tawa mi mute.
 predicate_be(OB) -->
   adjectives_at_least_one(ADJ),
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,ADJ)}.
+  {removing_extraneous_tree_nodes_a(OB,ADJ)}.
 
 
 % An object after a missing "be" can consists of (compound) pronoun.
@@ -2532,7 +2532,7 @@ predicate_be(OB) -->
 % ni li ona mute, tawa mi mute.
 predicate_be(OB) -->
   pronoun_with_optional_adjectives(PNC),
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,PNC)}.
+  {removing_extraneous_tree_nodes_a(OB,PNC)}.
 
 % An object after a missing "be" can consists of a compound noun.
 % examples:
@@ -2540,7 +2540,7 @@ predicate_be(OB) -->
 % ona li jan pi pona mute, tawa mi mute.
 predicate_be(OB) -->
   noun_compound(NC),
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,NC)}.
+  {removing_extraneous_tree_nodes_a(OB,NC)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% special forms of an object after missing "be".
@@ -2550,92 +2550,92 @@ predicate_be(OB) -->
 % nimi mi li Mawija.
 predicate_be_designate_person(OB) -->
   adjective_female_prominent_personage(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi mi li Mose.
 predicate_be_designate_person(OB) -->
   adjective_male_prominent_personage(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi mi li Lisa.
 predicate_be_designate_person(OB) -->
   adjective_female_name(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi mi li Lope.
 predicate_be_designate_person(OB) -->
   adjective_male_name(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi mi li Devil.
 predicate_be_designate_person(OB) -->
   adjective_person_name(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi mi li Lopen.
 predicate_be_designate_person(OB) -->
   adjective_person_name_unknown(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % A special, designate object for a non person consist of special adjective.
 % examples:
 % nimi pi ma suli mi li Elopa.
 predicate_be_designate_continent(OB) -->
   adjective_continent(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi ma mi li Tosi.
 predicate_be_designate_country(OB) -->
   adjective_country(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi ma tomo mi li Pelin.
 predicate_be_designate_city(OB) -->
   adjective_city(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi toki mi li Tosi.
 predicate_be_designate_language(OB) -->
   adjective_language(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi toki luka mi li Tosi.
 predicate_be_designate_sign_language(OB) -->
   adjective_sign_language(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi nasin sewi mi li Patapali.
 predicate_be_designate_ideology(OB) -->
   adjective_ideology(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi kulupu mi li Neje.
 predicate_be_designate_community(OB) -->
   adjective_community(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi sitelen tawa ni li X-Files.
 predicate_be_designate_movie(OB) -->
   adjective_movie(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 % examples:
 % nimi pi tomo tawa mi li Pata.
 predicate_be_designate_misc(OB) -->
   adjective_unofficial_words_miscellaneous(A,_), !,
-  {removing_extraneous_tree_nodes_pr_a('predicate',OB,A)}.
+  {removing_extraneous_tree_nodes_a(OB,A)}.
 
 
 
@@ -2788,7 +2788,7 @@ object_prepositional_what(OQ) -->
 % sina ' seme, kepeken ni?
 predicate_be_what_is(OQ) -->
   pronoun_question(QW,seme),
-  {removing_extraneous_tree_nodes_pr_a('predicate',OQ,QW)}.
+  {removing_extraneous_tree_nodes_a(OQ,QW)}.
 
 % A predicate phrase (question what is object) consists of a compound noun and the question word "seme".
 % In toki pona is no verb "to be".
@@ -2797,7 +2797,7 @@ predicate_be_what_is(OQ) -->
 predicate_be_what_is_adjective(OQ) -->
   noun_compound(NC),
   pronoun_question(QW,seme),
-  {removing_extraneous_tree_nodes_pr_ab('predicate',OQ,NC,QW)}.
+  {removing_extraneous_tree_nodes_ab(OQ,NC,QW)}.
 
 
 

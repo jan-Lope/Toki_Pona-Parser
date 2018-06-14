@@ -488,8 +488,8 @@ verb_pre(verb_pre(Verb_pre),Verb_pre) --> [Verb_pre], { member(Verb_pre, [
  ])
 }.
 
-verb_be(be) --> [].     % In Toki Pona is no verb "to be".
-verb_be(be) --> ['''']. % Inofficial: You can use an apostrophe instead of "to be".
+verb_be(verb_int(be)) --> [].     % In Toki Pona is no verb "to be".
+verb_be(verb_int(be)) --> ['''']. % Inofficial: You can use an apostrophe instead of "to be".
                         % In prolog you have to quote an apostrophe with an second apostrophe.
 
 
