@@ -90,10 +90,10 @@ After the prompt |: you can type a Toki Pona sentence.
 Use neither a space before the sentence nor doppel spaces.
 In this example it is the sentence "mi moku.".
 
-    |: mi moku.  
-    s(dec(sp(sub(pronoun(mi))),pp(verb_tra(moku))))
-    s(dec(sp(sub(pronoun(mi))),pp(be,predicate(adjective(moku)))))
-    s(dec(sp(sub(pronoun(mi))),pp(be,predicate(noun(moku)))))
+    |: mi moku.
+    s(dec(subj_p(pronoun(mi)),pred_p(verb_t(moku))))
+    s(dec(subj_p(pronoun(mi)),pred_p(verb_int(be),adjective(moku))))
+    s(dec(subj_p(pronoun(mi)),pred_p(verb_int(be),noun(moku))))
     |:
 
 You can see this sentence has three grammar variants and at least three meanings. Here can "moku" be a transitive verb (verb_tra), an predicate adjective or a predicate noun.
@@ -101,7 +101,7 @@ You can see this sentence has three grammar variants and at least three meanings
 Let's check the next sentence.
 
     |: mi moku e moku.  
-    s(dec(sp(sub(pronoun(mi))),pp(verb_tra(moku),obj_d(noun(moku)))))
+    s(dec(subj_p(pronoun(mi)),pred_p(verb_t(moku),obj_d(noun(moku)))))
 
 The grammar of the sentence "mi moku e moku." is unambiguously. The first "moku" can only be a transitive verb and the second "moku" is a noun.
 This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subject phrase (sp) with a subject (sub) and a predicate phrase (pp) with a direct object (obj_d). Here are the abbreviations:
@@ -138,7 +138,7 @@ This sentence (s) is a declarative (dec), simple (sim) sentence. It has a subjec
 
     conj         conjunction  
     verb_i       verb_intransitive  
-    verb_t       verb transitive 
+    verb_t       verb transitive
     verb_p       verb pre
     be           The missing "be", "am", "are", "is" in Toki Pona.  
 
@@ -147,46 +147,46 @@ Avoid ambiguous grammar as much as possible! Keep in mind if a sentence is clear
 Next example: "ona li pakala e tomo tan jan seme?" This question has two grammar variants (whom, which_object).
 
     |: ona li pakala e tomo tan jan seme?  
-    s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),pronoun_question(seme))))))
-    s(int(which_object(sp(sub(pronoun(ona))),pp(verb_tra(pakala),obj_d(noun(tomo), (adjective(tan),adjective(jan)),pronoun_question(seme))))))
+    s(int(whom(subj_p(pronoun(ona)), (pred_p(verb_t(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),pronoun_question(seme))))))
+    s(int(which_object(subj_p(pronoun(ona)),pred_p(verb_t(pakala),obj_d(noun(tomo), (adjective(tan),adjective(jan)),pronoun_question(seme))))))
+
 
 A comma before "tan" make the sentence to a whom question only, because "tan" can only be a preposition here.
 
     |: ona li pakala e tomo, tan jan seme?  
-    s(int(whom(sp(sub(pronoun(ona))), (pp(verb_tra(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),pronoun_question(seme))))))
+    s(int(whom(subj_p(pronoun(ona)), (pred_p(verb_t(pakala),obj_d(noun(tomo))),obj_p(preposition(tan),noun(jan),pronoun_question(seme))))))
 
 In the next example a comma can make the grammar unambiguous. But maybe this is not what you mean.
 
     |: jan pona pi meli mi en mi li moku e moku.  
-    s(dec(sp(sub(((noun(jan),adjective(pona)), (noun(meli),pronoun(mi)),conj(en),pronoun(mi)))),pp(verb_tra(moku),obj_d(noun(moku)))))
-    s(dec(sp((sub(((noun(jan),adjective(pona)),noun(meli),pronoun(mi))),conj(en),sub(pronoun(mi)))),pp(verb_tra(moku),obj_d(noun(moku)))))
+    s(dec(subj_p(((noun(jan),adjective(pona)), (noun(meli),pronoun(mi)),conj(en),pronoun(mi))),pred_p(verb_t(moku),obj_d(noun(moku)))))
+    s(dec(subj_p((((noun(jan),adjective(pona)),noun(meli),pronoun(mi)),conj(en),pronoun(mi))),pred_p(verb_t(moku),obj_d(noun(moku)))))
 
-    |: jan pona pi meli mi, en mi li moku e moku.  
-    s(dec(sp((sub(((noun(jan),adjective(pona)),noun(meli),pronoun(mi))),conj(en),sub(pronoun(mi)))),pp(verb_tra(moku),obj_d(noun(moku)))))
+    |: jan pona pi meli mi, en mi li moku e moku.
+   s(dec(subj_p((((noun(jan),adjective(pona)),noun(meli),pronoun(mi)),conj(en),pronoun(mi))),pred_p(verb_t(moku),obj_d(noun(moku)))))
 
 If you would like to mark the missing "be" you can use an apostrophe for the grammar check. This is not an official Toki Pona rule, but it avoid ambiguous.
 
     |: ni li ' moku.  
-    s(dec(sim(sp(sub(pronoun(ni))),pp(be,predicate(adjective(moku))))))
-    s(dec(sim(sp(sub(pronoun(ni))),pp(be,predicate(noun(moku))))))
+    s(dec(subj_p(pronoun(ni)),pred_p(verb_int(be),adjective(moku))))
+    s(dec(subj_p(pronoun(ni)),pred_p(verb_int(be),noun(moku))))
 
 To reduce the object variants to a noun you can use "pi".  
 
     |: ni li ' moku pi jan pona.  
-    s(dec(sp(sub(pronoun(ni))),pp(be,predicate(adjective(moku)))))
-    s(dec(sp(sub(pronoun(ni))),pp(be,predicate(noun(moku)))))
+    s(dec(subj_p(pronoun(ni)),pred_p(verb_int(be), (noun(moku),noun(jan),adjective(pona)))))
 
 To mark numbers you can use a comma or a "#" (unofficial).
 
     |:  jan lili li moku e moku.  
-    s(dec(sp(sub((noun(jan),adjective(lili)))),pp(verb_tra(moku),obj_d(noun(moku)))))
-    s(dec(sp(sub((noun(jan),card(adjective(lili))))),pp(verb_tra(moku),obj_d(noun(moku)))))
+    s(dec(subj_p((noun(jan),adjective(lili))),pred_p(verb_t(moku),obj_d(noun(moku)))))
+    s(dec(subj_p((noun(jan),card(adjective(lili)))),pred_p(verb_t(moku),obj_d(noun(moku)))))
 
     |:  jan, lili li moku e moku.  
-    s(dec(sp(sub((noun(jan),card(adjective(lili))))),pp(verb_tra(moku),obj_d(noun(moku)))))
+    s(dec(subj_p((noun(jan),card(adjective(lili)))),pred_p(verb_t(moku),obj_d(noun(moku)))))
 
     |:  jan # lili li moku e moku.  
-    s(dec(sp(sub((noun(jan),card(adjective(lili))))),pp(verb_tra(moku),obj_d(noun(moku)))))
+    s(dec(subj_p((noun(jan),card(adjective(lili)))),pred_p(verb_t(moku),obj_d(noun(moku)))))
 
 These scripts can help you to better understand Toki Pona sentences.
 For example the sentence “sina pona ala pona?” can not mean “Are you ok or not ok?”
@@ -194,47 +194,48 @@ The verb "are" (or "be") doesn't exist in Toki Pona.
 "pona" can only be a transitive verb here.
 
     |: sina pona ala pona?
-    s(int(yes_no(sp(sub(pronoun(sina))),pp(verb_tra(pona),adverb(ala),verb_tra(pona)))))
+    s(int(yes_no(subj_p(pronoun(sina)),pred_p(verb_t(pona),adverb(ala),verb_t(pona)))))
 
 This example make it more clear.
 
     |: sina pona ala pona e ni?
-    s(int(yes_no(sp(sub(pronoun(sina))),pp(verb_tra(pona),adverb(ala),verb_tra(pona),obj_d(sep(e),pronoun(ni))))),sep(?))
+    s(int(yes_no(subj_p(pronoun(sina)),pred_p(verb_t(pona),adverb(ala),verb_t(pona),obj_d(pronoun(ni))))))
 
 To say “Are you ok or not ok?” use "sina ' pona anu seme?":
 
     |: sina ' pona anu seme?
-    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate(adjective(pona))),conj(anu),pronoun_question(seme)))))
-    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate(noun(pona))),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(subj_p(pronoun(sina)), (pred_p(verb_int(be),adjective(pona)),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(subj_p(pronoun(sina)), (pred_p(verb_int(be),noun(pona)),conj(anu),pronoun_question(seme)))))
 
 This sentence is clearer.
 
     |: sina ' pona pi pilin en sijelo anu seme?
-    s(int(or_what(sp(sub(pronoun(sina))), (pp(be,predicate((noun(pona),noun(pilin),conj(en),noun(sijelo)))),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(subj_p(pronoun(sina)), (pred_p(verb_int(be), (noun(pona),noun(pilin),conj(en),noun(sijelo))),conj(anu),pronoun_question(seme)))))
 
 An other example is the sentence "ona li mama ala mama?" can not mean "Is she a mother?"
 
     |: ona li mama ala mama?
-    s(int(yes_no(sp(sub(pronoun(ona))),pp(verb_tra(mama),adverb(ala),verb_tra(mama)))))
+    s(int(yes_no(subj_p(pronoun(ona)),pred_p(verb_t(mama),adverb(ala),verb_t(mama)))))
 
 "mama" is a transitive verb here and not a noun. This sentence means "Does she mother (somebody)?" or "Does she wet-nurse (somebody)?".
 
 The sentence "ona li ' mama anu seme?" could mean "Is she a mother?". But it can also mean "Is she maternal?".
 
     |: ona li ' mama anu seme?
-    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(adjective(mama))),conj(anu),pronoun_question(seme)))))
-    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate(noun(mama))),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(subj_p(pronoun(ona)), (pred_p(verb_int(be),adjective(mama)),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(subj_p(pronoun(ona)), (pred_p(verb_int(be),noun(mama)),conj(anu),pronoun_question(seme)))))
 
 A "pi" make it more clear. "mama" can only be a noun here.
 
     |: ona li ' mama pi jan ni anu seme?  
-    s(int(or_what(sp(sub(pronoun(ona))), (pp(be,predicate((noun(mama),noun(jan),pronoun(ni)))),conj(anu),pronoun_question(seme)))))
+    s(int(or_what(subj_p(pronoun(ona)), (pred_p(verb_int(be), (noun(mama),noun(jan),pronoun(ni))),conj(anu),pronoun_question(seme)))))
 
 You can check more complicated sentences also.
 
     |: ken la jan Lope li wile e ni: sina kama sona e toki pona!
-    s(exc(cond(sub(noun(ken))),sp(sub((noun(jan),unofficial_male_name(known_male_name(Lope))))),pp(verb_tra(wile),obj_d(pronoun(ni))),
-    sp(sub(pronoun(sina))),pp((verb_pre(kama),verb_tra(sona)),obj_d((noun(toki),adjective(pona))))))
+    s(exc(cond_p(noun(ken)),subj_p((noun(jan),unofficial_male_name(known_male_name(Lope)))),pred_p(verb_t(wile),obj_d(pronoun(ni))),
+      subj_p(pronoun(sina)),
+      pred_p((verb_p(kama),verb_t(sona)),obj_d((noun(toki),adjective(pona))))))
 
 You can check a paragraph with an optional headline and several sentences. But if you use sentences with ambiguity grammar you will get many results.
 At the end of a headline you have to type the sign "/" because you can't use a new line in this version of the script. For example:
