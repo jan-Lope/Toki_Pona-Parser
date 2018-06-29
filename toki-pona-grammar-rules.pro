@@ -661,7 +661,7 @@ designate(S) -->
 % examples:
 % seme?
 question(S) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('pardon',S,QW)}.
 
 
@@ -1421,7 +1421,7 @@ predicate_phrases_question_or_what(VPSQ) -->
   {removing_extraneous_tree_nodes_abcd(VPSQ,VP,Con,VPQ,PO)}.
 
 predicate_phrase_question_or_what(VPQ) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_a(VPQ,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1507,7 +1507,7 @@ predicate_phrases_what_verb_trans(VPQ) -->
   {removing_extraneous_tree_nodes_pr_abc('pred_p',VPQ,VP,DO,PO)}.
 
 predicate_phrase_what_verb_trans(VPQ) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('verb_t',VPQ,QW)}.
 
 % A predicate phrase (question what intransitive verb) consists of the question word "seme" as intransitive verb,
@@ -1524,7 +1524,7 @@ predicate_phrases_what_verb_intrans(VPQ) -->
   {removing_extraneous_tree_nodes_pr_abc('pred_p',VPQ,VP,IO,PO)}.
 
 predicate_phrase_what_verb_intrans(VPQ) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('verb_i',VPQ,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1807,7 +1807,7 @@ la_phrase_question(LPQ) -->
 la_phrase_when(LPQ) -->
   noun(N,tenpo),
   adjectives(ADJS),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   separator(la),
   {removing_extraneous_tree_nodes_pr_abc('cond_p',LPQ,N,ADJS,QW)}.
 
@@ -1816,7 +1816,7 @@ la_phrase_when(LPQ) -->
 % tan seme la soweli wawa pimeja li moku e ona?
 la_phrase_why(LPQ) -->
   noun(N,tan),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   separator(la),
   {removing_extraneous_tree_nodes_pr_ab('cond_p',LPQ,N,QW)}.
 
@@ -1827,7 +1827,7 @@ la_phrase_how_many(LPQ) -->
   subjects_all(SU),
   separator(pi),
   noun(N,mute),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   separator(la),
   {removing_extraneous_tree_nodes_pr_abc('cond_p',LPQ,SU,N,QW)}.
 
@@ -2252,7 +2252,7 @@ subject_add(SUBA) -->
 % examples:
 % seme li moku e moku?
 subject_what(SUB) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_a(SUB,QW)}.
 
 % A subject (who) consist of a noun (person), optional adjectives, the question word "seme" and optional noun_pi_phrases.
@@ -2267,7 +2267,7 @@ subject_what(SUB) -->
 subject_who(SUB) -->
   noun(N,X), {X=jan;X=meli;X=mije},
   adjectives(A),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   noun_pi_phrases(NPG),
   {removing_extraneous_tree_nodes_abcd(SUB,N,A,QW,NPG)}.
 
@@ -2277,7 +2277,7 @@ subject_who(SUB) -->
 subject_which(SUB) -->
   noun(N,X), {X\=jan,X\=meli,X\=mije},
   adjectives(A),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   noun_pi_phrases(NPG),
   {removing_extraneous_tree_nodes_abcd(SUB,N,A,QW,NPG)}.
 
@@ -2289,7 +2289,7 @@ subject_how_many(SUB) -->
   subjects_all(SU),
   separator(pi),
   noun(N,mute),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_abc(SUB,SU,N,QW)}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -2752,7 +2752,7 @@ object_optional_add(OA) -->
 % sina kipisi e seme, kepeken ilo?
 object_direct_what(OQ) -->
   separator(e),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('obj_d',OQ,QW)}.
 
 % An object for a question (what indirect object) consist of the question word "seme".
@@ -2760,7 +2760,7 @@ object_direct_what(OQ) -->
 % sina ken mute seme?
 % sina ken mute seme, kepeken ni?
 object_indirect_what(OQ) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_a('obj_i',OQ,QW)}.
 
 % An object for question (what prepositional object) consists of
@@ -2771,7 +2771,7 @@ object_indirect_what(OQ) -->
 object_prepositional_what(OQ) -->
   comma_optional,
   preposition(Prep,P), {P\=lon,P\=tan,P\=tawa},
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_ab('obj_p',OQ,Prep,QW)}.
 
 
@@ -2787,7 +2787,7 @@ object_prepositional_what(OQ) -->
 % sina ' seme?
 % sina ' seme, kepeken ni?
 predicate_be_what_is(OQ) -->
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_a(OQ,QW)}.
 
 % A predicate phrase (question what is object) consists of a compound noun and the question word "seme".
@@ -2796,7 +2796,7 @@ predicate_be_what_is(OQ) -->
 % ona li jan pi pana sona seme?
 predicate_be_what_is_adjective(OQ) -->
   noun_compound(NC),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_ab(OQ,NC,QW)}.
 
 
@@ -2811,7 +2811,7 @@ predicate_be_what_is_adjective(OQ) -->
 object_prepositional_where(OQ) -->
   comma_optional,
   preposition(Prep,lon),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_ab('obj_p',OQ,Prep,QW)}.
 
 % A object for a question (where) can consists of an optional comma,
@@ -2822,7 +2822,7 @@ object_prepositional_where(OQ) -->
   comma_optional,
   preposition(Prep,lon),
   noun(N,X), {X=anpa;X=insa;X=monsi;X=noka;X=poka;X=sewi;X=sinpin },      % spatial nouns
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_p',OQ,Prep,N,QW)}.
 
 % A object for a question (where from) can consists of an optional comma,
@@ -2832,7 +2832,7 @@ object_prepositional_where(OQ) -->
 object_prepositional_wherefrom(OQ) -->
   comma_optional,
   preposition(Prep,tan),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_ab('obj_p',OQ,Prep,QW)}.
 
 % A object for a question (where from) can consists of an optional comma,
@@ -2844,7 +2844,7 @@ object_prepositional_wherefrom(OQ) -->
   comma_optional,
   preposition(Prep,tan),
   noun_compound(NC),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_p',OQ,Prep,NC,QW)}.
 
 % A object for a question (where to) can consists of an optional comma,
@@ -2854,7 +2854,7 @@ object_prepositional_wherefrom(OQ) -->
 object_prepositional_whereto(OQ) -->
   comma_optional,
   preposition(Prep,tawa),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_ab('obj_p',OQ,Prep,QW)}.
 
 % A object for a question (where to) can consists of an optional comma,
@@ -2866,7 +2866,7 @@ object_prepositional_whereto(OQ) -->
   comma_optional,
   preposition(Prep,tawa),
   noun(N,X), {X=anpa;X=insa;X=monsi;X=noka;X=poka;X=sewi;X=sinpin },                   % spatial noun
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_p',OQ,Prep,N,QW)}.
 
 % A direct object for a question (whom) can consists of the separator "e",
@@ -2882,7 +2882,7 @@ object_direct_whom(OQ) -->
   separator(e),
   noun(N,X), {X=jan;X=meli;X=mije},
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_d',OQ,N,ADJ,QW)}.
 
 % A indirect object for a question (whom) can consists of
@@ -2892,7 +2892,7 @@ object_direct_whom(OQ) -->
 object_intrans_whom(OQ) -->
   noun(N,X), {X=jan;X=meli;X=mije},
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_i',OQ,N,ADJ,QW)}.
 
 
@@ -2910,7 +2910,7 @@ object_prepositional_whom(OQ) -->
   preposition(Pre,_),
   noun(N,X), {X=jan;X=meli;X=mije},
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abcd('obj_p',OQ,Pre,N,ADJ,QW)}.
 
 % A direct object for a question (which) can consists of the separator "e",
@@ -2922,7 +2922,7 @@ object_direct_which(OQ) -->
   separator(e),
   noun(No,N), {N\=jan,N\=meli,N\=mije,N\=tan,N\=tenpo},
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_d',OQ,No,ADJ,QW)}.
 
 % A indirect object for a question (which) can consists of
@@ -2933,7 +2933,7 @@ object_direct_which(OQ) -->
 object_intrans_which(OQ) -->
   noun(No,N), {N\=jan,N\=meli,N\=mije,N\=tan,N\=tenpo},
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_i',OQ,No,ADJ,QW)}.
 
 % A prepositional object for a question (which) can consists of an optional comma,
@@ -2946,7 +2946,7 @@ object_prepositional_which(OQ) -->
   preposition(Pre,P), {P\=lon,P\=tan},
   noun(No,N), {N\=jan,N\=meli,N\=mije,N\=tan,N\=tenpo},
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abcd('obj_p',OQ,Pre,No,ADJ,QW)}.
 
 % A prepositional object for a question (when) can consists of an optional comma,
@@ -2959,7 +2959,7 @@ object_prepositional_when(OQ) -->
   preposition(Pre,lon),
   noun(N,tenpo),
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abcd('obj_p',OQ,Pre,N,ADJ,QW)}.
 
 % A prepositional object for a question (why) can consists of an optional comma,
@@ -2970,7 +2970,7 @@ object_prepositional_when(OQ) -->
 object_prepositional_why(OQ) -->
   comma_optional,
   preposition(Pre,tan),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_ab('obj_p',OQ,Pre,QW)}.
 
 % A prepositional object for a question (how) can consists of an optional comma,
@@ -2983,7 +2983,7 @@ object_prepositional_how(OQ) -->
   preposition(Pre,kepeken),
   noun(N,nasin),
   adjectives(ADJ),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abcd('obj_p',OQ,Pre,N,ADJ,QW)}.
 
 % A direct object for a question (how many) can consists of the separator "e",
@@ -2997,7 +2997,7 @@ object_direct_how_many(OQ) -->
   noun_compound(NC),
   separator(pi),
   noun(N,mute),
-  pronoun_question(QW,seme),
+  pronoun_interrogative(QW,seme),
   {removing_extraneous_tree_nodes_pr_abc('obj_d',OQ,NC,N,QW)}.
 
 

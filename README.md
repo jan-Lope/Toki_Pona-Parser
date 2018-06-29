@@ -54,7 +54,13 @@ First you have to install swi-prolog. Here are the command for Ubuntu/Debian:
 
     $ sudo apt-get install swi-prolog  
 
-After this you have to download the Toki Pona parser from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser).
+After this you have to clone the repository with the sources of the Toki Pona parser. 
+
+    $ git clone https://github.com/jan-Lope/Toki_Pona-Parser.git
+    $ cd Toki_Pona-Parser
+
+
+Alternatively you can download the sources as a ZIP file from this link [https://github.com/jan-Lope/Toki_Pona-Parser](https://github.com/jan-Lope/Toki_Pona-Parser).
 Use the button "Clone or download" and then "Download ZIP".
 
 Unzip the file "Toki_Pona-Parser-master.zip" and changed to the new directory.

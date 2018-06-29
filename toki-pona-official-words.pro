@@ -331,6 +331,10 @@ preposition(preposition(Preposition),Preposition) --> [Preposition], { member(Pr
  ])
 }.
 
+
+% https://online-lernen.levrai.de/deutsch-uebungen/grammatik_5_7/27_pronomen/01_pronomen_liste.html
+
+% pronoun_general
 pronoun(pronoun(Pronoun),Pronoun) --> [Pronoun], { member(Pronoun, [
      mi,           % I, we (pronoun 1. person)
      sina,         % you (pronoun 2. person)
@@ -339,10 +343,37 @@ pronoun(pronoun(Pronoun),Pronoun) --> [Pronoun], { member(Pronoun, [
  ])
 }.
 
-pronoun_question(pronoun_question(Question_word),Question_word) --> [Question_word], { member(Question_word, [
+% pronoun_personal
+% pronoun_personal(pronoun_personal(Pronoun_personal),Pronoun_personal) --> [Pronoun_personal], { member(Pronoun_personal, [
+%     mi,           % I, we (pronoun 1. person)
+%     sina,         % you (pronoun 2. person)
+%     ona,           % she, he, it, they (pronoun 3. person)
+%     ni            % this, that (pronoun determiner)
+% ])
+%}.
+
+% pronoun_reflexive
+
+% pronoun_possesive
+
+% pronoun_relative
+
+% pronoun_demonstrative
+
+% pronoun_interrogative
+pronoun_interrogative(pronoun_interrogative(Pronoun_interrogative),Pronoun_interrogative) --> [Pronoun_interrogative], { member(Pronoun_interrogative, [
 	seme           % what, which, wh- (question word)
  ])
 }.
+
+% pronoun_indevinitive
+
+
+
+
+
+
+
 
 % separator(sep(Separator),Separator) --> [Separator], { member(Separator, [
 separator(Separator) --> [Separator], { member(Separator, [
@@ -488,8 +519,8 @@ verb_pre(verb_p(Verb_pre),Verb_pre) --> [Verb_pre], { member(Verb_pre, [
  ])
 }.
 
-verb_be(verb_int(be)) --> [].     % In Toki Pona is no verb "to be".
-verb_be(verb_int(be)) --> ['''']. % Inofficial: You can use an apostrophe instead of "to be".
+verb_be(verb_i(be)) --> [].     % In Toki Pona is no verb "to be".
+verb_be(verb_i(be)) --> ['''']. % Inofficial: You can use an apostrophe instead of "to be".
                         % In prolog you have to quote an apostrophe with an second apostrophe.
 
 
