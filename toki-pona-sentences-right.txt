@@ -429,8 +429,8 @@ jan Sili li lape lili lon supa.
 jan Sili li pilin pona, li uta e jan Mawijo.
 jan sin li kama.
 jan Sinsin li nasa.
-% jan Sipi Wanta li jan sewi.% To Do 
-% jan Sipi Wanta li ken ala lukin.% To Do 
+% jan Sipi Wanta li jan sewi.% To Do
+% jan Sipi Wanta li ken ala lukin.% To Do
 jan sona li jan nasa.
 jan sona li kute.
 jan sona li pu.
@@ -522,7 +522,7 @@ kasi mute li laso jelo.
 kasi ni li ante mute kin li suli.
 kasi ni li lon telo taso.
 kasi ni li pona pilin li pilin e ni: seli pi meli Mapuwika li ijo suli.
-kasi pi nanpa wan 
+kasi pi nanpa wan
 ken la ilo li pakala.
 ken la jaki!
 ken la jan lili li wile moku e telo.
@@ -741,6 +741,7 @@ meli Lalalalalala li toki e toki.
 meli Lapalapala
 meli li jan.
 meli li kute e mije.
+meli li lon e jan lili ona.
 meli li lili.
 meli lili li awen pona li toki utala ala.
 meli lili li kalama utala li toki e nimi ike tawa jan lawa lete.
@@ -1173,9 +1174,9 @@ nasin ante li pona tawa jan ante.
 % nasin Kolisu li lon tan ni.
 nasin li kama lili.
 nasin mani li ike.
-nasin nanpa tu 
-nasin nanpa tu wan 
-nasin nanpa wan 
+nasin nanpa tu
+nasin nanpa tu wan
+nasin nanpa wan
 nasin ni la mi kepeken toki pona.
 nasin ni la sina jo ala e selo pona mute.
 nasin pona li mute.
@@ -1548,7 +1549,7 @@ pali pona!
 pali sina li pakala e nimi pona pi tomo meli ni!
 pali sina li pona mute.
 pan ni li moku ike.
-pilin ike 
+pilin ike
 pilin pona li pana e sijelo pona.
 pimeja li ijo seme?
 pimeja li tawa insa kon mi.
@@ -1960,7 +1961,7 @@ tenpo ali la mi pali e ike.
 tenpo ali la o kama sona!
 tenpo ijo la meli li ken ala pakala e pilin olin e pilin unpa.
 tenpo ike la jan li wile toki tawa jan pona.
-% tenpo ike, tenpo olin, tenpo utala, tenpo pona, tenpo pi ken pilin, tenpo pi ken ala pilin 
+% tenpo ike, tenpo olin, tenpo utala, tenpo pona, tenpo pi ken pilin, tenpo pi ken ala pilin
 tenpo kama la ken la mi moku e moku.
 tenpo kama la, ken, la mi moku e moku.
 tenpo kama la kiwen lili li lon insa ale.
@@ -1999,7 +2000,7 @@ tenpo mun tu li pini la soweli li tawa e lawa ona tan poki mama.
 tenpo mute la meli lili pi jan ante li ike pilin.
 tenpo mute la ona mute li unpa.
 tenpo mute li pini.
-tenpo nanpa luka tu tu 
+tenpo nanpa luka tu tu
 tenpo nanpa tu la kala laso lili li kama li toki e ni: mi wile e wan pi selo suno sina.
 tenpo ni la jan Mawijo li kama lon lupa, li jo e soweli lili tu.
 tenpo ni la kalama pi jan lili Elu li lon insa sina.
@@ -2007,7 +2008,7 @@ tenpo ni la mi lon.
 tenpo ni la mi sona e ni: mi anpa.
 tenpo ni la ona li sona e ni: ona li nasa!
 tenpo ni la sina awen ala awen seli?
-% tenpo pali sin, tenpo pakala, tenpo tawa, tenpo awen, tenpo pi kiwen ala, tenpo pi kulupu kiwen 
+% tenpo pali sin, tenpo pakala, tenpo tawa, tenpo awen, tenpo pi kiwen ala, tenpo pi kulupu kiwen
 % tenpo pi lon sin, tenpo moli, tenpo pali, tenpo moku tenpo pakala, tenpo pona, tenpo musi, tenpo ike
 tenpo pi ma ali
 tenpo pimeja la jan ante li lape la jan Mawi li tawa ma ale li telo e seli ale.
@@ -2071,33 +2072,33 @@ toki luka Lapalapala
 toki musi ni li tan lipu pona ni.
 toki musi pimeja pi jan lili
 toki nanpa tu
-toki nanpa tu tan lukin ala 
-toki nanpa wan tan lukin ala 
+toki nanpa tu tan lukin ala
+toki nanpa wan tan lukin ala
 toki ni li seme?
 toki pona li pona tawa mi.
 toki pona li tan seme?
 toki pona li toki pona.
 toki sina en pali sina li sama, la sina pilin pona.
 toki sina li telo.
-toki tan ali ante 
-toki tan ijo sewi 
-toki tan ilo moku 
-toki tan mani pi jan sewi 
-toki tan moli 
-toki tan mute 
-toki tan nanpa 
-toki tan nasa 
-toki tan nasin ante 
-toki tan nasin pi jan Jon 
-toki tan olin 
-toki tan pakala pi ali ala 
-toki tan pilin ike mute 
-toki tan pona lukin 
-toki tan sona ala 
-toki tan tenpo suli 
+toki tan ali ante
+toki tan ijo sewi
+toki tan ilo moku
+toki tan mani pi jan sewi
+toki tan moli
+toki tan mute
+toki tan nanpa
+toki tan nasa
+toki tan nasin ante
+toki tan nasin pi jan Jon
+toki tan olin
+toki tan pakala pi ali ala
+toki tan pilin ike mute
+toki tan pona lukin
+toki tan sona ala
+toki tan tenpo suli
 toki tan toki pi jan Pokakijo
-toki tan wawa 
-toki tan wawa pi ilo musi 
+toki tan wawa
+toki tan wawa pi ilo musi
 toki utala pi pimeja soweli
 tomo li jo e ilo toki.
 tomo lipu li sin.
@@ -2136,7 +2137,7 @@ utala li ike, tawa mi.
 uta ona li lupa lukin.
 uta pi meli lili li ken ala tawa suli.
 wan li pona.
-wan taso 
+wan taso
 waso ike li tawa sike lon lawa mi.
 waso li kalama ala musi.
 waso li moku e pipi lili.

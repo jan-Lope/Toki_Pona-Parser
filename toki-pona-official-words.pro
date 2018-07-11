@@ -452,6 +452,7 @@ verb_transitive(verb_t(Verb_transitive),Verb_transitive) --> [Verb_transitive], 
      len,          % to wear, to be dressed, to dress
      lete,         % to cool down, to chill
      lili,         % to reduce, to shorten, to shrink, to lessen
+     lon,          % to give birth, to create
      lukin,        % to see, to look at, to watch, to read
      lupa,         % to pierce, to stab, to perforate
      mama,         % to mother sb., to wet-nurse, mothering
