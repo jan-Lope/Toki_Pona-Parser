@@ -417,7 +417,7 @@ verb_intransitive(verb_i(Verb_intransitive),Verb_intransitive) --> [Verb_intrans
      sewi,         % to get up
      sona,         % to know, to understand
      tan,          % to come from, to originate from, to stem from, to be descended from, to emerge, to follow, to come out of
-     tawa,         % go to, walk, travel, move, leave
+     tawa,         % to walk, to travel, to move, to leave, to visit
      toki,         % to talk, to chat, to communicate
      unpa          % to have sex
  ])
