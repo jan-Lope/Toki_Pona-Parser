@@ -510,7 +510,7 @@ verb_transitive(verb_t(Verb_transitive),Verb_transitive) --> [Verb_transitive], 
 verb_pre(verb_p(Verb_pre),Verb_pre) --> [Verb_pre], { member(Verb_pre, [
      kama,         % to become, to mange to
      ken,          % to can, may
-     kepeken,      % to use
+#     kepeken,      % to use
      lukin,        % to seek to, try to, look for
      open,         % to begin, to start
      pini,         % to stop, to finish, to end, to interrupt
